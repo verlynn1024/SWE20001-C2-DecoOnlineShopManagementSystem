@@ -7,3 +7,4 @@ Please add your name here as you've successfully joined the codespace.
 SaaStars Members:
 Lee Thean Verlynn
 Tay Jia Xuan
+Jaanane Catherine Mahadevan 
