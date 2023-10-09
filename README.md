@@ -5,6 +5,6 @@ SWE20001: Managing Software Projects by Mr Mohammad Faizal (Swinburne)
 Please add your name here as you've successfully joined the codespace.
 
 SaaStars Members:
-Lee Thean Verlynn
+Lee Thean Verlynn (104055622)
 Tay Jia Xuan
 Jaanane Catherine Mahadevan 
