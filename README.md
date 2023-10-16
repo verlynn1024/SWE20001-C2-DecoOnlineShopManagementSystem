@@ -8,3 +8,4 @@ SaaStars Members:
 Lee Thean Verlynn (104055622)
 Tay Jia Xuan
 Jaanane Catherine Mahadevan 
+Phua Wai Wai (104208028)
