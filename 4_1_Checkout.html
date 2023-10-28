@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4.1.Checkout</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: 4.1.Checkout;
+		--web-view-id: n_1Checkout;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: n_1Checkout;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#n_1Checkout {
+		position: absolute;
+		width: 1366px;
+		height: 1200px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: 4.1.Checkout;
+		--web-view-id: n_1Checkout;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Logo-Text_i {
+		position: absolute;
+		width: 190px;
+		height: 40px;
+		left: 588px;
+		top: 48px;
+		overflow: visible;
+	}
+	#LOZA_j {
+		left: 44px;
+		top: 5px;
+		position: absolute;
+		overflow: visible;
+		width: 147px;
+		height: 35px;
+		text-align: left;
+		font-family: SF Pro Text;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 31px;
+		color: rgba(21,21,21,1);
+		letter-spacing: 1.25px;
+	}
+	#Logo_k {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container_w {
+		fill: transparent;
+	}
+	.Container_w {
+		position: absolute;
+		overflow: visible;
+		width: 40px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+	}
+	#Logo_m {
+		fill: rgba(21,21,21,1);
+	}
+	.Logo_m {
+		overflow: visible;
+		position: absolute;
+		width: 35px;
+		height: 30px;
+		left: 2.5px;
+		top: 5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line {
+		fill: rgba(233,233,233,1);
+	}
+	.Line {
+		position: absolute;
+		overflow: visible;
+		width: 1248px;
+		height: 1px;
+		left: 59px;
+		top: 112px;
+	}
+	#right {
+		position: absolute;
+		width: 425px;
+		height: 379px;
+		left: 882px;
+		top: 153px;
+		overflow: visible;
+		padding: 0px;
+	}
+	#total {
+		position: absolute;
+		width: 424px;
+		height: 28px;
+		left: 0px;
+		top: 351px;
+		overflow: visible;
+	}
+	#Total_q {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		white-space: nowrap;
+		line-height: 28px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(0,0,0,1);
+	}
+	#USD_4800 {
+		left: 312px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		white-space: nowrap;
+		line-height: 28px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(0,0,0,1);
+	}
+	#Line-Break_t {
+		fill: rgba(233,233,233,1);
+	}
+	.Line-Break_t {
+		position: absolute;
+		overflow: visible;
+		width: 424px;
+		height: 1px;
+		left: 0px;
+		top: 326px;
+	}
+	#n__t {
+		position: absolute;
+		width: 422px;
+		height: 18px;
+		left: 1px;
+		top: 292px;
+		overflow: visible;
+	}
+	#Free {
+		left: 394px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 29px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Shipping {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 58px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#n__w {
+		position: absolute;
+		width: 424px;
+		height: 18px;
+		left: 1px;
+		top: 258px;
+		overflow: visible;
+	}
+	#Subtotal {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 56px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#USD_4800_y {
+		left: 354px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Product_List_Check-out {
+		position: absolute;
+		width: 424px;
+		height: 113px;
+		left: 1px;
+		top: 129px;
+		overflow: visible;
+	}
+	#Line-Break_a {
+		fill: rgba(233,233,233,1);
+	}
+	.Line-Break_a {
+		position: absolute;
+		overflow: visible;
+		width: 424px;
+		height: 1px;
+		left: 0px;
+		top: 112px;
+	}
+	#Betty_ {
+		left: 112px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 42px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(21,21,21,1);
+	}
+	#n__items {
+		left: 112px;
+		top: 30px;
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#USD_3600 {
+		left: 353px;
+		top: 78px;
+		position: absolute;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Icon__Plus_ {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 399px;
+		top: 28px;
+		overflow: visible;
+		padding: 6px 11px 6px 11px;
+	}
+	#Group_498_ {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container-Button_ {
+		fill: transparent;
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container-Button_ {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Minus_ {
+		fill: rgba(21,21,21,1);
+	}
+	.Minus_ {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Minus_a {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_a {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Minus_b {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_b {
+		width: 12px;
+		height: 2px;
+		position: absolute;
+		overflow: visible;
+		transform: translate(0px, 0px) matrix(1,0,0,1,6,11) rotate(-90deg);
+		transform-origin: center;
+	}
+	#Icon__Minus_a {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 351px;
+		top: 28px;
+		overflow: visible;
+	}
+	#Container-Button_b {
+		fill: transparent;
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container-Button_b {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Minus_c {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_c {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Image-Product_d {
+		position: absolute;
+		width: 96px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container-Thumbnail {
+		fill: rgba(239,239,239,1);
+	}
+	.Container-Thumbnail {
+		position: absolute;
+		overflow: visible;
+		width: 96px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+	}
+	#Image {
+		position: absolute;
+		width: 96px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Product_List_Check-out_g {
+		position: absolute;
+		width: 424px;
+		height: 113px;
+		left: 1px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Image-Product_h {
+		position: absolute;
+		width: 96px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container-Thumbnail_i {
+		fill: rgba(239,239,239,1);
+	}
+	.Container-Thumbnail_i {
+		position: absolute;
+		overflow: visible;
+		width: 96px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+	}
+	#Image_j {
+		position: absolute;
+		width: 96px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Line-Break_k {
+		fill: rgba(233,233,233,1);
+	}
+	.Line-Break_k {
+		position: absolute;
+		overflow: visible;
+		width: 424px;
+		height: 1px;
+		left: 0px;
+		top: 112px;
+	}
+	#Lule_l {
+		left: 112px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 32px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(21,21,21,1);
+	}
+	#n__item {
+		left: 112px;
+		top: 30px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#USD_1200_n {
+		left: 354px;
+		top: 78px;
+		position: absolute;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Icon__Plus_o {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 399px;
+		top: 28px;
+		overflow: visible;
+		padding: 6px 11px 6px 11px;
+	}
+	#Group_498_p {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container-Button_q {
+		fill: transparent;
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container-Button_q {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Minus_r {
+		fill: rgba(21,21,21,1);
+	}
+	.Minus_r {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Minus_s {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_s {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Minus_t {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_t {
+		width: 12px;
+		height: 2px;
+		position: absolute;
+		overflow: visible;
+		transform: translate(0px, 0px) matrix(1,0,0,1,6,11) rotate(-90deg);
+		transform-origin: center;
+	}
+	#Icon__Minus_u {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 351px;
+		top: 28px;
+		overflow: visible;
+	}
+	#Container-Button_v {
+		fill: transparent;
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container-Button_v {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Minus_w {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_w {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Continue_shopping {
+		left: 59px;
+		top: 70px;
+		position: absolute;
+		overflow: visible;
+		width: 122px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+		text-decoration: underline;
+	}
+	#Checkout-Form {
+		position: absolute;
+		width: 718px;
+		height: 689px;
+		left: 59px;
+		top: 153px;
+		overflow: visible;
+		padding: 0px;
+	}
+	#PayWith {
+		position: absolute;
+		width: 718px;
+		height: 65px;
+		left: 0px;
+		top: 624px;
+		overflow: visible;
+		padding: 0px;
+	}
+	#Group_531 {
+		position: absolute;
+		width: 718px;
+		height: 65px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container_b {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container_b {
+		position: absolute;
+		overflow: visible;
+		width: 718px;
+		height: 65px;
+		left: 0px;
+		top: 0px;
+	}
+	#Checkout-Step {
+		position: absolute;
+		width: 119px;
+		height: 32px;
+		left: 40px;
+		top: 17px;
+		overflow: visible;
+	}
+	#Number {
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container_c {
+		fill: rgba(233,233,233,1);
+	}
+	.Container_c {
+		position: absolute;
+		overflow: visible;
+		width: 32px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+	}
+	#n__ {
+		left: 11px;
+		top: 6px;
+		position: absolute;
+		overflow: visible;
+		width: 11px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(87,87,87,1);
+	}
+	#Pay_With {
+		left: 40px;
+		top: 6px;
+		position: absolute;
+		overflow: visible;
+		width: 80px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(87,87,87,1);
+		text-transform: uppercase;
+	}
+	#ShipTo {
+		position: absolute;
+		width: 718px;
+		height: 600px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		padding: 16px 0px 54px 0px;
+	}
+	#Container_d {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container_d {
+		position: absolute;
+		overflow: visible;
+		width: 718px;
+		height: 600px;
+		left: 0px;
+		top: 0px;
+	}
+	#Primary-Button_ {
+		position: absolute;
+		width: 300px;
+		height: 49px;
+		left: 378px;
+		top: 497px;
+		overflow: visible;
+		transition: all 0.6000000238418579s snap;
+		--web-animation: fadein 0.6000000238418579s snap;
+		--web-action-type: page;
+		/*--web-action-target: 4_2_Checkout_Payment_Method.html;*/
+		cursor: pointer;
+		padding: 16px 80px 15px 80px;
+	}
+	#Primary-Button_a {
+		fill: rgba(255,178,107,1);
+	}
+	.Primary-Button_a {
+		position: absolute;
+		overflow: visible;
+		width: 300px;
+		height: 49px;
+		left: 0px;
+		top: 0px;
+	}
+	#Continue_to_payment {
+		left: 80px;
+		top: 16px;
+		position: absolute;
+		overflow: visible;
+		width: 141px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Group_513 {
+		position: absolute;
+		width: 638px;
+		height: 70px;
+		left: 40px;
+		top: 379px;
+		overflow: visible;
+	}
+	#Form {
+		position: absolute;
+		width: 310px;
+		height: 70px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_48 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_48 {
+		position: absolute;
+		overflow: visible;
+		width: 310px;
+		height: 44px;
+		left: 0px;
+		top: 26px;
+	}
+	#Enter_your_postcode {
+		left: 24px;
+		top: 38px;
+		position: absolute;
+		overflow: visible;
+		width: 148px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(159,159,159,1);
+	}
+	#Post_code {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 66px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Form_h {
+		position: absolute;
+		width: 310px;
+		height: 70px;
+		left: 328px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_48_i {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_48_i {
+		position: absolute;
+		overflow: visible;
+		width: 310px;
+		height: 44px;
+		left: 0px;
+		top: 26px;
+	}
+	#Enter_your_city {
+		left: 24px;
+		top: 38px;
+		position: absolute;
+		overflow: visible;
+		width: 107px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(159,159,159,1);
+	}
+	#City {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 27px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Form_l {
+		position: absolute;
+		width: 638px;
+		height: 70px;
+		left: 40px;
+		top: 285px;
+		overflow: visible;
+	}
+	#Rectangle_48_m {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_48_m {
+		position: absolute;
+		overflow: visible;
+		width: 638px;
+		height: 44px;
+		left: 0px;
+		top: 26px;
+	}
+	#Enter_your_address {
+		left: 24px;
+		top: 38px;
+		position: absolute;
+		overflow: visible;
+		width: 140px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(159,159,159,1);
+	}
+	#Address {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 56px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Form_p {
+		position: absolute;
+		width: 638px;
+		height: 70px;
+		left: 40px;
+		top: 191px;
+		overflow: visible;
+	}
+	#Rectangle_48_q {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_48_q {
+		position: absolute;
+		overflow: visible;
+		width: 638px;
+		height: 44px;
+		left: 0px;
+		top: 26px;
+	}
+	#Ninja_Kas {
+		left: 24px;
+		top: 38px;
+		position: absolute;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(21,21,21,1);
+	}
+	#Full_name {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 66px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+
+	#Group_512 {
+		position: absolute;
+		width: 638px;
+		height: 70px;
+		left: 40px;
+		top: 97px;
+		overflow: visible;
+	}
+	#Form_v {
+		position: absolute;
+		width: 310px;
+		height: 70px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_48_w {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_48_w {
+		position: absolute;
+		overflow: visible;
+		width: 310px;
+		height: 44px;
+		left: 0px;
+		top: 26px;
+	}
+	#Enter_your_email {
+		left: 24px;
+		top: 38px;
+		position: absolute;
+		overflow: visible;
+		width: 121px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(159,159,159,1);
+	}
+	#Email {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Form_z {
+		position: absolute;
+		width: 310px;
+		height: 70px;
+		left: 328px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_48_ {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_48_ {
+		position: absolute;
+		overflow: visible;
+		width: 310px;
+		height: 44px;
+		left: 0px;
+		top: 26px;
+	}
+	#Enter_your_phone_number {
+		left: 24px;
+		top: 38px;
+		position: absolute;
+		overflow: visible;
+		width: 188px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(159,159,159,1);
+	}
+	#Phone_number {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 98px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Rectangle_47 {
+		fill: rgba(233,233,233,1);
+	}
+	.Rectangle_47 {
+		position: absolute;
+		overflow: visible;
+		width: 718px;
+		height: 1px;
+		left: 0px;
+		top: 64px;
+	}
+	#Group_511 {
+		position: absolute;
+		width: 638px;
+		height: 32px;
+		left: 40px;
+		top: 16px;
+		overflow: visible;
+	}
+	#Checkout-Step_ {
+		position: absolute;
+		width: 104px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Number_ {
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container_x {
+		fill: rgba(21,21,21,1);
+		stroke: rgba(21,21,21,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container_x {
+		position: absolute;
+		overflow: visible;
+		width: 32px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+	}
+	#n__a {
+		left: 11px;
+		top: 6px;
+		position: absolute;
+		overflow: visible;
+		width: 11px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#Ship_to {
+		left: 40px;
+		top: 6px;
+		position: absolute;
+		overflow: visible;
+		width: 65px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(21,21,21,1);
+		text-transform: uppercase;
+	}
+	#Shipping_to {
+		position: absolute;
+		width: 194px;
+		height: 20px;
+		left: 444px;
+		top: 6px;
+		overflow: visible;
+	}
+	#United_State {
+		left: 85px;
+		top: 1px;
+		position: absolute;
+		overflow: visible;
+		width: 82px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Shipping_to_c {
+		left: 0px;
+		top: 1px;
+		position: absolute;
+		overflow: visible;
+		width: 78px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(87,87,87,1);
+	}
+	#Iconchevron-down_d {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 174px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Icon_material-keyboard-arrow-d_e {
+		fill: rgba(0,0,0,1);
+	}
+	.Icon_material-keyboard-arrow-d_e {
+		overflow: visible;
+		position: absolute;
+		width: 11.039px;
+		height: 6.817px;
+		left: 4.335px;
+		top: 6.594px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_217_f {
+		fill: transparent;
+	}
+	.Path_217_f {
+		overflow: visible;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+</style>
+<script src="scripts/CheckOut.js"></script>
+<script id="applicationScript" type="text/javascript" src="scripts/4_1.js"></script>
+</head>
+<body>
+<div id="n_1Checkout">
+	<div id="Logo-Text_i" class="Logo_Text">
+		<div id="LOZA_j">
+			<span>DECO</span>
+		</div>
+		<div id="Logo_k" class="Logo">
+			<svg class="Container_w">
+				<rect id="Container_w" rx="0" ry="0" x="0" y="0" width="40" height="40">
+				</rect>
+			</svg>
+			<svg class="Logo_m" viewBox="0 0 35 30">
+				<path id="Logo_m" d="M 35 30 L 34.998779296875 30 L 28.8232421875 30 L 17.4981689453125 9.998779296875 L 6.1761474609375 30 L 0 30 L 17.5006103515625 0 L 34.9993896484375 29.9981689453125 L 35 30 Z M 22.6458740234375 30 L 22.6446533203125 30 L 12.3529052734375 30 L 17.5006103515625 19.998779296875 L 22.645263671875 29.9981689453125 L 22.6458740234375 30 Z">
+				</path>
+			</svg>
+		</div>
+	</div>
+	<svg class="Line">
+		<rect id="Line" rx="0" ry="0" x="0" y="0" width="1248" height="1">
+		</rect>
+	</svg>
+	<div id="right">
+		<div id="total">
+			<div id="Total_q">
+				<span>Total</span>
+			</div>
+			<div id="USD_4800">
+				<span>USD 4,800</span>
+			</div>
+		</div>
+		<svg class="Line-Break_t">
+			<rect id="Line-Break_t" rx="0" ry="0" x="0" y="0" width="424" height="1">
+			</rect>
+		</svg>
+		<div id="n__t">
+			<div id="Free">
+				<span>Free</span>
+			</div>
+			<div id="Shipping">
+				<span>Shipping</span>
+			</div>
+		</div>
+		<div id="n__w">
+			<div id="Subtotal">
+				<span>Subtotal</span>
+			</div>
+			<div id="USD_4800_y">
+				<span>USD 4,800</span>
+			</div>
+		</div>
+		<div id="Product_List_Check-out">
+			<svg class="Line-Break_a">
+				<rect id="Line-Break_a" rx="0" ry="0" x="0" y="0" width="424" height="1">
+				</rect>
+			</svg>
+			<div id="Betty_">
+				<span>Betty</span>
+			</div>
+			<div id="n__items">
+				<span>2 items</span>
+			</div>
+			<div id="USD_3600">
+				<span>USD 3,600</span>
+			</div>
+			<div id="Icon__Plus_" class="Icon___Plus">
+				<div id="Group_498_">
+					<svg class="Container-Button_">
+						<ellipse id="Container-Button_" rx="12" ry="12" cx="12" cy="12">
+						</ellipse>
+					</svg>
+					<svg class="Minus_">
+						<rect id="Minus_" rx="0" ry="0" x="0" y="0" width="12" height="2">
+						</rect>
+					</svg>
+					<svg class="Minus_a">
+						<rect id="Minus_a" rx="0" ry="0" x="0" y="0" width="12" height="2">
+						</rect>
+					</svg>
+				</div>
+				<svg class="Minus_b">
+					<rect id="Minus_b" rx="0" ry="0" x="0" y="0" width="12" height="2">
+					</rect>
+				</svg>
+			</div>
+			<div id="Icon__Minus_a" class="Icon___Minus">
+				<svg class="Container-Button_b">
+					<ellipse id="Container-Button_b" rx="12" ry="12" cx="12" cy="12">
+					</ellipse>
+				</svg>
+				<svg class="Minus_c">
+					<rect id="Minus_c" rx="0" ry="0" x="0" y="0" width="12" height="2">
+					</rect>
+				</svg>
+			</div>
+			<div id="Image-Product_d">
+				<svg class="Container-Thumbnail">
+					<rect id="Container-Thumbnail" rx="0" ry="0" x="0" y="0" width="96" height="96">
+					</rect>
+				</svg>
+				<img id="Image" src="Image.png" srcset="Image.png 1x, Image@2x.png 2x">
+					
+			</div>
+		</div>
+		<div id="Product_List_Check-out_g">
+			<div id="Image-Product_h">
+				<svg class="Container-Thumbnail_i">
+					<rect id="Container-Thumbnail_i" rx="0" ry="0" x="0" y="0" width="96" height="96">
+					</rect>
+				</svg>
+				<img id="Image_j" src="Image_j.png" srcset="Image_j.png 1x, Image_j@2x.png 2x">
+					
+			</div>
+			<svg class="Line-Break_k">
+				<rect id="Line-Break_k" rx="0" ry="0" x="0" y="0" width="424" height="1">
+				</rect>
+			</svg>
+			<div id="Lule_l">
+				<span>Lule</span>
+			</div>
+			<div id="n__item">
+				<span>1 item</span>
+			</div>
+			<div id="USD_1200_n">
+				<span>USD 1,200</span>
+			</div>
+			<div id="Icon__Plus_o" class="Icon___Plus">
+				<div id="Group_498_p">
+					<svg class="Container-Button_q">
+						<ellipse id="Container-Button_q" rx="12" ry="12" cx="12" cy="12">
+						</ellipse>
+					</svg>
+					<svg class="Minus_r">
+						<rect id="Minus_r" rx="0" ry="0" x="0" y="0" width="12" height="2">
+						</rect>
+					</svg>
+					<svg class="Minus_s">
+						<rect id="Minus_s" rx="0" ry="0" x="0" y="0" width="12" height="2">
+						</rect>
+					</svg>
+				</div>
+				<svg class="Minus_t">
+					<rect id="Minus_t" rx="0" ry="0" x="0" y="0" width="12" height="2">
+					</rect>
+				</svg>
+			</div>
+			<div id="Icon__Minus_u" class="Icon___Minus">
+				<svg class="Container-Button_v">
+					<ellipse id="Container-Button_v" rx="12" ry="12" cx="12" cy="12">
+					</ellipse>
+				</svg>
+				<svg class="Minus_w">
+					<rect id="Minus_w" rx="0" ry="0" x="0" y="0" width="12" height="2">
+					</rect>
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div id="Continue_shopping">
+		<span>Continue shopping</span>
+	</div>
+	<div id="Checkout-Form">
+		<div id="PayWith" class="PayWith">
+			<div id="Group_531">
+				<svg class="Container_b">
+					<rect id="Container_b" rx="4" ry="4" x="0" y="0" width="718" height="65">
+					</rect>
+				</svg>
+				<div id="Checkout-Step" class="Checkout_Step">
+					<div id="Number">
+						<svg class="Container_c">
+							<ellipse id="Container_c" rx="16" ry="16" cx="16" cy="16">
+							</ellipse>
+						</svg>
+						<div id="n__">
+							<span>2</span>
+						</div>
+					</div>
+					<div id="Pay_With">
+						<span>Pay With</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="ShipTo" class="ShipTo">
+			<svg class="Container_d">
+				<rect id="Container_d" rx="4" ry="4" x="0" y="0" width="718" height="600">
+				</rect>
+			</svg>
+			<div onClick="continuePayment()" id="Primary-Button_" class="Primary_Button">
+				<svg class="Primary-Button_a">
+					<rect id="Primary-Button_a" rx="4" ry="4" x="0" y="0" width="300" height="49">
+					</rect>
+				</svg>
+				<div id="Continue_to_payment" class="Primary-Button_a">
+					<span>Continue to payment</span>
+				</div>
+			</div>
+			<div id="Group_513">
+				<div id="Form" class="Form">
+					<svg class="Rectangle_48">
+						<rect id="Rectangle_48" rx="4" ry="4" x="0" y="0" width="310" height="44">
+						</rect>
+					</svg>
+					<div id="Enter_your_postcode">
+						<!--<span>Enter your postcode</span>-->
+						<span><input name="postcode" type="text" id="postcode" placeholder="Enter your postcode"></span>
+					</div>
+					<div id="Post_code">
+						<span>Post code</span>
+					</div>
+				</div>
+				<div id="Form_h" class="Form">
+					<svg class="Rectangle_48_i">
+						<rect id="Rectangle_48_i" rx="4" ry="4" x="0" y="0" width="310" height="44">
+						</rect>
+					</svg>
+					<div id="Enter_your_city">
+						<!--<span>Enter your city</span>-->
+						<span><input name="city" type="text" id="city" placeholder="Enter your city"></span>
+					</div>
+					<div id="City">
+						<span>City</span>
+					</div>
+				</div>
+			</div>
+			<div id="Form_l" class="Form">
+				<svg class="Rectangle_48_m">
+					<rect id="Rectangle_48_m" rx="4" ry="4" x="0" y="0" width="638" height="44">
+					</rect>
+				</svg>
+				<div id="Enter_your_address">
+					<!--<span>Enter your address</span>-->
+					<span><input name="address" type="text" id="address" placeholder="Enter your address"></span>
+				</div>
+				<div id="Address">
+					<span>Address</span>
+				</div>
+			</div>
+			<div id="Form_p" class="Form">
+				<svg class="Rectangle_48_q">
+					<rect id="Rectangle_48_q" rx="4" ry="4" x="0" y="0" width="638" height="44">
+					</rect>
+				</svg>
+				<div id="Ninja_Kas">
+					<span><input name="name" type="text" id="name" placeholder="Enter your full name"></span>
+				</div>
+				<div id="Full_name">
+					<span>Full name</span>
+				</div>
+			</div>
+			<div id="Group_512">
+				<div id="Form_v" class="Form">
+					<svg class="Rectangle_48_w">
+						<rect id="Rectangle_48_w" rx="4" ry="4" x="0" y="0" width="310" height="44">
+						</rect>
+					</svg>
+					<div id="Enter_your_email">
+						<span><input name="email" type="text" id="email" placeholder="Enter your email"></span>
+					</div>
+					<div id="Email">
+						<span>Email</span>
+					</div>
+				</div>
+				<div id="Form_z" class="Form">
+					<svg class="Rectangle_48_">
+						<rect id="Rectangle_48_" rx="4" ry="4" x="0" y="0" width="310" height="44">
+						</rect>
+					</svg>
+					<div id="Enter_your_phone_number">
+						<span><input name="phonenum" type="text" id="phonenum" placeholder="Enter your phone number"></span>
+					</div>
+					<div id="Phone_number">
+						<span>Phone number</span>
+					</div>
+				</div>
+			</div>
+			<svg class="Rectangle_47">
+				<rect id="Rectangle_47" rx="0" ry="0" x="0" y="0" width="718" height="1">
+				</rect>
+			</svg>
+			<div id="Group_511">
+				<div id="Checkout-Step_" class="Checkout_Step">
+					<div id="Number_">
+						<svg class="Container_x">
+							<ellipse id="Container_x" rx="16" ry="16" cx="16" cy="16">
+							</ellipse>
+						</svg>
+						<div id="n__a">
+							<span>1</span>
+						</div>
+					</div>
+					<div id="Ship_to">
+						<span>Ship to</span>
+					</div>
+				</div>
+				<div id="Shipping_to">
+					<div id="United_State">
+						<span>United State</span>
+					</div>
+					<div id="Shipping_to_c">
+						<span>Shipping to:</span>
+					</div>
+					<div id="Iconchevron-down_d">
+						<svg class="Icon_material-keyboard-arrow-d_e" viewBox="0 0 11.039 6.817">
+							<path id="Icon_material-keyboard-arrow-d_e" d="M 1.297098636627197 -4.76837158203125e-07 L 5.519567966461182 4.213269233703613 L 9.742034912109375 4.76837158203125e-07 L 11.03913688659668 1.297098159790039 L 5.519567966461182 6.816665649414062 L 0 1.297098636627197 L 1.297098636627197 -4.76837158203125e-07 Z">
+							</path>
+						</svg>
+						<svg class="Path_217_f" viewBox="0 0 20 20">
+							<path id="Path_217_f" d="M 0 0 L 20 0 L 20 20 L 0 20 L 0 0 Z">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
