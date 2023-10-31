@@ -4,16 +4,18 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>5.1 Login – Admin</title>
+<title>5.1 Login</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: 5.1 Login – Admin;
-		--web-view-id: n_1_Login__Admin;
+		--web-view-name: 5.1 Login;
+		--web-view-id: n_1_Login;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: n_1_Login__Admin;
+		--web-view-ids: n_1_Login;
 	}
 	* {
 		margin: 0;
@@ -21,14 +23,16 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#n_1_Login__Admin {
+	#n_1_Login {
 		position: absolute;
 		width: 1366px;
 		height: 895px;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
-		--web-view-name: 5.1 Login – Admin;
-		--web-view-id: n_1_Login__Admin;
+		--web-view-name: 5.1 Login;
+		--web-view-id: n_1_Login;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
@@ -46,7 +50,7 @@
 	
 	
 	}
-	#Logo-Text {
+	#Logo-Text_bnx {
 		position: absolute;
 		width: 190px;
 		height: 40px;
@@ -59,7 +63,7 @@
 		--web-action-target: 1_1_Home.html;
 		cursor: pointer;
 	}
-	#LOZA {
+	#LOZA_bny {
 		left: 44px;
 		top: 5px;
 		position: absolute;
@@ -74,7 +78,7 @@
 		color: rgba(21,21,21,1);
 		letter-spacing: 1.25px;
 	}
-	#Logo {
+	#Logo_bnz {
 		position: absolute;
 		width: 40px;
 		height: 40px;
@@ -82,10 +86,10 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#Container {
+	#Container_bn {
 		fill: transparent;
 	}
-	.Container {
+	.Container_bn {
 		position: absolute;
 		overflow: visible;
 		width: 40px;
@@ -93,10 +97,10 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Logo_be {
+	#Logo_bn {
 		fill: rgba(21,21,21,1);
 	}
-	.Logo_be {
+	.Logo_bn {
 		overflow: visible;
 		position: absolute;
 		width: 35px;
@@ -105,10 +109,10 @@
 		top: 5px;
 		transform: matrix(1,0,0,1,0,0);
 	}
-	#Line {
+	#Line_bn {
 		fill: rgba(233,233,233,1);
 	}
-	.Line {
+	.Line_bn {
 		position: absolute;
 		overflow: visible;
 		width: 1248px;
@@ -116,7 +120,75 @@
 		left: 59px;
 		top: 112px;
 	}
-	#Primary-Button {
+	#Continue_shopping_bn {
+		left: 59px;
+		top: 70px;
+		position: absolute;
+		overflow: visible;
+		width: 122px;
+		white-space: nowrap;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: 1_1_Home.html;
+		cursor: pointer;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+		text-decoration: underline;
+	}
+	#Primary-Button_bn {
+		position: absolute;
+		width: 331px;
+		height: 46px;
+		left: 823px;
+		top: 564px;
+		overflow: visible;
+		transition: all 0.6000000238418579s ease-out;
+		--web-animation: fadein 0.6000000238418579s ease-out;
+		--web-action-type: page;
+		--web-action-target: 5_2_Signup.html;
+		cursor: pointer;
+		padding: 16px 133px 12px 146px;
+	}
+	#Primary-Button_boa {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(21,21,21,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Primary-Button_boa {
+		position: absolute;
+		overflow: visible;
+		width: 331px;
+		height: 46px;
+		left: 0px;
+		top: 0px;
+	}
+	#Sign_Up {
+		left: 146px;
+		top: 16px;
+		position: absolute;
+		overflow: visible;
+		width: 53px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Primary-Button_bob {
 		position: absolute;
 		width: 329px;
 		height: 49px;
@@ -126,14 +198,14 @@
 		transition: all 0.6000000238418579s ease-out;
 		--web-animation: fadein 0.6000000238418579s ease-out;
 		--web-action-type: page;
-		--web-action-target: 5_2_Inventory_Management___Dashboard.html;
+		--web-action-target: 5_2_Login.html;
 		cursor: pointer;
 		padding: 16px 147px 15px 146px;
 	}
-	#Primary-Button_bh {
+	#Primary-Button_boc {
 		fill: rgba(255,178,107,1);
 	}
-	.Primary-Button_bh {
+	.Primary-Button_boc {
 		position: absolute;
 		overflow: visible;
 		width: 329px;
@@ -157,7 +229,7 @@
 		font-size: 14px;
 		color: rgba(21,21,21,1);
 	}
-	#Form {
+	#Form_boa {
 		position: absolute;
 		width: 310px;
 		height: 70px;
@@ -165,7 +237,7 @@
 		top: 232px;
 		overflow: visible;
 	}
-	#Rectangle_48 {
+	#Rectangle_48_bob {
 		fill: rgba(255,255,255,1);
 		stroke: rgba(233,233,233,1);
 		stroke-width: 1px;
@@ -174,7 +246,7 @@
 		stroke-miterlimit: 4;
 		shape-rendering: auto;
 	}
-	.Rectangle_48 {
+	.Rectangle_48_bob {
 		position: absolute;
 		overflow: visible;
 		width: 310px;
@@ -182,64 +254,7 @@
 		left: 0px;
 		top: 26px;
 	}
-	#Enter_your_admin_ID {
-		left: 24px;
-		top: 38px;
-		position: absolute;
-		overflow: visible;
-		width: 147px;
-		white-space: nowrap;
-		line-height: 21px;
-		margin-top: -2.5px;
-		text-align: left;
-		font-family: Muli;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(159,159,159,1);
-	}
-	#Admin_ID {
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 63px;
-		white-space: nowrap;
-		line-height: 20px;
-		margin-top: -3px;
-		text-align: left;
-		font-family: Muli;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 14px;
-		color: rgba(21,21,21,1);
-	}
-	#Form_bn {
-		position: absolute;
-		width: 310px;
-		height: 70px;
-		left: 823px;
-		top: 341px;
-		overflow: visible;
-	}
-	#Rectangle_48_bo {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(233,233,233,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_48_bo {
-		position: absolute;
-		overflow: visible;
-		width: 310px;
-		height: 44px;
-		left: 0px;
-		top: 26px;
-	}
-	#Enter_your_password {
+	#Enter_your_username {
 		left: 24px;
 		top: 38px;
 		position: absolute;
@@ -255,12 +270,12 @@
 		font-size: 16px;
 		color: rgba(159,159,159,1);
 	}
-	#Password {
+	#Username {
 		left: 0px;
 		top: 0px;
 		position: absolute;
 		overflow: visible;
-		width: 67px;
+		width: 69px;
 		white-space: nowrap;
 		line-height: 20px;
 		margin-top: -3px;
@@ -271,9 +286,108 @@
 		font-size: 14px;
 		color: rgba(21,21,21,1);
 	}
-	#Log_in_to_your_Admin_DECO_acco {
-		left: 152px;
-		top: 256px;
+	#Form_boe {
+		position: absolute;
+		width: 310px;
+		height: 70px;
+		left: 823px;
+		top: 341px;
+		overflow: visible;
+	}
+	#Rectangle_48_bof {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_48_bof {
+		position: absolute;
+		overflow: visible;
+		width: 310px;
+		height: 44px;
+		left: 0px;
+		top: 26px;
+	}
+	#Enter_your_email_bog {
+		left: 24px;
+		top: 38px;
+		position: absolute;
+		overflow: visible;
+		width: 121px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(159,159,159,1);
+	}
+	#Email_boh {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#home_office_boi {
+		position: absolute;
+		width: 511px;
+		height: 263px;
+		left: 143px;
+		top: 199px;
+		overflow: visible;
+		padding: 0px;
+	}
+	#Terms__Condition {
+		left: 0px;
+		top: 245px;
+		position: absolute;
+		overflow: visible;
+		width: 119px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,1);
+		text-decoration: underline;
+	}
+	#Get_a_more_personalised_experi {
+		left: 0px;
+		top: 180px;
+		position: absolute;
+		overflow: visible;
+		width: 472px;
+		height: 41px;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(0,0,0,1);
+	}
+	#Log_in_to_your_DECO_account {
+		left: 0px;
+		top: 51px;
 		position: absolute;
 		overflow: visible;
 		width: 512px;
@@ -287,147 +401,101 @@
 		font-size: 40px;
 		color: rgba(0,0,0,1);
 	}
-	#Rectangle_45 {
+	#Rectangle_45_bom {
 		fill: rgba(233,233,233,1);
 	}
-	.Rectangle_45 {
+	.Rectangle_45_bom {
 		position: absolute;
 		overflow: visible;
 		width: 511px;
 		height: 1px;
-		left: 152px;
-		top: 232px;
+		left: 0px;
+		top: 0px;
 	}
-	#Forgot_Password {
-		left: 823px;
-		top: 424px;
-		position: absolute;
-		overflow: visible;
-		width: 117px;
-		white-space: nowrap;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: 5_1_Login___Admin_Forgot_Password.html;
-		cursor: pointer;
-		line-height: 20px;
-		margin-top: -3px;
-		text-align: right;
-		font-family: Muli;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 14px;
-		color: rgba(21,21,21,1);
-		text-decoration: underline;
-	}
-	.modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-
-    .modal-content {
-        background-color: #fefefe;
-        margin: 15% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-        max-width: 400px;
-        border-radius: 5px;
-        position: relative;
-    }
-
-    .close {
-        position: absolute;
-        right: 10px;
-        top: 5px;
-        color: #888;
-        font-size: 24px;
-        font-weight: bold;
-        cursor: pointer;
-    }
 </style>
-<script src="scripts/5_1_Login_Admin.js"></script>
-<script src="scripts/Admin_Login.js"></script>
+<script id="applicationScript" type="text/javascript" src="scripts/5_1.js"></script>
 </head>
 <body>
-	<div id="error-modal" class="modal">
-		<div class="modal-content">
-			<span class="close" id="close-modal">&times;</span>
-			<p id="modal-message">Incorrect admin ID or password. Please try again.</p>
-		</div>
-	</div>
-<div id="n_1_Login__Admin">
-	<div onclick="application.goToTargetView(event)" id="Logo-Text" class="Logo_Text">
-		<div id="LOZA">
+<div id="n_1_Login">
+	<div onclick="application.goToTargetView(event)" id="Logo-Text_bnx" class="Logo_Text">
+		<div id="LOZA_bny">
 			<span>DECO</span>
 		</div>
-		<div id="Logo" class="Logo">
-			<svg class="Container">
-				<rect id="Container" rx="0" ry="0" x="0" y="0" width="40" height="40">
+		<div id="Logo_bnz" class="Logo">
+			<svg class="Container_bn">
+				<rect id="Container_bn" rx="0" ry="0" x="0" y="0" width="40" height="40">
 				</rect>
 			</svg>
-			<svg class="Logo_be" viewBox="0 0 35 30">
-				<path id="Logo_be" d="M 35 30 L 34.998779296875 30 L 28.8232421875 30 L 17.4981689453125 9.998779296875 L 6.1761474609375 30 L 0 30 L 17.5006103515625 0 L 34.9993896484375 29.9981689453125 L 35 30 Z M 22.6458740234375 30 L 22.6446533203125 30 L 12.3529052734375 30 L 17.5006103515625 19.998779296875 L 22.645263671875 29.9981689453125 L 22.6458740234375 30 Z">
+			<svg class="Logo_bn" viewBox="0 0 35 30">
+				<path id="Logo_bn" d="M 35 30 L 34.998779296875 30 L 28.8232421875 30 L 17.4981689453125 9.998779296875 L 6.1761474609375 30 L 0 30 L 17.5006103515625 0 L 34.9993896484375 29.9981689453125 L 35 30 Z M 22.6458740234375 30 L 22.6446533203125 30 L 12.3529052734375 30 L 17.5006103515625 19.998779296875 L 22.645263671875 29.9981689453125 L 22.6458740234375 30 Z">
 				</path>
 			</svg>
 		</div>
 	</div>
-	<svg class="Line">
-		<rect id="Line" rx="0" ry="0" x="0" y="0" width="1248" height="1">
+	<svg class="Line_bn">
+		<rect id="Line_bn" rx="0" ry="0" x="0" y="0" width="1248" height="1">
 		</rect>
 	</svg>
-	<div id="Primary-Button" class="Primary_Button" onclick="navigateToInventoryDashboard()">
-		<svg class="Primary-Button_bh">
-			<rect id="Primary-Button_bh" rx="4" ry="4" x="0" y="0" width="329" height="49">
+	<div onclick="application.goToTargetView(event)" id="Continue_shopping_bn">
+		<span>Continue shopping</span>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Primary-Button_bn" class="Primary_Button">
+		<svg class="Primary-Button_boa">
+			<rect id="Primary-Button_boa" rx="4" ry="4" x="0" y="0" width="331" height="46">
 			</rect>
 		</svg>
-		<div id="Login" >
+		<div id="Sign_Up">
+			<span>Sign Up</span>
+		</div>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Primary-Button_bob" class="Primary_Button">
+		<svg class="Primary-Button_boc">
+			<rect id="Primary-Button_boc" rx="4" ry="4" x="0" y="0" width="329" height="49">
+			</rect>
+		</svg>
+		<div id="Login">
 			<span>Login</span>
 		</div>
 	</div>
-	<div id="Form" class="Form">
-		<svg class="Rectangle_48">
-			<rect id="Rectangle_48" rx="4" ry="4" x="0" y="0" width="310" height="44">
+	<div>
+		<svg class="Rectangle_48_bob">
+			<rect id="Rectangle_48_bob" rx="4" ry="4" x="0" y="0" width="310" height="44">
 			</rect>
 		</svg>
-		<div id="Enter_your_admin_ID">
-			<input name="ID" type="text" id="ID" placeholder="Enter your Admin ID">
+		<!--<div id="Enter_your_username">
+			<span>Enter your username</span>
 		</div>
-		<div id="Admin_ID">
-			<span>Admin ID</span>
+		<div id="Username">
+			<span>Username</span>
 		</div>
 	</div>
-	<div id="Form_bn" class="Form">
-		<svg class="Rectangle_48_bo">
-			<rect id="Rectangle_48_bo" rx="4" ry="4" x="0" y="0" width="310" height="44">
+	<div id="Form_boe" class="Form">
+		<svg class="Rectangle_48_bof">
+			<rect id="Rectangle_48_bof" rx="4" ry="4" x="0" y="0" width="310" height="44">
 			</rect>
 		</svg>
-		<div id="Enter_your_password">
-			<input name="password" type="password" id="password" placeholder="Enter your password">
-
+		<div id="Enter_your_email_bog">
+			<span>Enter your email</span>
 		</div>
-		<div id="Password">
-			<span>Password</span>
+		<div id="Email_boh">
+			<span>Email</span>
+		</div>-->
+	</div>
+	<div id="home_office_boi">
+		<div id="Terms__Condition">
+			<span>Terms & Condition</span>
 		</div>
+		<div id="Get_a_more_personalised_experi">
+			<span>Get a more personalised experience where you don’t need to fill in your info every time</span>
+		</div>
+		<div id="Log_in_to_your_DECO_account">
+			<span>Log in to your DECO account</span>
+		</div>
+		<svg class="Rectangle_45_bom">
+			<rect id="Rectangle_45_bom" rx="0" ry="0" x="0" y="0" width="511" height="1">
+			</rect>
+		</svg>
 	</div>
-	<div id="Log_in_to_your_Admin_DECO_acco">
-		<span>Log in to your Admin DECO account</span>
-	</div>
-	<svg class="Rectangle_45">
-		<rect id="Rectangle_45" rx="0" ry="0" x="0" y="0" width="511" height="1">
-		</rect>
-	</svg>
-	<div onclick="navigateToForgotPassword()" id="Forgot_Password">
-		<span>Forgot Password?</span>
-	</div>
-
-	<div id="error-message" class="error-message"></div>
 </div>
 </body>
 </html>
