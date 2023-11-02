@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4.3.Checkout_Paypal</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: 4.3.Checkout_Paypal;
+		--web-view-id: n_3Checkout_Paypal;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: n_3Checkout_Paypal;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#n_3Checkout_Paypal {
+		position: absolute;
+		width: 1366px;
+		height: 1200px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: 4.3.Checkout_Paypal;
+		--web-view-id: n_3Checkout_Paypal;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Logo-Text_bap {
+		position: absolute;
+		width: 190px;
+		height: 40px;
+		left: 588px;
+		top: 48px;
+		overflow: visible;
+	}
+	#LOZA_baq {
+		left: 44px;
+		top: 5px;
+		position: absolute;
+		overflow: visible;
+		width: 147px;
+		height: 35px;
+		text-align: left;
+		font-family: SF Pro Text;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 31px;
+		color: rgba(21,21,21,1);
+		letter-spacing: 1.25px;
+	}
+	#Logo_bar {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container_bas {
+		fill: transparent;
+	}
+	.Container_bas {
+		position: absolute;
+		overflow: visible;
+		width: 40px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+	}
+	#Logo_bat {
+		fill: rgba(21,21,21,1);
+	}
+	.Logo_bat {
+		overflow: visible;
+		position: absolute;
+		width: 35px;
+		height: 30px;
+		left: 2.5px;
+		top: 5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_bau {
+		fill: rgba(233,233,233,1);
+	}
+	.Line_bau {
+		position: absolute;
+		overflow: visible;
+		width: 1248px;
+		height: 1px;
+		left: 59px;
+		top: 112px;
+	}
+	#Continue_shopping_bav {
+		left: 59px;
+		top: 70px;
+		position: absolute;
+		overflow: visible;
+		width: 122px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+		text-decoration: underline;
+	}
+	#Checkout-Form_baw {
+		position: absolute;
+		width: 718px;
+		height: 634px;
+		left: 59px;
+		top: 153px;
+		overflow: visible;
+		padding: 0px;
+	}
+	#PayWith_bax {
+		position: absolute;
+		width: 718px;
+		height: 370px;
+		left: 0px;
+		top: 264px;
+		overflow: visible;
+		padding: 16px 0px 48px 0px;
+	}
+	#Container_bay {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container_bay {
+		position: absolute;
+		overflow: visible;
+		width: 718px;
+		height: 370px;
+		left: 0px;
+		top: 0px;
+	}
+	#Primary-Button_baz {
+		position: absolute;
+		width: 260px;
+		height: 49px;
+		left: 418px;
+		top: 273px;
+		overflow: visible;
+		padding: 16px 80px 15px 80px;
+	}
+	#Primary-Button_ba {
+		fill: rgba(255,163,78,1);
+	}
+	.Primary-Button_ba {
+		position: absolute;
+		overflow: visible;
+		width: 260px;
+		height: 49px;
+		left: 0px;
+		top: 0px;
+	}
+	#Pay_USD_4800_ba {
+		left: 80px;
+		top: 16px;
+		position: absolute;
+		overflow: visible;
+		width: 101px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Payment-Options_ba {
+		position: absolute;
+		width: 638px;
+		height: 136px;
+		left: 40px;
+		top: 89px;
+		overflow: visible;
+		padding: 0px;
+	}
+	#Payment-Option_ba {
+		position: absolute;
+		width: 638px;
+		height: 64px;
+		left: 0px;
+		top: 72px;
+		overflow: visible;
+	}
+	#Container_ba {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(255,178,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container_ba {
+		position: absolute;
+		overflow: visible;
+		width: 638px;
+		height: 64px;
+		left: 0px;
+		top: 0px;
+	}
+	#Radio_ba {
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 24px;
+		top: 24px;
+		overflow: visible;
+	}
+	#Radio_bba {
+		fill: rgba(255,123,84,1);
+		stroke: rgba(255,123,84,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Radio_bba {
+		position: absolute;
+		overflow: visible;
+		width: 16px;
+		height: 16px;
+		left: 0px;
+		top: 0px;
+	}
+	#Selector_ba {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(255,123,84,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Selector_ba {
+		position: absolute;
+		overflow: visible;
+		width: 8px;
+		height: 8px;
+		left: 4px;
+		top: 4px;
+	}
+	#Paypal_ba {
+		left: 112px;
+		top: 22px;
+		position: absolute;
+		overflow: visible;
+		width: 52px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(21,21,21,1);
+	}
+	#icon-Paypal_ba {
+		position: absolute;
+		width: 48px;
+		height: 32px;
+		left: 56px;
+		top: 16px;
+		overflow: visible;
+	}
+	#Container_bba {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container_bba {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+	}
+	#Paypal_bbb {
+		position: absolute;
+		width: 17px;
+		height: 20px;
+		left: 16px;
+		top: 6px;
+		overflow: visible;
+	}
+	#Path_2816_bbc {
+		fill: rgba(39,52,106,1);
+	}
+	.Path_2816_bbc {
+		overflow: visible;
+		position: absolute;
+		width: 15.41px;
+		height: 17.781px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_2817_bbd {
+		fill: rgba(39,52,106,1);
+	}
+	.Path_2817_bbd {
+		overflow: visible;
+		position: absolute;
+		width: 15.41px;
+		height: 17.78px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_2818_bbe {
+		fill: rgba(39,144,195,1);
+	}
+	.Path_2818_bbe {
+		overflow: visible;
+		position: absolute;
+		width: 12.888px;
+		height: 14.919px;
+		left: 4.112px;
+		top: 5.081px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_2819_bbf {
+		fill: rgba(31,38,79,1);
+	}
+	.Path_2819_bbf {
+		overflow: visible;
+		position: absolute;
+		width: 9.999px;
+		height: 7.415px;
+		left: 5.322px;
+		top: 4.445px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Payment-Option_bbg {
+		position: absolute;
+		width: 638px;
+		height: 64px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container_bbh {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container_bbh {
+		position: absolute;
+		overflow: visible;
+		width: 638px;
+		height: 64px;
+		left: 0px;
+		top: 0px;
+	}
+	#Radio_bbi {
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 24px;
+		top: 24px;
+		overflow: visible;
+	}
+	#Radio_bbj {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(87,87,87,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Radio_bbj {
+		position: absolute;
+		overflow: visible;
+		width: 16px;
+		height: 16px;
+		left: 0px;
+		top: 0px;
+	}
+	#Credit__Debit_Card_bbk {
+		left: 112px;
+		top: 22px;
+		position: absolute;
+		overflow: visible;
+		width: 138px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(21,21,21,1);
+	}
+	#icon-CreditCard_bbl {
+		position: absolute;
+		width: 48px;
+		height: 32px;
+		left: 56px;
+		top: 16px;
+		overflow: visible;
+	}
+	#Container_bbm {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container_bbm {
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+	}
+	#icon-Credit_bbn {
+		fill: rgba(21,21,21,1);
+		stroke: rgba(21,21,21,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.icon-Credit_bbn {
+		overflow: visible;
+		position: absolute;
+		width: 27.5px;
+		height: 20.5px;
+		left: 11px;
+		top: 6px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Rectangle_50_bbo {
+		fill: rgba(233,233,233,1);
+	}
+	.Rectangle_50_bbo {
+		position: absolute;
+		overflow: visible;
+		width: 718px;
+		height: 1px;
+		left: 0px;
+		top: 64px;
+	}
+	#Checkout-Step_bbp {
+		position: absolute;
+		width: 119px;
+		height: 32px;
+		left: 40px;
+		top: 16px;
+		overflow: visible;
+	}
+	#Number_bbq {
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container_bbr {
+		fill: rgba(21,21,21,1);
+		stroke: rgba(21,21,21,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container_bbr {
+		position: absolute;
+		overflow: visible;
+		width: 32px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+	}
+	#n__bbs {
+		left: 11px;
+		top: 6px;
+		position: absolute;
+		overflow: visible;
+		width: 11px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#Pay_With_bbt {
+		left: 40px;
+		top: 6px;
+		position: absolute;
+		overflow: visible;
+		width: 80px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(21,21,21,1);
+		text-transform: uppercase;
+	}
+	#ShipTo_bbu {
+		position: absolute;
+		width: 718px;
+		height: 240px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		padding: 16px 0px 39px 0px;
+	}
+	#Container_bbv {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container_bbv {
+		position: absolute;
+		overflow: visible;
+		width: 718px;
+		height: 240px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_0_N_Martingale_Road_Suite_40_bbw {
+		left: 40px;
+		top: 183px;
+		position: absolute;
+		overflow: visible;
+		width: 369px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Address_bbx {
+		left: 40px;
+		top: 157px;
+		position: absolute;
+		overflow: visible;
+		width: 56px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#ninjaimpekablecom_933923223_bby {
+		left: 40px;
+		top: 115px;
+		position: absolute;
+		overflow: visible;
+		width: 225px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Personal_Information_bbz {
+		left: 40px;
+		top: 89px;
+		position: absolute;
+		overflow: visible;
+		width: 141px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Rectangle_47_bb {
+		fill: rgba(233,233,233,1);
+	}
+	.Rectangle_47_bb {
+		position: absolute;
+		overflow: visible;
+		width: 718px;
+		height: 1px;
+		left: 0px;
+		top: 64px;
+	}
+	#Group_511_bb {
+		position: absolute;
+		width: 638px;
+		height: 32px;
+		left: 40px;
+		top: 16px;
+		overflow: visible;
+	}
+	#Checkout-Step_bb {
+		position: absolute;
+		width: 104px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Number_bb {
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container_bb {
+		fill: rgba(224,255,204,1);
+	}
+	.Container_bb {
+		position: absolute;
+		overflow: visible;
+		width: 32px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+	}
+	#n__bb {
+		fill: rgba(87,185,24,1);
+		stroke: rgba(87,185,24,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n__bb {
+		overflow: visible;
+		position: absolute;
+		width: 16.74px;
+		height: 12.678px;
+		left: 8px;
+		top: 10px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Ship_to_bb {
+		left: 40px;
+		top: 6px;
+		position: absolute;
+		overflow: visible;
+		width: 65px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(21,21,21,1);
+		text-transform: uppercase;
+	}
+	#Shipping_to_bb {
+		position: absolute;
+		width: 25px;
+		height: 18px;
+		left: 613px;
+		top: 7px;
+		overflow: visible;
+		transition: all 0.6000000238418579s snap;
+		--web-animation: fadein 0.6000000238418579s snap;
+		--web-action-type: page;
+		--web-action-target: 4_1_Checkout.html;
+		cursor: pointer;
+	}
+	#Edit_bb {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 26px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(87,87,87,1);
+	}
+	#right_bb {
+		position: absolute;
+		width: 425px;
+		height: 379px;
+		left: 882px;
+		top: 153px;
+		overflow: visible;
+		padding: 0px;
+	}
+	#total_bca {
+		position: absolute;
+		width: 424px;
+		height: 28px;
+		left: 0px;
+		top: 351px;
+		overflow: visible;
+	}
+	#Total_bcb {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		white-space: nowrap;
+		line-height: 28px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(0,0,0,1);
+	}
+	#USD_4800_bcc {
+		left: 312px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		white-space: nowrap;
+		line-height: 28px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(0,0,0,1);
+	}
+	#Line-Break_bcd {
+		fill: rgba(233,233,233,1);
+	}
+	.Line-Break_bcd {
+		position: absolute;
+		overflow: visible;
+		width: 424px;
+		height: 1px;
+		left: 0px;
+		top: 326px;
+	}
+	#n__bce {
+		position: absolute;
+		width: 422px;
+		height: 18px;
+		left: 1px;
+		top: 292px;
+		overflow: visible;
+	}
+	#Free_bcf {
+		left: 394px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 29px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Shipping_bcg {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 58px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#n__bch {
+		position: absolute;
+		width: 424px;
+		height: 18px;
+		left: 1px;
+		top: 258px;
+		overflow: visible;
+	}
+	#Subtotal_bci {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 56px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#USD_4800_bcj {
+		left: 354px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Product_List_Check-out_bck {
+		position: absolute;
+		width: 424px;
+		height: 113px;
+		left: 1px;
+		top: 129px;
+		overflow: visible;
+	}
+	#Line-Break_bcl {
+		fill: rgba(233,233,233,1);
+	}
+	.Line-Break_bcl {
+		position: absolute;
+		overflow: visible;
+		width: 424px;
+		height: 1px;
+		left: 0px;
+		top: 112px;
+	}
+	#Betty_bcm {
+		left: 112px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 42px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(21,21,21,1);
+	}
+	#n__items_bcn {
+		left: 112px;
+		top: 30px;
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#USD_3600_bco {
+		left: 353px;
+		top: 78px;
+		position: absolute;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Icon__Plus_bcp {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 399px;
+		top: 28px;
+		overflow: visible;
+		padding: 6px 11px 6px 11px;
+	}
+	#Group_498_bcq {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container-Button_bcr {
+		fill: transparent;
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container-Button_bcr {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Minus_bcs {
+		fill: rgba(21,21,21,1);
+	}
+	.Minus_bcs {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Minus_bct {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_bct {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Minus_bcu {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_bcu {
+		width: 12px;
+		height: 2px;
+		position: absolute;
+		overflow: visible;
+		transform: translate(0px, 0px) matrix(1,0,0,1,6,11) rotate(-90deg);
+		transform-origin: center;
+	}
+	#Icon__Minus_bcv {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 351px;
+		top: 28px;
+		overflow: visible;
+	}
+	#Container-Button_bcw {
+		fill: transparent;
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container-Button_bcw {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Minus_bcx {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_bcx {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Image-Product_bcy {
+		position: absolute;
+		width: 96px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container-Thumbnail_bcz {
+		fill: rgba(239,239,239,1);
+	}
+	.Container-Thumbnail_bcz {
+		position: absolute;
+		overflow: visible;
+		width: 96px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+	}
+	#Image_bc {
+		position: absolute;
+		width: 96px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Product_List_Check-out_bc {
+		position: absolute;
+		width: 424px;
+		height: 113px;
+		left: 1px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Image-Product_bc {
+		position: absolute;
+		width: 96px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container-Thumbnail_bc {
+		fill: rgba(239,239,239,1);
+	}
+	.Container-Thumbnail_bc {
+		position: absolute;
+		overflow: visible;
+		width: 96px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+	}
+	#Image_bda {
+		position: absolute;
+		width: 96px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Line-Break_bc {
+		fill: rgba(233,233,233,1);
+	}
+	.Line-Break_bc {
+		position: absolute;
+		overflow: visible;
+		width: 424px;
+		height: 1px;
+		left: 0px;
+		top: 112px;
+	}
+	#Lule_bc {
+		left: 112px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 32px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(21,21,21,1);
+	}
+	#n__item_bc {
+		left: 112px;
+		top: 30px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#USD_1200_bc {
+		left: 354px;
+		top: 78px;
+		position: absolute;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Icon__Plus_bc {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 399px;
+		top: 28px;
+		overflow: visible;
+		padding: 6px 11px 6px 11px;
+	}
+	#Group_498_bda {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container-Button_bdb {
+		fill: transparent;
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container-Button_bdb {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Minus_bdc {
+		fill: rgba(21,21,21,1);
+	}
+	.Minus_bdc {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Minus_bdd {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_bdd {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Minus_bde {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_bde {
+		width: 12px;
+		height: 2px;
+		position: absolute;
+		overflow: visible;
+		transform: translate(0px, 0px) matrix(1,0,0,1,6,11) rotate(-90deg);
+		transform-origin: center;
+	}
+	#Icon__Minus_bdf {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 351px;
+		top: 28px;
+		overflow: visible;
+	}
+	#Container-Button_bdg {
+		fill: transparent;
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container-Button_bdg {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Minus_bdh {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_bdh {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+</style>
+<script id="applicationScript" type="text/javascript" src="scripts/4_3.js"></script>
+</head>
+<body>
+<div id="n_3Checkout_Paypal">
+	<div id="Logo-Text_bap" class="Logo_Text">
+		<div id="LOZA_baq">
+			<span>DECO</span>
+		</div>
+		<div id="Logo_bar" class="Logo">
+			<svg class="Container_bas">
+				<rect id="Container_bas" rx="0" ry="0" x="0" y="0" width="40" height="40">
+				</rect>
+			</svg>
+			<svg class="Logo_bat" viewBox="0 0 35 30">
+				<path id="Logo_bat" d="M 35 30 L 34.998779296875 30 L 28.8232421875 30 L 17.4981689453125 9.998779296875 L 6.1761474609375 30 L 0 30 L 17.5006103515625 0 L 34.9993896484375 29.9981689453125 L 35 30 Z M 22.6458740234375 30 L 22.6446533203125 30 L 12.3529052734375 30 L 17.5006103515625 19.998779296875 L 22.645263671875 29.9981689453125 L 22.6458740234375 30 Z">
+				</path>
+			</svg>
+		</div>
+	</div>
+	<svg class="Line_bau">
+		<rect id="Line_bau" rx="0" ry="0" x="0" y="0" width="1248" height="1">
+		</rect>
+	</svg>
+	<div id="Continue_shopping_bav">
+		<span>Continue shopping</span>
+	</div>
+	<div id="Checkout-Form_baw">
+		<div id="PayWith_bax" class="PayWith">
+			<svg class="Container_bay">
+				<rect id="Container_bay" rx="4" ry="4" x="0" y="0" width="718" height="370">
+				</rect>
+			</svg>
+			<div id="Primary-Button_baz" class="Primary_Button">
+				<svg class="Primary-Button_ba">
+					<rect id="Primary-Button_ba" rx="4" ry="4" x="0" y="0" width="260" height="49">
+					</rect>
+				</svg>
+				<div id="Pay_USD_4800_ba">
+					<span>Pay USD 4,800</span>
+				</div>
+			</div>
+			<div id="Payment-Options_ba">
+				<div id="Payment-Option_ba" class="Payment_Option">
+					<svg class="Container_ba">
+						<rect id="Container_ba" rx="4" ry="4" x="0" y="0" width="638" height="64">
+						</rect>
+					</svg>
+					<div id="Radio_ba" class="Radio">
+						<svg class="Radio_bba">
+							<ellipse id="Radio_bba" rx="8" ry="8" cx="8" cy="8">
+							</ellipse>
+						</svg>
+						<svg class="Selector_ba">
+							<ellipse id="Selector_ba" rx="4" ry="4" cx="4" cy="4">
+							</ellipse>
+						</svg>
+					</div>
+					<div id="Paypal_ba">
+						<span>Paypal</span>
+					</div>
+					<div id="icon-Paypal_ba">
+						<svg class="Container_bba">
+							<rect id="Container_bba" rx="4" ry="4" x="0" y="0" width="48" height="32">
+							</rect>
+						</svg>
+						<div id="Paypal_bbb">
+							<svg class="Path_2816_bbc" viewBox="0.035 0.816 15.41 17.781">
+								<path id="Path_2816_bbc" d="M 14.50974750518799 2.323830842971802 C 13.58086204528809 1.268287181854248 11.90176773071289 0.8157533407211304 9.753791809082031 0.8157533407211304 L 3.51961088180542 0.8157533407211304 C 3.080138206481934 0.8157533407211304 2.706698179244995 1.134407877922058 2.637891530990601 1.56647264957428 L 0.04211998730897903 17.97995376586914 C -0.009484715759754181 18.30358695983887 0.2418801188468933 18.59679222106934 0.5709294080734253 18.59679222106934 L 4.419641494750977 18.59679222106934 L 5.386258125305176 12.48426723480225 L 5.35629415512085 12.67568111419678 C 5.425100803375244 12.24361705780029 5.795766830444336 11.92496204376221 6.234684467315674 11.92496204376221 L 8.063599586486816 11.92496204376221 C 11.65650653839111 11.92496204376221 14.46979522705078 10.46999359130859 15.29158592224121 6.261096954345703 C 15.31600189208984 6.136622428894043 15.33708572387695 6.015466690063477 15.3553991317749 5.897078037261963 C 15.251633644104 5.842309474945068 15.251633644104 5.842309474945068 15.3553991317749 5.897078037261963 C 15.6001033782959 4.341423988342285 15.35373306274414 3.2825608253479 14.50974750518799 2.323830842971802">
+								</path>
+							</svg>
+							<svg class="Path_2817_bbd" viewBox="0.035 0.816 15.41 17.78">
+								<path id="Path_2817_bbd" d="M 6.858928680419922 5.336666584014893 C 6.961583137512207 5.287983417510986 7.075891017913818 5.260875701904297 7.195746898651123 5.260875701904297 L 12.08320999145508 5.260875701904297 C 12.66195964813232 5.260875701904297 13.20186805725098 5.298494338989258 13.69516468048096 5.377604484558105 C 13.83666133880615 5.400286674499512 13.97371864318848 5.426287651062012 14.10689258575439 5.456161975860596 C 14.240065574646 5.485482692718506 14.36935520172119 5.518675804138184 14.49475955963135 5.555188179016113 C 14.55746269226074 5.573444366455078 14.61905479431152 5.592254161834717 14.67953777313232 5.612170219421387 C 14.92202377319336 5.692940235137939 15.14786338806152 5.786987781524658 15.35539436340332 5.897078037261963 C 15.60009956359863 4.340870380401611 15.35372829437256 3.2825608253479 14.50974178314209 2.323830842971802 C 13.58030319213867 1.268287181854248 11.90176105499268 0.8157533407211304 9.753785133361816 0.8157533407211304 L 3.519050359725952 0.8157533407211304 C 3.080133199691772 0.8157533407211304 2.706692934036255 1.134407877922058 2.63788628578186 1.56647264957428 L 0.04211467877030373 17.97939872741699 C -0.009490015916526318 18.30358695983887 0.2418747991323471 18.59623908996582 0.5703691840171814 18.59623908996582 L 4.419636726379395 18.59623908996582 L 6.425005435943604 5.917547702789307 C 6.466067314147949 5.657533645629883 6.633643627166748 5.444544315338135 6.858928680419922 5.336666584014893 Z">
+								</path>
+							</svg>
+							<svg class="Path_2818_bbe" viewBox="61.73 77.272 12.887 14.919">
+								<path id="Path_2818_bbe" d="M 72.87322998046875 77.63584136962891 C 72.05143737792969 81.84417724609375 69.23815155029297 83.29970550537109 65.64523315429688 83.29970550537109 L 63.81576919555664 83.29970550537109 C 63.37685012817383 83.29970550537109 63.00618362426758 83.61836242675781 62.93793487548828 84.05043029785156 L 61.73548889160156 91.65055847167969 C 61.69054412841797 91.93379974365234 61.9102783203125 92.19049835205078 62.19771194458008 92.19049835205078 L 65.44215393066406 92.19049835205078 C 65.82613372802734 92.19049835205078 66.15296936035156 91.91168212890625 66.212890625 91.53382873535156 L 66.24452209472656 91.36897277832031 L 66.85600280761719 87.50528717041016 L 66.89540863037109 87.29174041748047 C 66.95533752441406 86.91389465332031 67.28216552734375 86.63506317138672 67.66615295410156 86.63506317138672 L 68.15167999267578 86.63506317138672 C 71.29456329345703 86.63506317138672 73.75550079345703 85.36211395263672 74.47463989257812 81.68043518066406 C 74.77483367919922 80.14192962646484 74.61946868896484 78.85734558105469 73.82541656494141 77.95503997802734 C 73.58460235595703 77.68175506591797 73.28550720214844 77.45604705810547 72.93704223632812 77.27182006835938 C 72.91817474365234 77.39075469970703 72.89763641357422 77.51136779785156 72.87322998046875 77.63584136962891 L 72.87322998046875 77.63584136962891 Z">
+								</path>
+							</svg>
+							<svg class="Path_2819_bbf" viewBox="79.864 67.699 9.999 7.415">
+								<path id="Path_2819_bbf" d="M 89.00234985351562 67.99352264404297 C 88.87693786621094 67.95700836181641 88.74765014648438 67.92381286621094 88.61447906494141 67.89449310302734 C 88.48130798339844 67.86517333984375 88.34368896484375 67.83917236328125 88.20275115966797 67.81648254394531 C 87.70890045166016 67.73682403564453 87.16954803466797 67.69920349121094 86.59024047851562 67.69920349121094 L 81.70332336425781 67.69920349121094 C 81.58292388916016 67.69920349121094 81.46861267089844 67.72631072998047 81.36651611328125 67.77555084228516 C 81.14067840576172 67.88343048095703 80.97365570068359 68.09586334228516 80.93259429931641 68.35643005371094 L 79.89384460449219 74.92259979248047 L 79.86387634277344 75.114013671875 C 79.93212890625 74.68194580078125 80.30279541015625 74.36329650878906 80.74170684814453 74.36329650878906 L 82.57117462158203 74.36329650878906 C 86.16408538818359 74.36329650878906 88.97737121582031 72.90831756591797 89.79916381835938 68.69942474365234 C 89.82357788085938 68.574951171875 89.84410858154297 68.45435333251953 89.86297607421875 68.33541107177734 C 89.65489196777344 68.22587585449219 89.42961120605469 68.13127136230469 89.18712615966797 68.05105590820312 C 89.12664031982422 68.03114318847656 89.06504821777344 68.01177978515625 89.00234985351562 67.99352264404297">
+								</path>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="Payment-Option_bbg" class="Payment_Option">
+					<svg class="Container_bbh">
+						<rect id="Container_bbh" rx="4" ry="4" x="0" y="0" width="638" height="64">
+						</rect>
+					</svg>
+					<div id="Radio_bbi" class="Radio">
+						<svg class="Radio_bbj">
+							<ellipse id="Radio_bbj" rx="8" ry="8" cx="8" cy="8">
+							</ellipse>
+						</svg>
+					</div>
+					<div id="Credit__Debit_Card_bbk">
+						<span>Credit / Debit Card</span>
+					</div>
+					<div id="icon-CreditCard_bbl">
+						<svg class="Container_bbm">
+							<rect id="Container_bbm" rx="4" ry="4" x="0" y="0" width="48" height="32">
+							</rect>
+						</svg>
+						<svg class="icon-Credit_bbn" viewBox="11.75 20.5 27 20">
+							<path id="icon-Credit_bbn" d="M 36.51432800292969 20.49999809265137 L 13.98566818237305 20.49999809265137 C 12.75230121612549 20.49999809265137 11.74999904632568 21.48782920837402 11.74999904632568 22.70338821411133 L 11.74999904632568 38.29661178588867 C 11.74999904632568 39.51217269897461 12.75230121612549 40.5 13.98566818237305 40.5 L 36.51432800292969 40.5 C 37.74769592285156 40.5 38.75 39.51217269897461 38.75 38.29661178588867 L 38.75 22.70338821411133 C 38.75 21.48782920837402 37.74769592285156 20.49999809265137 36.51432800292969 20.49999809265137 Z M 37.71814727783203 38.29661178588867 C 37.71814727783203 38.95074462890625 37.17805099487305 39.48305130004883 36.51432800292969 39.48305130004883 L 13.98566818237305 39.48305130004883 C 13.32194900512695 39.48305130004883 12.78184700012207 38.95074462890625 12.78184700012207 38.29661178588867 L 12.78184700012207 28.12711715698242 L 37.71814727783203 28.12711715698242 L 37.71814727783203 38.29661178588867 Z M 37.71814727783203 27.11016845703125 L 12.78184700012207 27.11016845703125 L 12.78184700012207 22.70338821411133 C 12.78184700012207 22.04925346374512 13.32194900512695 21.51694869995117 13.98566818237305 21.51694869995117 L 36.51432800292969 21.51694869995117 C 37.17805099487305 21.51694869995117 37.71814727783203 22.04925346374512 37.71814727783203 22.70338821411133 L 37.71814727783203 27.11016845703125 Z M 15.40445804595947 33.97457504272461 L 19.66082572937012 33.97457504272461 C 19.94565963745117 33.97457504272461 20.17675018310547 33.74682235717773 20.17675018310547 33.46610641479492 C 20.17675018310547 33.18537902832031 19.94565963745117 32.95762634277344 19.66082572937012 32.95762634277344 L 15.40445804595947 32.95762634277344 C 15.11962699890137 32.95762634277344 14.88853359222412 33.18537902832031 14.88853359222412 33.46610641479492 C 14.88853359222412 33.74682235717773 15.11962699890137 33.97457504272461 15.40445804595947 33.97457504272461 Z M 22.5413990020752 33.97457504272461 L 31.61305618286133 33.97457504272461 C 31.89788818359375 33.97457504272461 32.12897872924805 33.74682235717773 32.12897872924805 33.46610641479492 C 32.12897872924805 33.18537902832031 31.89788818359375 32.95762634277344 31.61305618286133 32.95762634277344 L 22.5413990020752 32.95762634277344 C 22.25656890869141 32.95762634277344 22.02547645568848 33.18537902832031 22.02547645568848 33.46610641479492 C 22.02547645568848 33.74682235717773 22.25656890869141 33.97457504272461 22.5413990020752 33.97457504272461 Z">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<svg class="Rectangle_50_bbo">
+				<rect id="Rectangle_50_bbo" rx="0" ry="0" x="0" y="0" width="718" height="1">
+				</rect>
+			</svg>
+			<div id="Checkout-Step_bbp" class="Checkout_Step">
+				<div id="Number_bbq">
+					<svg class="Container_bbr">
+						<ellipse id="Container_bbr" rx="16" ry="16" cx="16" cy="16">
+						</ellipse>
+					</svg>
+					<div id="n__bbs">
+						<span>2</span>
+					</div>
+				</div>
+				<div id="Pay_With_bbt">
+					<span>Pay With</span>
+				</div>
+			</div>
+		</div>
+		<div id="ShipTo_bbu" class="ShipTo">
+			<svg class="Container_bbv">
+				<rect id="Container_bbv" rx="4" ry="4" x="0" y="0" width="718" height="240">
+				</rect>
+			</svg>
+			<div id="n_0_N_Martingale_Road_Suite_40_bbw">
+				<span>10 N. Martingale Road, Suite 400, Schaumburg, IL 60173</span>
+			</div>
+			<div id="Address_bbx">
+				<span>Address</span>
+			</div>
+			<div id="ninjaimpekablecom_933923223_bby">
+				<span>ninja@impekable.com, 933923223</span>
+			</div>
+			<div id="Personal_Information_bbz">
+				<span>Personal Information</span>
+			</div>
+			<svg class="Rectangle_47_bb">
+				<rect id="Rectangle_47_bb" rx="0" ry="0" x="0" y="0" width="718" height="1">
+				</rect>
+			</svg>
+			<div id="Group_511_bb">
+				<div id="Checkout-Step_bb" class="Checkout_Step">
+					<div id="Number_bb">
+						<svg class="Container_bb">
+							<ellipse id="Container_bb" rx="16" ry="16" cx="16" cy="16">
+							</ellipse>
+						</svg>
+						<svg class="n__bb" viewBox="17.918 28.332 16 12">
+							<path id="n__bb" d="M 22.28181457519531 40.33200073242188 L 17.91799926757812 36.33200454711914 L 19.37227249145508 34.99897003173828 L 22.28181457519531 37.66594314575195 L 32.46372222900391 28.33200073242188 L 33.91799926757812 29.66592025756836 L 22.28181457519531 40.33200073242188 Z">
+							</path>
+						</svg>
+					</div>
+					<div id="Ship_to_bb">
+						<span>Ship to</span>
+					</div>
+				</div>
+				<div onclick="application.goToTargetView(event)" id="Shipping_to_bb">
+					<div id="Edit_bb">
+						<span>Edit</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="right_bb">
+		<div id="total_bca">
+			<div id="Total_bcb">
+				<span>Total</span>
+			</div>
+			<div id="USD_4800_bcc">
+				<span>USD 4,800</span>
+			</div>
+		</div>
+		<svg class="Line-Break_bcd">
+			<rect id="Line-Break_bcd" rx="0" ry="0" x="0" y="0" width="424" height="1">
+			</rect>
+		</svg>
+		<div id="n__bce">
+			<div id="Free_bcf">
+				<span>Free</span>
+			</div>
+			<div id="Shipping_bcg">
+				<span>Shipping</span>
+			</div>
+		</div>
+		<div id="n__bch">
+			<div id="Subtotal_bci">
+				<span>Subtotal</span>
+			</div>
+			<div id="USD_4800_bcj">
+				<span>USD 4,800</span>
+			</div>
+		</div>
+		<div id="Product_List_Check-out_bck">
+			<svg class="Line-Break_bcl">
+				<rect id="Line-Break_bcl" rx="0" ry="0" x="0" y="0" width="424" height="1">
+				</rect>
+			</svg>
+			<div id="Betty_bcm">
+				<span>Betty</span>
+			</div>
+			<div id="n__items_bcn">
+				<span>2 items</span>
+			</div>
+			<div id="USD_3600_bco">
+				<span>USD 3,600</span>
+			</div>
+			<div id="Icon__Plus_bcp" class="Icon___Plus">
+				<div id="Group_498_bcq">
+					<svg class="Container-Button_bcr">
+						<ellipse id="Container-Button_bcr" rx="12" ry="12" cx="12" cy="12">
+						</ellipse>
+					</svg>
+					<svg class="Minus_bcs">
+						<rect id="Minus_bcs" rx="0" ry="0" x="0" y="0" width="12" height="2">
+						</rect>
+					</svg>
+					<svg class="Minus_bct">
+						<rect id="Minus_bct" rx="0" ry="0" x="0" y="0" width="12" height="2">
+						</rect>
+					</svg>
+				</div>
+				<svg class="Minus_bcu">
+					<rect id="Minus_bcu" rx="0" ry="0" x="0" y="0" width="12" height="2">
+					</rect>
+				</svg>
+			</div>
+			<div id="Icon__Minus_bcv" class="Icon___Minus">
+				<svg class="Container-Button_bcw">
+					<ellipse id="Container-Button_bcw" rx="12" ry="12" cx="12" cy="12">
+					</ellipse>
+				</svg>
+				<svg class="Minus_bcx">
+					<rect id="Minus_bcx" rx="0" ry="0" x="0" y="0" width="12" height="2">
+					</rect>
+				</svg>
+			</div>
+			<div id="Image-Product_bcy">
+				<svg class="Container-Thumbnail_bcz">
+					<rect id="Container-Thumbnail_bcz" rx="0" ry="0" x="0" y="0" width="96" height="96">
+					</rect>
+				</svg>
+				<img id="Image_bc" src="Image_bc.png" srcset="Image_bc.png 1x, Image_bc@2x.png 2x">
+					
+			</div>
+		</div>
+		<div id="Product_List_Check-out_bc">
+			<div id="Image-Product_bc">
+				<svg class="Container-Thumbnail_bc">
+					<rect id="Container-Thumbnail_bc" rx="0" ry="0" x="0" y="0" width="96" height="96">
+					</rect>
+				</svg>
+				<img id="Image_bda" src="Image_bda.png" srcset="Image_bda.png 1x, Image_bda@2x.png 2x">
+					
+			</div>
+			<svg class="Line-Break_bc">
+				<rect id="Line-Break_bc" rx="0" ry="0" x="0" y="0" width="424" height="1">
+				</rect>
+			</svg>
+			<div id="Lule_bc">
+				<span>Lule</span>
+			</div>
+			<div id="n__item_bc">
+				<span>1 item</span>
+			</div>
+			<div id="USD_1200_bc">
+				<span>USD 1,200</span>
+			</div>
+			<div id="Icon__Plus_bc" class="Icon___Plus">
+				<div id="Group_498_bda">
+					<svg class="Container-Button_bdb">
+						<ellipse id="Container-Button_bdb" rx="12" ry="12" cx="12" cy="12">
+						</ellipse>
+					</svg>
+					<svg class="Minus_bdc">
+						<rect id="Minus_bdc" rx="0" ry="0" x="0" y="0" width="12" height="2">
+						</rect>
+					</svg>
+					<svg class="Minus_bdd">
+						<rect id="Minus_bdd" rx="0" ry="0" x="0" y="0" width="12" height="2">
+						</rect>
+					</svg>
+				</div>
+				<svg class="Minus_bde">
+					<rect id="Minus_bde" rx="0" ry="0" x="0" y="0" width="12" height="2">
+					</rect>
+				</svg>
+			</div>
+			<div id="Icon__Minus_bdf" class="Icon___Minus">
+				<svg class="Container-Button_bdg">
+					<ellipse id="Container-Button_bdg" rx="12" ry="12" cx="12" cy="12">
+					</ellipse>
+				</svg>
+				<svg class="Minus_bdh">
+					<rect id="Minus_bdh" rx="0" ry="0" x="0" y="0" width="12" height="2">
+					</rect>
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
