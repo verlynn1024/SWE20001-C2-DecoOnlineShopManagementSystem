@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
             BankAccoout: "109876354",
             Member: "Non-member", 
             PaymentMethod : "Paypal", //should remove it?? 
-            // Add more data properties as needed
         };
 
         // Create an HTML template with placeholders
@@ -21,7 +20,6 @@ Member? {{Member}}
 Payment Method: {{PaymentMethod}}
         `;
 
-        // Replace placeholders with actual data
         const content = template.replace(/{{(.*?)}}/g, (match, key) => data[key.trim()]);
 
         // Create a Blob containing the text
