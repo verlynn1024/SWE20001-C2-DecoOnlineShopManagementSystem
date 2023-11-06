@@ -1189,6 +1189,96 @@
 		left: 0px;
 		top: 0px;
 	}
+
+	#Container-Button {
+		fill: transparent;
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container-Button {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Minus {
+		fill: rgba(21,21,21,1);
+	}
+	.Minus {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Minus_du {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_du {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Minus_dv {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_dv {
+		width: 12px;
+		height: 2px;
+		position: absolute;
+		overflow: visible;
+		transform: translate(0px, 0px) matrix(1,0,0,1,6,11) rotate(-90deg);
+		transform-origin: center;
+		left: 0.15px;
+		top: -0.15px;
+	}
+	#Icon__Minus {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 351px;
+		top: 28px;
+		overflow: visible;
+	}
+	#Container-Button_dx {
+		fill: transparent;
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container-Button_dx {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Minus_dy {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_dy {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+
 	#Minus_y {
 		fill: rgba(21,21,21,1);
 	}
@@ -1416,7 +1506,7 @@
 		top: 0px;
 	}
 	#Minus_bah {
-		fill: rgba(21,21,21,1);
+		fill: rgb(87, 87, 87, 1);
 	}
 	.Minus_bah {
 		position: absolute;
@@ -1424,19 +1514,9 @@
 		width: 12px;
 		height: 2px;
 		left: 6px;
-		top: 11px;
+		top: 10px;
 	}
-	#Minus_bai {
-		fill: rgba(87,87,87,1);
-	}
-	.Minus_bai {
-		position: absolute;
-		overflow: visible;
-		width: 12px;
-		height: 2px;
-		left: 6px;
-		top: 11px;
-	}
+
 	#Minus_baj {
 		fill: rgba(87,87,87,1);
 	}
@@ -1517,9 +1597,15 @@
 		margin-right: 4px; /* Space between the symbol and text */
 	}
 
+	#incrementButton, #decrementButton, #incrementButton2, #decrementButton2 {
+    cursor: pointer;
+}
+
 
 </style>
+<script src="scripts/itemQuantity.js"></script>
 <script src="scripts/PaymentMethod.js"></script>
+
 <script id="applicationScript" type="text/javascript" src="scripts/4_2.js"></script>
 </head>
 <body>
@@ -1779,22 +1865,32 @@
 			</div>
 			<div id="Icon__Plus_u" class="Icon___Plus">
 				<div id="Group_498_v">
-					<svg class="Container-Button_w">
+					<svg class="Container-Button_w" id="incrementButton2">
 						<ellipse id="Container-Button_w" rx="12" ry="12" cx="12" cy="12">
 						</ellipse>
 					</svg>
-					<button id="increment">+</button>
+					<svg class="Minus">
+						<rect id="Minus" rx="0" ry="0" x="0" y="0" width="12" height="2">
+						</rect>
+					</svg>
+					<svg class="Minus_du">
+						<rect id="Minus_du" rx="0" ry="0" x="0" y="0" width="12" height="2">
+						</rect>
 					</svg>
 				</div>
-				
+				<svg class="Minus_dv">
+					<rect id="Minus_dv" rx="0" ry="0" x="0" y="0" width="12" height="2">
+					</rect>
 				</svg>
 			</div>
 			<div id="Icon__Minus_" class="Icon___Minus">
-				<svg class="Container-Button_baa">
+				<svg class="Container-Button_baa" id="decrementButton2">
 					<ellipse id="Container-Button_baa" rx="12" ry="12" cx="12" cy="12">
 					</ellipse>
 				</svg>
-					<button id="decrement">-</button>
+				<svg class="Minus_dy">
+					<rect id="Minus_dy" rx="0" ry="0" x="0" y="0" width="12" height="2">
+					</rect>
 				</svg>
 			</div>
 			<div id="Image-Product_">
@@ -1830,7 +1926,7 @@
 			</div>
 			<div id="Icon__Plus_bae" class="Icon___Plus">
 				<div id="Group_498_baf">
-					<svg class="Container-Button_bag">
+					<svg class="Container-Button_bag" id="incrementButton"> 
 						<ellipse id="Container-Button_bag" rx="12" ry="12" cx="12" cy="12">
 						</ellipse>
 					</svg>
@@ -1838,10 +1934,7 @@
 						<rect id="Minus_bah" rx="0" ry="0" x="0" y="0" width="12" height="2">
 						</rect>
 					</svg>
-					<svg class="Minus_bai">
-						<rect id="Minus_bai" rx="0" ry="0" x="0" y="0" width="12" height="2">
-						</rect>
-					</svg>
+					
 				</div>
 				<svg class="Minus_baj">
 					<rect id="Minus_baj" rx="0" ry="0" x="0" y="0" width="12" height="2">
@@ -1849,7 +1942,7 @@
 				</svg>
 			</div>
 			<div id="Icon__Minus_bak" class="Icon___Minus">
-				<svg class="Container-Button_bal">
+				<svg class="Container-Button_bal" id="decrementButton">
 					<ellipse id="Container-Button_bal" rx="12" ry="12" cx="12" cy="12">
 					</ellipse>
 				</svg>
