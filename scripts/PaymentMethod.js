@@ -174,33 +174,9 @@ function Pay() {
     }
 }
 
-const decrementButton = document.getElementById('decrement');
-const incrementButton = document.getElementById('increment');
-const itemCount = document.getElementById('item-count');
 
-// Initialize item count
-let count = 2;
 
-// Update item count and display
-function updateItemCount() {
-    itemCount.textContent = count + ' items';
-}
 
-// Event listeners for the buttons
-decrementButton.addEventListener('click', () => {
-    if (count > 0) {
-        count--;
-        updateItemCount();
-    }
-});
-
-incrementButton.addEventListener('click', () => {
-    count++;
-    updateItemCount();
-});
-
-// Initial display
-updateItemCount();
 
 
 
