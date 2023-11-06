@@ -78,8 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
     updateItemDetails1();
     updateItemDetails2();
 
-    // ... Your existing code for item details, subtotal, and total ...
-
     // Function to update the Pay button text with the total amount
     function updatePayButton(total) {
         const payButton = document.getElementById('Pay_USD_4800');
