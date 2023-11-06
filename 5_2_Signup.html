@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5.2 Signup</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: 5.2 Signup;
+		--web-view-id: n_2_Signup;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: n_2_Signup;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#n_2_Signup {
+		position: absolute;
+		width: 1366px;
+		height: 895px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: 5.2 Signup;
+		--web-view-id: n_2_Signup;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Logo-Text_bpm {
+		position: absolute;
+		width: 190px;
+		height: 40px;
+		left: 588px;
+		top: 48px;
+		overflow: visible;
+	}
+	#LOZA_bpn {
+		left: 44px;
+		top: 5px;
+		position: absolute;
+		overflow: visible;
+		width: 147px;
+		height: 35px;
+		text-align: left;
+		font-family: SF Pro Text;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 31px;
+		color: rgba(21,21,21,1);
+		letter-spacing: 1.25px;
+	}
+	#Logo_bpo {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container_bpp {
+		fill: transparent;
+	}
+	.Container_bpp {
+		position: absolute;
+		overflow: visible;
+		width: 40px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+	}
+	#Logo_bpq {
+		fill: rgba(21,21,21,1);
+	}
+	.Logo_bpq {
+		overflow: visible;
+		position: absolute;
+		width: 35px;
+		height: 30px;
+		left: 2.5px;
+		top: 5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_bpr {
+		fill: rgba(233,233,233,1);
+	}
+	.Line_bpr {
+		position: absolute;
+		overflow: visible;
+		width: 1248px;
+		height: 1px;
+		left: 59px;
+		top: 112px;
+	}
+	#Continue_shopping_bps {
+		left: 59px;
+		top: 70px;
+		position: absolute;
+		overflow: visible;
+		width: 122px;
+		white-space: nowrap;
+		transition: all 0.6000000238418579s ease-out;
+		--web-animation: fadein 0.6000000238418579s ease-out;
+		--web-action-type: page;
+		--web-action-target: 2_1_PLP.html;
+		cursor: pointer;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+		text-decoration: underline;
+	}
+	#home_office_bpt {
+		position: absolute;
+		width: 511px;
+		height: 200px;
+		left: 59px;
+		top: 165px;
+		overflow: visible;
+		padding: 0px;
+	}
+	#Already_have_an_account_Log_in {
+		left: 0px;
+		top: 180px;
+		position: absolute;
+		overflow: visible;
+		width: 472px;
+		height: 20px;
+		transition: all 0.6000000238418579s ease-out;
+		--web-animation: fadein 0.6000000238418579s ease-out;
+		--web-action-type: page;
+		--web-action-target: 5_2_Login.html;
+		cursor: pointer;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(0,0,0,1);
+	}
+	#Create_a_DECO_account_ {
+		left: 0px;
+		top: 51px;
+		position: absolute;
+		overflow: visible;
+		width: 512px;
+		height: 105px;
+		line-height: 55px;
+		margin-top: -7.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(0,0,0,1);
+	}
+	#Rectangle_45_bpw {
+		opacity: 0;
+		fill: rgba(233,233,233,1);
+	}
+	.Rectangle_45_bpw {
+		position: absolute;
+		overflow: visible;
+		width: 511px;
+		height: 1px;
+		left: 0px;
+		top: 0px;
+	}
+	#Container_bpx {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container_bpx {
+		position: absolute;
+		overflow: visible;
+		width: 718px;
+		height: 536px;
+		left: 588px;
+		top: 165px;
+	}
+	#Primary-Button_bpy {
+		position: absolute;
+		width: 300px;
+		height: 49px;
+		left: 966px;
+		top: 598px;
+		overflow: visible;
+		transition: all 0.6000000238418579s ease-out;
+		--web-animation: fadein 0.6000000238418579s ease-out;
+		--web-action-type: page;
+		--web-action-target: 5_3_User_Account_Management.html;
+		cursor: pointer;
+		padding: 16px 80px 15px 80px;
+	}
+	#Primary-Button_bpz {
+		fill: rgba(255,178,107,1);
+	}
+	.Primary-Button_bpz {
+		position: absolute;
+		overflow: visible;
+		width: 300px;
+		height: 49px;
+		left: 0px;
+		top: 0px;
+	}
+	#Continue_to_User_Site {
+		left: 80px;
+		top: 16px;
+		position: absolute;
+		overflow: visible;
+		width: 141px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Form_bp {
+		position: absolute;
+		width: 638px;
+		height: 70px;
+		left: 628px;
+		top: 386px;
+		overflow: visible;
+	}
+	#Rectangle_48_bp {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_48_bp {
+		position: absolute;
+		overflow: visible;
+		width: 638px;
+		height: 44px;
+		left: 0px;
+		top: 26px;
+	}
+	#Enter_your_address_bp {
+		left: 24px;
+		top: 38px;
+		position: absolute;
+		overflow: visible;
+		width: 140px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(159,159,159,1);
+	}
+	#Passsword {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 74px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Form_bqa {
+		position: absolute;
+		width: 638px;
+		height: 70px;
+		left: 628px;
+		top: 292px;
+		overflow: visible;
+	}
+	#Rectangle_48_bqa {
+		fill: rgba(255,255,255,1);
+		stroke: #E9E9E9;
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_48_bqa {
+		position: absolute;
+		overflow: visible;
+		width: 638px;
+		height: 44px;
+		left: 0px;
+		top: 26px;
+	}
+	#Ninja_Kas_bp {
+		left: 24px;
+		top: 38px;
+		position: absolute;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(21,21,21,1);
+	}
+	#Full_name_bp {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 66px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	
+	.Rectangle_49_bp {
+		position: absolute;
+		overflow: visible;
+		width: 1px;
+		height: 23px;
+		left: 95px;
+		top: 38px;
+	}
+	#Form_bqb {
+		position: absolute;
+		width: 310px;
+		height: 70px;
+		left: 628px;
+		top: 198px;
+		overflow: visible;
+	}
+	#Rectangle_48_bqb {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_48_bqb {
+		position: absolute;
+		overflow: visible;
+		width: 310px;
+		height: 44px;
+		left: 0px;
+		top: 26px;
+	}
+	#Enter_your_email_bqc {
+		left: 24px;
+		top: 38px;
+		position: absolute;
+		overflow: visible;
+		width: 121px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(159,159,159,1);
+	}
+	#Email_bqd {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 38px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Form_bqe {
+		position: absolute;
+		width: 310px;
+		height: 70px;
+		left: 956px;
+		top: 198px;
+		overflow: visible;
+	}
+	#Rectangle_48_bqf {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_48_bqf {
+		position: absolute;
+		overflow: visible;
+		width: 310px;
+		height: 44px;
+		left: 0px;
+		top: 26px;
+	}
+	#Enter_your_phone_number_bqg {
+		left: 24px;
+		top: 38px;
+		position: absolute;
+		overflow: visible;
+		width: 188px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(159,159,159,1);
+	}
+	#Phone_number_bqh {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 98px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Payment-Option_bqi {
+		position: absolute;
+		width: 638px;
+		height: 64px;
+		left: 623px;
+		top: 487px;
+		overflow: visible;
+	}
+	#Container_bqj {
+		fill: rgba(255,255,255,1);
+	}
+	.Container_bqj {
+		position: absolute;
+		overflow: visible;
+		width: 638px;
+		height: 64px;
+		left: 0px;
+		top: 0px;
+	}
+	#Radio_bqk {
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 24px;
+		top: 24px;
+		overflow: visible;
+	}
+
+	.Radio {
+		position: relative;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+	}
+
+	.Radio input{
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+	}
+
+	.checkmark{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 25px;
+		width: 25px;
+		background-color: #eee;
+		border-radius: 50%;
+	}
+
+	.Radio:hover .checkmark{
+		background-color: #ccc;
+	}
+
+	.Radio input:checked + .checkmark{
+		background-color: orange;
+	}
+
+	.checkmark:after{
+		content: "";
+		position: absolute;
+		display: none;
+	}
+
+	.Radio input:checked + .checkmark:after{
+		display: block;
+	}
+
+	.Radio .checkmark:after {
+		top: 7px;
+		left: 7px;
+		width: 11px;
+		height:  11px;
+		border-radius: 50%;
+		background: white;
+	}
+
+	#I_have_read_and_understood_the {
+		left: 63px;
+		top: 29px;
+		position: absolute;
+		overflow: visible;
+		width: 337px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgb(0, 0, 0);
+	}
+</style>
+<script src="scripts/SignUp.js"></script>
+<script id="applicationScript" type="text/javascript" src="scripts/5_2.js"></script>
+</head>
+<body>
+<div id="n_2_Signup">
+	<div id="Logo-Text_bpm" class="Logo_Text">
+		<div id="LOZA_bpn">
+			<span>DECO</span>
+		</div>
+		<div id="Logo_bpo" class="Logo">
+			<svg class="Container_bpp">
+				<rect id="Container_bpp" rx="0" ry="0" x="0" y="0" width="40" height="40">
+				</rect>
+			</svg>
+			<svg class="Logo_bpq" viewBox="0 0 35 30">
+				<path id="Logo_bpq" d="M 35 30 L 34.998779296875 30 L 28.8232421875 30 L 17.4981689453125 9.998779296875 L 6.1761474609375 30 L 0 30 L 17.5006103515625 0 L 34.9993896484375 29.9981689453125 L 35 30 Z M 22.6458740234375 30 L 22.6446533203125 30 L 12.3529052734375 30 L 17.5006103515625 19.998779296875 L 22.645263671875 29.9981689453125 L 22.6458740234375 30 Z">
+				</path>
+			</svg>
+		</div>
+	</div>
+	<svg class="Line_bpr">
+		<rect id="Line_bpr" rx="0" ry="0" x="0" y="0" width="1248" height="1">
+		</rect>
+	</svg>
+	<div onclick="application.goToTargetView(event)" id="Continue_shopping_bps">
+		<span>Continue shopping</span>
+	</div>
+	<div id="home_office_bpt">
+		<div onclick="application.goToTargetView(event)" id="Already_have_an_account_Log_in">
+			<span>Already have an account? </span><span style="text-decoration:underline;">Log in here</span>
+		</div>
+		<div id="Create_a_DECO_account_">
+			<span>Create a DECO account</span><br/>
+		</div>
+		<svg class="Rectangle_45_bpw">
+			<rect id="Rectangle_45_bpw" rx="0" ry="0" x="0" y="0" width="511" height="1">
+			</rect>
+		</svg>
+	</div>
+	<svg class="Container_bpx">
+		<rect id="Container_bpx" rx="4" ry="4" x="0" y="0" width="718" height="536">
+		</rect>
+	</svg>
+	<div  id="Primary-Button_bpy" class="Primary_Button">
+		<svg class="Primary-Button_bpz">
+			<rect id="Primary-Button_bpz" rx="4" ry="4" x="0" y="0" width="300" height="49">
+			</rect>
+		</svg>
+		<div id="Continue_to_User_Site" class="Primary-Button_bpz" onClick="signup()">
+			<span>Continue to User Site</span>
+		</div>
+	</div>
+	<div id="Form_bp" class="Form">
+		<svg class="Rectangle_48_bp">
+			<rect id="Rectangle_48_bp" rx="4" ry="4" x="0" y="0" width="638" height="44">
+			</rect>
+		</svg>
+		<div id="Enter_your_address_bp">
+			<span><input name="password" type="password" id="password" placeholder="Enter your password"></span>
+		</div>
+		<div id="Passsword">
+			<span>Passsword</span>
+		</div>
+	</div>
+	<div id="Form_bqa" class="Form">
+		<svg class="Rectangle_48_bqa">
+			<rect id="Rectangle_48_bqa" rx="4" ry="4" x="0" y="0" width="638" height="44">
+			</rect>
+		</svg>
+		<div id="Ninja_Kas_bp">
+			<span><input name="name" type="text" id="name" placeholder="Enter your full name"></span>
+		</div>
+		<div id="Full_name_bp">
+			<span>Full name</span>
+			
+		</div>
+
+	</div>
+	<div id="Form_bqb" class="Form">
+		<svg class="Rectangle_48_bqb">
+			<rect id="Rectangle_48_bqb" rx="4" ry="4" x="0" y="0" width="310" height="44">
+			</rect>
+		</svg>
+		<div id="Enter_your_email_bqc">
+			<span><input name="email" type="text" id="email" placeholder="Enter your email"></span>
+		</div>
+		<div id="Email_bqd">
+			<span>Email</span>
+		</div>
+	</div>
+	<div id="Form_bqe" class="Form">
+		<svg class="Rectangle_48_bqf">
+			<rect id="Rectangle_48_bqf" rx="4" ry="4" x="0" y="0" width="310" height="44">
+			</rect>
+		</svg>
+		<div id="Enter_your_phone_number_bqg">
+			<span><input name="phonenum" type="text" id="phonenum" placeholder="Enter your phone number"></span>
+		</div>
+		<div id="Phone_number_bqh">
+			<span>Phone number</span>
+		</div>
+	</div>
+	<div id="Payment-Option_bqi" class="Payment_Option">
+		<svg class="Container_bqj">
+			<rect id="Container_bqj" rx="4" ry="4" x="0" y="0" width="638" height="64">
+			</rect>
+		</svg>
+		<div id="Radio_bqk" class="Radio">
+			<input type="radio" id="privacy_policy" name="privacy_policy">
+			<label for="privacy_policy" class="checkmark"></label>
+			<svg class="Radio_bql">
+			</svg>
+		</div>
+		<div id="I_have_read_and_understood_the">
+			<span>I have read and understood the privacy policy</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>
