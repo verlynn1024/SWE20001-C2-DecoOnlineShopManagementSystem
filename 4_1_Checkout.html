@@ -384,6 +384,8 @@
 		overflow: visible;
 		transform: translate(0px, 0px) matrix(1,0,0,1,6,11) rotate(-90deg);
 		transform-origin: center;
+		top: 0.25px;
+		left: 0.1px;
 	}
 	#Icon__Minus_a {
 		position: absolute;
@@ -608,6 +610,8 @@
 		overflow: visible;
 		transform: translate(0px, 0px) matrix(1,0,0,1,6,11) rotate(-90deg);
 		transform-origin: center;
+		top: 0.25px;
+		left: 0.1px;
 	}
 	#Icon__Minus_u {
 		position: absolute;
@@ -1348,7 +1352,12 @@
 		top: 0px;
 		transform: matrix(1,0,0,1,0,0);
 	}
+
+	#incrementButton, #decrementButton, #incrementButton2, #decrementButton2 {
+    cursor: pointer;
+}
 </style>
+<script src="scripts/CheckOutItemQuantity.js"></script>
 <script src="scripts/CheckOut.js"></script>
 <script id="applicationScript" type="text/javascript" src="scripts/4_1.js"></script>
 </head>
@@ -1418,7 +1427,7 @@
 			</div>
 			<div id="Icon__Plus_" class="Icon___Plus">
 				<div id="Group_498_">
-					<svg class="Container-Button_">
+					<svg class="Container-Button_" id="incrementButton2">
 						<ellipse id="Container-Button_" rx="12" ry="12" cx="12" cy="12">
 						</ellipse>
 					</svg>
@@ -1437,7 +1446,7 @@
 				</svg>
 			</div>
 			<div id="Icon__Minus_a" class="Icon___Minus">
-				<svg class="Container-Button_b">
+				<svg class="Container-Button_b" id="decrementButton2">
 					<ellipse id="Container-Button_b" rx="12" ry="12" cx="12" cy="12">
 					</ellipse>
 				</svg>
@@ -1478,8 +1487,8 @@
 				<span>USD 1,200</span>
 			</div>
 			<div id="Icon__Plus_o" class="Icon___Plus">
-				<div id="Group_498_p">
-					<svg class="Container-Button_q">
+				<div id="Group_498_p" >
+					<svg class="Container-Button_q" id="incrementButton">
 						<ellipse id="Container-Button_q" rx="12" ry="12" cx="12" cy="12">
 						</ellipse>
 					</svg>
@@ -1498,7 +1507,7 @@
 				</svg>
 			</div>
 			<div id="Icon__Minus_u" class="Icon___Minus">
-				<svg class="Container-Button_v">
+				<svg class="Container-Button_v" id="decrementButton">
 					<ellipse id="Container-Button_v" rx="12" ry="12" cx="12" cy="12">
 					</ellipse>
 				</svg>
