@@ -2,30 +2,33 @@
 $host = "localhost";
 $username = "root";
 $password = "";
-$dbname = "online_store";
+$dbname = "Deco_store";
 
 $conn = new mysqli($host, $username, $password, $dbname);
-if (!$conn) {
-    echo "<p>Database connection failure</p>";
+
+if ($conn->connect_error) {
+    die("Database connection failure: " . $conn->connect_error);
 }
 
-$sql_table = "online_store";
+$sql_table = "Customers";
 
-$query = "insert into $sql_table (CustID, FName, LName, Email, Phone) VALUES ('$CustID', '$FName', '$LName', '$Email', '$Phone')";
+// handles form submission
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
+    $phone_number = $_POST["phonenum"];
 
-// Prepare the statement
-$stmt = $conn->prepare($sql);
+    // inserts data into the customers table
+    $sql = "INSERT INTO customers (name, email, password, phone_number) VALUES ('$name', '$email', '$password', '$phone_number')";
 
-// Bind parameters and execute the statement for each customer
-foreach ($customers as $customer) {
-	$stmt->bind_param("issss", $customer[0], $customer[1], $customer[2], $customer[3], $customer[4]);
-    $stmt->execute();
+    if (mysqli_query($conn, $sql)) {
+        echo "Signup successful!";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
 }
 
-// Close the statement and the database connection
-$stmt->close();
-$conn->close();
-
-echo "Records inserted successfully.";
-
+// Close the database connection
+mysqli_close($conn);
 ?>
