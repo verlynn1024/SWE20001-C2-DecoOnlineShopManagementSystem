@@ -218,7 +218,7 @@
 	}
 	#Container_ba {
 		fill: rgba(255,255,255,1);
-		stroke: rgba(255,178,107,1);
+		stroke: rgb(233, 233, 233, 1);
 		stroke-width: 1px;
 		stroke-linejoin: miter;
 		stroke-linecap: butt;
@@ -1031,6 +1031,8 @@
 		overflow: visible;
 		transform: translate(0px, 0px) matrix(1,0,0,1,6,11) rotate(-90deg);
 		transform-origin: center;
+		top: -0.25px;
+		left: 0.15px;
 	}
 	#Icon__Minus_bcv {
 		position: absolute;
@@ -1255,6 +1257,8 @@
 		overflow: visible;
 		transform: translate(0px, 0px) matrix(1,0,0,1,6,11) rotate(-90deg);
 		transform-origin: center;
+		top: -0.25px;
+		left: 0.15px;
 	}
 	#Icon__Minus_bdf {
 		position: absolute;
@@ -1292,7 +1296,73 @@
 		left: 6px;
 		top: 11px;
 	}
+
+	.Radio {
+  		position: relative;
+  		cursor: pointer;
+  		display: flex;
+  		align-items: center;
+		top: 0px;	
+		left: 50px;
+	}
+
+	.Radio input[type="radio"] {
+  		position: absolute;
+  		opacity: 0;
+  		cursor: pointer;
+		top: 0px;
+	}
+
+	.checkmark {
+ 		position: absolute;
+  		top: 0;
+  		left: -0.5px;
+  		height: 25px;
+  		width: 25px;
+		background-color: #eee;
+		border-radius: 50%;
+		transition: background-color 0.3s ease; /* Add a smooth transition effect */
+	}
+
+	.Radio:hover .checkmark {
+		background-color: #ccc;
+	}
+
+	.Radio input[type="radio"]:checked + .checkmark {
+		background-color: orange;
+	}
+
+	.checkmark:after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+
+	.Radio input[type="radio"]:checked + .checkmark:after {
+		display: block;
+	}
+
+	.Radio .checkmark:after {
+		top: 7px;
+		left: 7px;
+		width: 11px;
+		height: 11px;
+		border-radius: 50%;
+		background: white;
+	}
+
+	#incrementButton, #decrementButton, #incrementButton2, #decrementButton2 {
+    cursor: pointer;
+	}
+
+	#Pay_USD_4800_ba {
+    cursor: pointer;
+}
+
+
 </style>
+
+<script src="scripts/PayPalPay.js"></script>
 <script id="applicationScript" type="text/javascript" src="scripts/4_3.js"></script>
 </head>
 <body>
@@ -1325,12 +1395,12 @@
 				<rect id="Container_bay" rx="4" ry="4" x="0" y="0" width="718" height="370">
 				</rect>
 			</svg>
-			<div id="Primary-Button_baz" class="Primary_Button">
+			<div id="Primary-Button_baz" class="Primary_Button" >
 				<svg class="Primary-Button_ba">
 					<rect id="Primary-Button_ba" rx="4" ry="4" x="0" y="0" width="260" height="49">
 					</rect>
 				</svg>
-				<div id="Pay_USD_4800_ba">
+				<div id="Pay_USD_4800_ba" class="Primary_Button" onclick="payWithPayPal()">
 					<span>Pay USD 4,800</span>
 				</div>
 			</div>
@@ -1341,14 +1411,11 @@
 						</rect>
 					</svg>
 					<div id="Radio_ba" class="Radio">
+						<input type="radio" id="payPal" name="paymentMethod" value="payPal" checked>
+						<label for="payPal" class="checkmark"></label>
 						<svg class="Radio_bba">
-							<ellipse id="Radio_bba" rx="8" ry="8" cx="8" cy="8">
-							</ellipse>
 						</svg>
-						<svg class="Selector_ba">
-							<ellipse id="Selector_ba" rx="4" ry="4" cx="4" cy="4">
-							</ellipse>
-						</svg>
+						
 					</div>
 					<div id="Paypal_ba">
 						<span>Paypal</span>
@@ -1384,9 +1451,9 @@
 						</rect>
 					</svg>
 					<div id="Radio_bbi" class="Radio">
+						<input type="radio" id="cardPayment" name="paymentMethod" value="Card">
+						<label for="cardPayment" class="checkmark"></label>
 						<svg class="Radio_bbj">
-							<ellipse id="Radio_bbj" rx="8" ry="8" cx="8" cy="8">
-							</ellipse>
 						</svg>
 					</div>
 					<div id="Credit__Debit_Card_bbk">
@@ -1428,14 +1495,14 @@
 				<rect id="Container_bbv" rx="4" ry="4" x="0" y="0" width="718" height="240">
 				</rect>
 			</svg>
-			<div id="n_0_N_Martingale_Road_Suite_40_bbw">
-				<span>10 N. Martingale Road, Suite 400, Schaumburg, IL 60173</span>
+			<div id="n_0_N_Martingale_Road_Suite_40">
+				<span id="userAddress"></span>
 			</div>
 			<div id="Address_bbx">
 				<span>Address</span>
 			</div>
-			<div id="ninjaimpekablecom_933923223_bby">
-				<span>ninja@impekable.com, 933923223</span>
+			<div id="ninjaimpekablecom_933923223">
+				<span id="userEmail"></span>
 			</div>
 			<div id="Personal_Information_bbz">
 				<span>Personal Information</span>
@@ -1513,7 +1580,7 @@
 			</div>
 			<div id="Icon__Plus_bcp" class="Icon___Plus">
 				<div id="Group_498_bcq">
-					<svg class="Container-Button_bcr">
+					<svg class="Container-Button_bcr" id="incrementButton2">
 						<ellipse id="Container-Button_bcr" rx="12" ry="12" cx="12" cy="12">
 						</ellipse>
 					</svg>
@@ -1532,7 +1599,7 @@
 				</svg>
 			</div>
 			<div id="Icon__Minus_bcv" class="Icon___Minus">
-				<svg class="Container-Button_bcw">
+				<svg class="Container-Button_bcw" id="decrementButton2">
 					<ellipse id="Container-Button_bcw" rx="12" ry="12" cx="12" cy="12">
 					</ellipse>
 				</svg>
@@ -1574,7 +1641,7 @@
 			</div>
 			<div id="Icon__Plus_bc" class="Icon___Plus">
 				<div id="Group_498_bda">
-					<svg class="Container-Button_bdb">
+					<svg class="Container-Button_bdb" id="incrementButton">
 						<ellipse id="Container-Button_bdb" rx="12" ry="12" cx="12" cy="12">
 						</ellipse>
 					</svg>
@@ -1593,7 +1660,7 @@
 				</svg>
 			</div>
 			<div id="Icon__Minus_bdf" class="Icon___Minus">
-				<svg class="Container-Button_bdg">
+				<svg class="Container-Button_bdg" id="decrementButton">
 					<ellipse id="Container-Button_bdg" rx="12" ry="12" cx="12" cy="12">
 					</ellipse>
 				</svg>
