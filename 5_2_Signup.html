@@ -586,6 +586,7 @@
 </head>
 <body>
 <div id="n_2_Signup">
+	<form id="signupForm" action="5_2_SignUp.php" method="post">
 	<div id="Logo-Text_bpm" class="Logo_Text">
 		<div id="LOZA_bpn">
 			<span>DECO</span>
@@ -629,9 +630,15 @@
 			<rect id="Primary-Button_bpz" rx="4" ry="4" x="0" y="0" width="300" height="49">
 			</rect>
 		</svg>
-		<div id="Continue_to_User_Site" class="Primary-Button_bpz" onClick="signup()">
+		<!-- <div id="Continue_to_User_Site" class="Primary-Button_bpz" onClick="signup()">
+		
+			<input type="submit" value="Submit">
 			<span>Continue to User Site</span>
-		</div>
+		</div> -->
+		<button id="Continue_to_User_Site" class="Primary-Button_bpz" onClick="signup()" type="submit">
+			<span>Continue to User Site</span>
+		</button>		
+		<!-- <input type="button" value="Continue to User Site" onclick="signup()"> -->
 	</div>
 	<div id="Form_bp" class="Form">
 		<svg class="Rectangle_48_bp">
@@ -698,6 +705,7 @@
 			<span>I have read and understood the privacy policy</span>
 		</div>
 	</div>
+</form>
 </div>
 </body>
 </html>
