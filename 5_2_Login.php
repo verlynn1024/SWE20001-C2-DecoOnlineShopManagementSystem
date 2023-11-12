@@ -2,33 +2,49 @@
 $host = "localhost";
 $username = "root";
 $password = "";
-$dbname = "online_store";
+$dbname = "Deco_store";
 
 $conn = new mysqli($host, $username, $password, $dbname);
-if (!$conn) {
-    echo "<p>Database connection failure</p>";
+
+if ($conn) 
+{
+    echo "Database connection successful\n";
+}
+else
+{
+    echo "Database connection failure\n";
 }
 
 // Handle the form submission
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $entered_username = $_POST["username"];
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
+{
+    $entered_email = $_POST["email"];
+    $entered_phonenum = $_POST["phonenum"];
     $entered_password = $_POST["password"];
 
     // Query the database for the entered username
-    $sql = "SELECT * FROM users WHERE username = '$entered_username'";
+    $sql = "SELECT * FROM customers WHERE email = '$entered_email'";
     $result = $conn->query($sql);
 
-    if ($result->num_rows > 0) {
+    if ($result->num_rows > 0) 
+    {
         // User exists, now check the password
         $row = $result->fetch_assoc();
         $stored_password = $row["password"];
 
-        if ($entered_password == $stored_password) {
+        if ($entered_password == $stored_password) 
+        {
             echo "Login successful!"; 
-        } else {
+            header("Location: 5_3_User_Account_Management.html");
+            exit();
+        } 
+        else 
+        {
             echo "Incorrect password.";
         }
-    } else {
+    } 
+    else 
+    {
         echo "Username not found.";
     }
 }
