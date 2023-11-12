@@ -46,6 +46,8 @@ function validateForm(){
 
 function signup()
 {
+    var form = document.getElementById("signupForm");
+    
     //get user inputs (emails, phone number, name, password)
     var email = document.getElementById("email").value;
     var phonenum = document.getElementById("phonenum").value;
@@ -57,14 +59,16 @@ function signup()
 
     if(isValid)
     {
-        //perform signup action 
         alert("Sign Up Successful!!"); 
+        form.submit();
         window.location.href = "5_3_User_Account_Management.html";
     }
     else{
         alert("Sign Up Failed!");
         document.getElementById("Continue_to_User_Site").setAttribute("disabled", "true");
        }
+
+    var form = document.getElementById("signupForm");
 }
 
 // Add a click event listener for the radio button
