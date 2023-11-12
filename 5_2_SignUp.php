@@ -35,6 +35,8 @@ if (!$result)
 else 
 {
     echo "Insert successful";
+    header("Location: 5_3_User_Account_Management.html");
+    exit();
 }
 }
 else
