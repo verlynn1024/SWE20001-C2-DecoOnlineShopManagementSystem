@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3.3.Bag_detail</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: 3.3.Bag_detail;
+		--web-view-id: n_3Bag_detail;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+		--web-is-overlay: true;
+	}
+	:root {
+		--web-view-ids: n_3Bag_detail;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#n_3Bag_detail {
+		position: absolute;
+		width: 1366px;
+		height: 1000px;
+		overflow: hidden;
+		--web-view-name: 3.3.Bag_detail;
+		--web-view-id: n_3Bag_detail;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+		--web-is-overlay: true;
+	}
+	@keyframes  {
+	
+	
+	}
+	#Header-Web {
+		position: absolute;
+		width: 1366px;
+		height: 1000px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		cursor: pointer;
+	}
+	#Transparency {
+		opacity: 0.4;
+		fill: rgba(159,159,159,1);
+	}
+	.Transparency {
+		overflow: visible;
+		position: absolute;
+		width: 1366px;
+		height: 1000px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Container-Header_bl {
+		fill: rgba(255,255,255,1);
+	}
+	.Container-Header_bl {
+		filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 1369px;
+		height: 67px;
+		left: 0px;
+		top: 0px;
+	}
+	#Logo-Text_bma {
+		position: absolute;
+		width: 149px;
+		height: 32px;
+		left: 59px;
+		top: 16px;
+		overflow: visible;
+	}
+	#LOZA_bmb {
+		left: 36px;
+		top: 5px;
+		position: absolute;
+		overflow: visible;
+		width: 114px;
+		height: 27px;
+		line-height: 27px;
+		margin-top: -1.5px;
+		text-align: left;
+		font-family: SF Pro Text;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		color: rgba(21,21,21,1);
+		letter-spacing: 1.25px;
+	}
+	#Logo_bmc {
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container_bmd {
+		fill: transparent;
+	}
+	.Container_bmd {
+		position: absolute;
+		overflow: visible;
+		width: 32px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+	}
+	#Logo_bme {
+		fill: rgba(21,21,21,1);
+	}
+	.Logo_bme {
+		overflow: visible;
+		position: absolute;
+		width: 28px;
+		height: 24px;
+		left: 2px;
+		top: 4px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Bag_bmf {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 1283px;
+		top: 20px;
+		overflow: visible;
+	}
+	#Container_bmg {
+		fill: transparent;
+	}
+	.Container_bmg {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#bag_bmh {
+		fill: rgba(0,0,0,1);
+	}
+	.bag_bmh {
+		overflow: visible;
+		position: absolute;
+		width: 20px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Ellipse_76 {
+		fill: rgba(255,123,84,1);
+	}
+	.Ellipse_76 {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 6px;
+		left: 18px;
+		top: 0px;
+	}
+	#Log-in_bmj {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 1235px;
+		top: 20px;
+		overflow: visible;
+	}
+	#Conntainer_bmk {
+		fill: transparent;
+	}
+	.Conntainer_bmk {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Log-in_bml {
+		fill: rgba(0,0,0,1);
+	}
+	.Log-in_bml {
+		overflow: visible;
+		position: absolute;
+		width: 22px;
+		height: 24px;
+		left: 1px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Search_bmm {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 1187px;
+		top: 20px;
+		overflow: visible;
+	}
+	#Container_bmn {
+		fill: transparent;
+	}
+	.Container_bmn {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Search_bmo {
+		fill: rgba(0,0,0,1);
+	}
+	.Search_bmo {
+		overflow: visible;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 2px;
+		top: 2px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Bag_pop-up {
+		position: absolute;
+		width: 353px;
+		height: 373px;
+		left: 1013px;
+		top: 64px;
+		overflow: visible;
+	}
+	#Container_bmq {
+		fill: rgba(255,255,255,1);
+	}
+	.Container_bmq {
+		position: absolute;
+		overflow: visible;
+		width: 353px;
+		height: 373px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_509 {
+		position: absolute;
+		width: 270px;
+		height: 91px;
+		left: 24px;
+		top: 258px;
+		overflow: visible;
+	}
+	#Product_Total {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 90px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(0,0,0,1);
+	}
+	#USD_4800_bmt {
+		left: 199px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 72px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(0,0,0,1);
+	}
+	#Primary-Button_bmu {
+		position: absolute;
+		width: 270px;
+		height: 49px;
+		left: 0px;
+		top: 42px;
+		overflow: visible;
+		--web-animation: fadein undefineds undefined;
+		--web-action-type: page;
+		--web-action-target: 4_1_Checkout.html;
+		cursor: pointer;
+		padding: 16px 104px 15px 104px;
+	}
+	#Primary-Button_bmv {
+		fill: rgba(255,178,107,1);
+	}
+	.Primary-Button_bmv {
+		position: absolute;
+		overflow: visible;
+		width: 270px;
+		height: 49px;
+		left: 0px;
+		top: 0px;
+	}
+	#Checkout {
+		left: 104px;
+		top: 16px;
+		position: absolute;
+		overflow: visible;
+		width: 63px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(21,21,21,1);
+	}
+	#Bag_Product-list {
+		position: absolute;
+		width: 270px;
+		height: 97px;
+		left: 24px;
+		top: 24px;
+		overflow: visible;
+	}
+	#Image-Product_bmy {
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container_bmz {
+		fill: rgba(239,239,239,1);
+	}
+	.Container_bmz {
+		position: absolute;
+		overflow: visible;
+		width: 80px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+	}
+	#Image_bm {
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Lule_bm {
+		left: 88px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 28px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,1);
+	}
+	#n__item_bm {
+		left: 88px;
+		top: 29px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,1);
+	}
+	#USD_1200_bm {
+		left: 200px;
+		top: 62px;
+		position: absolute;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,1);
+	}
+	#Line-Break_bm {
+		fill: rgba(233,233,233,1);
+	}
+	.Line-Break_bm {
+		position: absolute;
+		overflow: visible;
+		width: 270px;
+		height: 1px;
+		left: 0px;
+		top: 96px;
+	}
+	#Icon__Plus_bm {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 246px;
+		top: 26px;
+		overflow: visible;
+		padding: 6px 11px 6px 11px;
+	}
+	#Group_498_bm {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container-Button_bm {
+		fill: transparent;
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container-Button_bm {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Minus_bm {
+		fill: rgba(21,21,21,1);
+	}
+	.Minus_bm {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Minus_bna {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_bna {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Minus_bnb {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_bnb {
+		width: 12px;
+		height: 2px;
+		position: absolute;
+		overflow: visible;
+		transform: translate(0px, 0px) matrix(1,0,0,1,6,11) rotate(-90deg);
+		transform-origin: center;
+		top: 0.15px;
+		left: 0.15px;
+	}
+	#Icon__Minus_bnb {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 198px;
+		top: 26px;
+		overflow: visible;
+	}
+	#Container-Button_bnc {
+		fill: transparent;
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container-Button_bnc {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Minus_bnd {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_bnd {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Bag_Product-list_bne {
+		position: absolute;
+		width: 270px;
+		height: 97px;
+		left: 24px;
+		top: 137px;
+		overflow: visible;
+	}
+	#Betty_bnf {
+		left: 88px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,1);
+	}
+	#n__items_bng {
+		left: 88px;
+		top: 29px;
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,1);
+	}
+	#USD_3600_bnh {
+		left: 200px;
+		top: 62px;
+		position: absolute;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,1);
+	}
+	#Line-Break_bni {
+		fill: rgba(233,233,233,1);
+	}
+	.Line-Break_bni {
+		position: absolute;
+		overflow: visible;
+		width: 270px;
+		height: 1px;
+		left: 0px;
+		top: 96px;
+	}
+	#Icon__Plus_bnj {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 246px;
+		top: 26px;
+		overflow: visible;
+		padding: 6px 11px 6px 11px;
+	}
+	#Group_498_bnk {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container-Button_bnl {
+		fill: transparent;
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container-Button_bnl {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Minus_bnm {
+		fill: rgba(21,21,21,1);
+	}
+	.Minus_bnm {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Minus_bnn {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_bnn {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Minus_bno {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_bno {
+		width: 12px;
+		height: 2px;
+		position: absolute;
+		overflow: visible;
+		transform: translate(0px, 0px) matrix(1,0,0,1,6,11) rotate(-90deg);
+		transform-origin: center;
+		top: 0.15px;
+		left: 0.15px;
+	}
+	#Icon__Minus_bnp {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 198px;
+		top: 26px;
+		overflow: visible;
+	}
+	#Container-Button_bnq {
+		fill: transparent;
+		stroke: rgba(233,233,233,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Container-Button_bnq {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Minus_bnr {
+		fill: rgba(87,87,87,1);
+	}
+	.Minus_bnr {
+		position: absolute;
+		overflow: visible;
+		width: 12px;
+		height: 2px;
+		left: 6px;
+		top: 11px;
+	}
+	#Image-Product_bns {
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Container_bnt {
+		fill: rgba(239,239,239,1);
+	}
+	.Container_bnt {
+		position: absolute;
+		overflow: visible;
+		width: 80px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+	}
+	#Image_bnu {
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+</style>
+<script src="scripts/Bagdetails.js"></script>
+<script id="applicationScript" type="text/javascript" src="scripts/3_3.js"></script>
+</head>
+<body>
+<div id="n_3Bag_detail">
+	<div onclick="application.goBack()" id="Header-Web" class="Header_Web">
+		<svg class="Transparency" viewBox="0 0 1366 1000">
+			<path id="Transparency" d="M 0 0 L 1366 0 L 1366 1000 L 0 1000 L 0 0 Z">
+			</path>
+		</svg>
+		<svg class="Container-Header_bl">
+			<rect id="Container-Header_bl" rx="0" ry="0" x="0" y="0" width="1366" height="64">
+			</rect>
+		</svg>
+		<div id="Logo-Text_bma" class="Logo_Text">
+			<div id="LOZA_bmb">
+				<span>DECO</span>
+			</div>
+			<div id="Logo_bmc" class="Logo">
+				<svg class="Container_bmd">
+					<rect id="Container_bmd" rx="0" ry="0" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Logo_bme" viewBox="0 0 28 24">
+					<path id="Logo_bme" d="M 28 24 L 27.9990234375 24 L 23.05859375 24 L 13.99853515625 7.9990234375 L 4.94091796875 24 L 0 24 L 14.00048828125 0 L 27.99951171875 23.99853515625 L 28 24 Z M 18.11669921875 24 L 18.11572265625 24 L 9.88232421875 24 L 14.00048828125 15.9990234375 L 18.1162109375 23.99853515625 L 18.11669921875 24 Z">
+					</path>
+				</svg>
+			</div>
+		</div>
+		<div id="Bag_bmf" class="Bag">
+			<svg class="Container_bmg">
+				<rect id="Container_bmg" rx="0" ry="0" x="0" y="0" width="24" height="24">
+				</rect>
+			</svg>
+			<svg class="bag_bmh" viewBox="8.488 0 20 24">
+				<path id="bag_bmh" d="M 17.26032638549805 0 C 15.49218940734863 0 14.04314613342285 1.439058065414429 14.04314613342285 3.200626850128174 L 14.04314613342285 5.087811470031738 L 10.74671268463135 5.087811470031738 C 10.72224712371826 5.085936546325684 10.69872093200684 5.085936546325684 10.67425537109375 5.087811470031738 C 10.31103134155273 5.122498035430908 10.02590560913086 5.41219425201416 9.996731758117676 5.774064540863037 L 8.491127014160156 23.18719291687012 C 8.473247528076172 23.39625549316406 8.5438232421875 23.60251235961914 8.686855316162109 23.7571907043457 C 8.828946113586426 23.91187858581543 9.030325889587402 24 9.241110801696777 24 L 27.73477363586426 24 C 27.94555854797363 24 28.14692497253418 23.91281127929688 28.28996849060059 23.75812911987305 C 28.43206024169922 23.60344123840332 28.50357818603516 23.3962574005127 28.48569869995117 23.18719482421875 L 26.97915267944336 5.77406644821167 C 26.94621849060059 5.385939598083496 26.61968612670898 5.087812900543213 26.22916984558105 5.087812900543213 L 22.93369674682617 5.087812900543213 L 22.93369674682617 3.200628995895386 C 22.93369674682617 1.439084053039551 21.48925590515137 1.831047143241449e-06 19.72109603881836 1.831047143241449e-06 L 17.26032638549805 0 Z M 17.26032638549805 1.499993920326233 L 19.72205352783203 1.499993920326233 C 20.681884765625 1.499993920326233 21.42902565002441 2.244374752044678 21.42902565002441 3.200602769851685 L 21.42808532714844 5.08778715133667 L 15.54875183105469 5.08778715133667 L 15.54875183105469 3.200602769851685 C 15.54875183105469 2.244350671768188 16.30061721801758 1.499993801116943 17.26044464111328 1.499993801116943 Z M 11.4354362487793 6.588693141937256 L 14.04194259643555 6.588693141937256 L 14.04194259643555 8.813364028930664 L 14.04288291931152 8.814301490783691 C 14.05135154724121 9.22210693359375 14.38635444641113 9.547426223754883 14.79568576812744 9.547426223754883 C 15.20501804351807 9.547426223754883 15.53907012939453 9.22210693359375 15.54848861694336 8.814301490783691 L 15.54848861694336 6.58869457244873 L 21.42782211303711 6.58869457244873 L 21.42782211303711 8.814301490783691 C 21.43723106384277 9.221171379089355 21.77129173278809 9.547426223754883 22.18062400817871 9.547426223754883 C 22.58995819091797 9.547426223754883 22.92494773864746 9.221171379089355 22.93342971801758 8.814301490783691 L 22.93342971801758 6.589630126953125 L 25.5399341583252 6.589630126953125 L 26.91191291809082 22.50084495544434 L 10.06405735015869 22.49990844726562 L 11.4354362487793 6.588693141937256 Z">
+				</path>
+			</svg>
+			<svg class="Ellipse_76">
+				<ellipse id="Ellipse_76" rx="3" ry="3" cx="3" cy="3">
+				</ellipse>
+			</svg>
+		</div>
+		<div id="Log-in_bmj" class="Log_in">
+			<svg class="Conntainer_bmk">
+				<rect id="Conntainer_bmk" rx="0" ry="0" x="0" y="0" width="24" height="24">
+				</rect>
+			</svg>
+			<svg class="Log-in_bml" viewBox="16 10 22 24">
+				<path id="Log-in_bml" d="M 38.00000381469727 34 C 38.00000381469727 28.05849647521973 33.07551193237305 23.24109649658203 27.00000190734863 23.24109649658203 C 20.92449569702148 23.24109649658203 16 28.05879592895508 16 34 L 17.69260025024414 34 C 17.69260025024414 28.97259712219238 21.8598461151123 24.89679527282715 26.99987602233887 24.89679527282715 C 32.13990783691406 24.89679527282715 36.30715179443359 28.97259521484375 36.30715179443359 34 L 38.00000381469727 34 Z M 27.00000190734863 21.58629608154297 C 30.27066993713379 21.58629608154297 32.92342758178711 18.99294662475586 32.92342758178711 15.79269886016846 C 32.92342758178711 12.59349822998047 30.27057456970215 9.999998092651367 27.00000381469727 9.999998092651367 C 23.72943687438965 9.999998092651367 21.07658386230469 12.59334754943848 21.07658386230469 15.79269886016846 C 21.07658386230469 18.99309539794922 23.72943687438965 21.58629608154297 27.00000381469727 21.58629608154297 Z M 27.00000190734863 19.93044662475586 C 24.66350746154785 19.93044662475586 22.76898765563965 18.07887649536133 22.76898765563965 15.79254817962646 C 22.76898765563965 13.50738906860352 24.66334533691406 11.65464782714844 27.00000190734863 11.65464782714844 C 29.33666038513184 11.65464782714844 31.23101615905762 13.5073881149292 31.23101615905762 15.79254817962646 C 31.23101615905762 18.07887840270996 29.33666038513184 19.93044662475586 27.00000190734863 19.93044662475586 Z">
+				</path>
+			</svg>
+		</div>
+		<div id="Search_bmm" class="Search">
+			<svg class="Container_bmn">
+				<rect id="Container_bmn" rx="0" ry="0" x="0" y="0" width="24" height="24">
+				</rect>
+			</svg>
+			<svg class="Search_bmo" viewBox="14 14 20 20">
+				<path id="Search_bmo" d="M 22.86062812805176 14 C 17.97811698913574 14 14 17.97811698913574 14 22.86062812805176 C 14 27.74314117431641 17.97811698913574 31.72125434875488 22.86062812805176 31.72125434875488 C 24.97196578979492 31.72125434875488 26.91146469116211 30.97531509399414 28.43671417236328 29.73525428771973 L 32.43291091918945 33.7314567565918 C 32.79097366333008 34.08951568603516 33.37339401245117 34.08951568603516 33.7314567565918 33.7314567565918 C 34.08951568603516 33.37339401245117 34.08951568603516 32.80050659179688 33.7314567565918 32.44244766235352 L 29.73525428771973 28.44624519348145 C 30.97769737243652 26.92093467712402 31.72125434875488 24.97440719604492 31.72125434875488 22.86068725585938 C 31.72125434875488 17.97817802429199 27.74314117431641 14.00006103515625 22.86062812805176 14.00006103515625 Z M 22.86062812805176 15.83323287963867 C 26.75258445739746 15.83323287963867 29.88802337646484 18.96867370605469 29.88802337646484 22.86062812805176 C 29.88802337646484 26.75258445739746 26.75258445739746 29.88802337646484 22.86062812805176 29.88802337646484 C 18.96867370605469 29.88802337646484 15.83323287963867 26.75258445739746 15.83323287963867 22.86062812805176 C 15.83323287963867 18.96867370605469 18.96867370605469 15.83323287963867 22.86062812805176 15.83323287963867 Z">
+				</path>
+			</svg>
+		</div>
+		<div id="Bag_pop-up">
+			<svg class="Container_bmq">
+				<rect id="Container_bmq" rx="0" ry="0" x="0" y="0" width="353" height="373">
+				</rect>
+			</svg>
+			<div id="Group_509">
+				<div id="Product_Total">
+					<span>Product Total</span>
+				</div>
+				<div id="USD_4800_bmt">
+					<span>USD 4,800</span>
+				</div>
+				<div onclick="application.goToTargetView(event)" id="Primary-Button_bmu" class="Primary_Button">
+					<svg class="Primary-Button_bmv">
+						<rect id="Primary-Button_bmv" rx="4" ry="4" x="0" y="0" width="270" height="49">
+						</rect>
+					</svg>
+					<div id="Checkout">
+						<span>Checkout</span>
+					</div>
+				</div>
+			</div>
+			<div id="Bag_Product-list">
+				<div id="Image-Product_bmy">
+					<svg class="Container_bmz">
+						<rect id="Container_bmz" rx="0" ry="0" x="0" y="0" width="80" height="80">
+						</rect>
+					</svg>
+					<img id="Image_bm" src="Image_bm.png" srcset="Image_bm.png 1x, Image_bm@2x.png 2x">
+						
+				</div>
+				<div id="Lule_bm">
+					<span>Lule</span>
+				</div>
+				<div id="n__item_bm">
+					<span>1 item</span>
+				</div>
+				<div id="USD_1200_bm">
+					<span>USD 1,200</span>
+				</div>
+				<svg class="Line-Break_bm">
+					<rect id="Line-Break_bm" rx="0" ry="0" x="0" y="0" width="270" height="1">
+					</rect>
+				</svg>
+				<div id="Icon__Plus_bm" class="Icon___Plus">
+					<div id="Group_498_bm">
+						<svg class="Container-Button_bm" id="incrementButton">
+							<ellipse id="Container-Button_bm" rx="12" ry="12" cx="12" cy="12">
+							</ellipse>
+						</svg>
+						<svg class="Minus_bm">
+							<rect id="Minus_bm" rx="0" ry="0" x="0" y="0" width="12" height="2">
+							</rect>
+						</svg>
+						<svg class="Minus_bna">
+							<rect id="Minus_bna" rx="0" ry="0" x="0" y="0" width="12" height="2">
+							</rect>
+						</svg>
+					</div>
+					<svg class="Minus_bnb">
+						<rect id="Minus_bnb" rx="0" ry="0" x="0" y="0" width="12" height="2">
+						</rect>
+					</svg>
+				</div>
+				<div id="Icon__Minus_bnb" class="Icon___Minus">
+					<svg class="Container-Button_bnc" id="decrementButton">
+						<ellipse id="Container-Button_bnc" rx="12" ry="12" cx="12" cy="12">
+						</ellipse>
+					</svg>
+					<svg class="Minus_bnd">
+						<rect id="Minus_bnd" rx="0" ry="0" x="0" y="0" width="12" height="2">
+						</rect>
+					</svg>
+				</div>
+			</div>
+			<div id="Bag_Product-list_bne">
+				<div id="Betty_bnf">
+					<span>Betty</span>
+				</div>
+				<div id="n__items_bng">
+					<span>2 items</span>
+				</div>
+				<div id="USD_3600_bnh">
+					<span>USD 3,600</span>
+				</div>
+				<svg class="Line-Break_bni">
+					<rect id="Line-Break_bni" rx="0" ry="0" x="0" y="0" width="270" height="1">
+					</rect>
+				</svg>
+				<div id="Icon__Plus_bnj" class="Icon___Plus">
+					<div id="Group_498_bnk">
+						<svg class="Container-Button_bnl" id="incrementButton2">
+							<ellipse id="Container-Button_bnl" rx="12" ry="12" cx="12" cy="12">
+							</ellipse>
+						</svg>
+						<svg class="Minus_bnm">
+							<rect id="Minus_bnm" rx="0" ry="0" x="0" y="0" width="12" height="2">
+							</rect>
+						</svg>
+						<svg class="Minus_bnn">
+							<rect id="Minus_bnn" rx="0" ry="0" x="0" y="0" width="12" height="2">
+							</rect>
+						</svg>
+					</div>
+					<svg class="Minus_bno">
+						<rect id="Minus_bno" rx="0" ry="0" x="0" y="0" width="12" height="2">
+						</rect>
+					</svg>
+				</div>
+				<div id="Icon__Minus_bnp" class="Icon___Minus">
+					<svg class="Container-Button_bnq" id="decrementButton2">
+						<ellipse id="Container-Button_bnq" rx="12" ry="12" cx="12" cy="12">
+						</ellipse>
+					</svg>
+					<svg class="Minus_bnr">
+						<rect id="Minus_bnr" rx="0" ry="0" x="0" y="0" width="12" height="2">
+						</rect>
+					</svg>
+				</div>
+				<div id="Image-Product_bns">
+					<svg class="Container_bnt">
+						<rect id="Container_bnt" rx="0" ry="0" x="0" y="0" width="80" height="80">
+						</rect>
+					</svg>
+					<img id="Image_bnu" src="Image_bnu.png" srcset="Image_bnu.png 1x, Image_bnu@2x.png 2x">
+						
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
