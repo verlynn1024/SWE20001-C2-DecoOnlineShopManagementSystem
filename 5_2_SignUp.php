@@ -6,29 +6,41 @@ $dbname = "Deco_store";
 
 $conn = new mysqli($host, $username, $password, $dbname);
 
-if ($conn->connect_error) {
-    die("Database connection failure: " . $conn->connect_error);
+if ($conn) 
+{
+    echo "Database connection successful\n";
+}
+else
+{
+    echo "Database connection failure\n";
 }
 
-$sql_table = "Customers";
-
-// handles form submission
+// form submission handling 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
-    $phone_number = $_POST["phonenum"];
+    $name = $_POST["name"] ?? '';
+    $email = $_POST["email"] ?? '';
+    $password = password_hash($_POST["password"] ?? '', PASSWORD_DEFAULT);
+    $phone_number = $_POST["phonenum"] ?? '';
 
-    // inserts data into the customers table
-    $sql = "INSERT INTO customers (name, email, password, phone_number) VALUES ('$name', '$email', '$password', '$phone_number')";
+$sql_table = "customers";
 
-    if (mysqli_query($conn, $sql)) {
-        echo "Signup successful!";
-    } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }
+// insert data 
+$sql = "INSERT INTO customers (name, email, password, phone_number) VALUES ('$name', '$email', '$password', '$phone_number')";
+
+$result = mysqli_query($conn, $sql);
+if (!$result) 
+{
+    echo "Something is wrong with ", $sql;
+} 
+else 
+{
+    echo "Insert successful";
+}
+}
+else
+{
+    echo "Insert unsuccessful";
 }
 
-// Close the database connection
 mysqli_close($conn);
 ?>
