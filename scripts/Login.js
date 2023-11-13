@@ -23,15 +23,12 @@ function validateForm() {
         return false; 
     }
 
-    if (!password.match(passwordRegex)) {
-        alert('Password must contain at least 8 characters, including uppercase, lowercase, numbers, and special characters.');
-        return false; 
-    }
-
     return true; // Allow form submission if all checks pass
 }
 
 function login() {
+    var form = document.getElementById("loginform");
+
     // Get user inputs (email, phone number, password)
     var email = document.getElementById("email").value;
     var phonenum = document.getElementById("phonenum").value;
@@ -41,11 +38,13 @@ function login() {
     var isValid = validateForm();
 
     if (isValid) {
-        // Perform login action
-        alert("Login successful!!"); 
+        form.submit();
         window.location.href = "5_3_User_Account_Management.html";
     } else {
         alert("Login failed!!");
         document.getElementById("Continue_to_User_Site_bvg").setAttribute("disabled", "true");
     }
+
+    // Get form reference
+    var form = document.getElementById("loginform");
 }
