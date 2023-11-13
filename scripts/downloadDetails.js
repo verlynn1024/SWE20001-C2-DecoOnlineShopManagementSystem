@@ -14,6 +14,12 @@ function redirectToSettings(){
     window.location.href = '2_2_Inventory_Management___Settings.html';
 }
 
+function redirectToHome(){
+    console.log("redirect to home page");
+    window.location.href = '1_1_Home.html';
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
     function generateTextFile() {
         // Create a data object with the dynamic content
