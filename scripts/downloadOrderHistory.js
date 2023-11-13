@@ -39,28 +39,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Create an HTML template with placeholders
         const template = `
-Item 1 Name: {{Item Name 1}}
-Item 1 Quantity: {{Item Quantity 1}}
-Item 1 Total Price: {{Item Total Price 1}}
+        Item 1 Name: {{Item Name 1}}
+        Item 1 Quantity: {{Item Quantity 1}}
+        Item 1 Total Price: {{Item Total Price 1}}
 
-Item 2 Name: {{Item Name 2}}
-Item 2 Quantity: {{Item Quantity 2}}
-Item 2 Total Price: {{Item Total Price 2}}
+        Item 2 Name: {{Item Name 2}}
+        Item 2 Quantity: {{Item Quantity 2}}
+        Item 2 Total Price: {{Item Total Price 2}}
 
-Shipping: {{Shipping}}
-Total: {{Total}}
+        Shipping: {{Shipping}}
+        Total: {{Total}}
         `;
 
         // Replace placeholders with actual data
         const content = template.replace(/{{(.*?)}}/g, (match, key) => data[key.trim()]);
 
         // Create a Blob containing the text
-        const blob = new Blob([content], { type: 'text/plain' });
+        //const blob = new Blob([content], { type: 'text/plain' });
+        const element = document.createElement('div');
+        element.innerHTML = content;
+
+        html2pdf(element, {
+            margin: 10,
+            filename: 'order_history.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        });
 
         // Create a download link
         const downloadLink = document.getElementById('DownloadOrderHistoryLink');
         downloadLink.href = URL.createObjectURL(blob);
-        downloadLink.download = 'order_history.txt'; // Specify the file name here
+        downloadLink.download = 'order_history.pdf'; // Specify the file name here
     }
 
     // Find the "DownloadOrderHistoryLink" element and add a click event listener
