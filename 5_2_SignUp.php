@@ -15,39 +15,34 @@ else
     echo "Database connection failure\n";
 }
 
-// Handle the form submission
-if ($_SERVER["REQUEST_METHOD"] == "POST") 
+// form submission handling 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["name"] ?? '';
+    $email = $_POST["email"] ?? '';
+    $password = password_hash($_POST["password"] ?? '', PASSWORD_DEFAULT);
+    $phone_number = $_POST["phonenum"] ?? '';
+
+$sql_table = "customers";
+
+// insert data 
+$sql = "INSERT INTO customers (name, email, password, phone_number) VALUES ('$name', '$email', '$password', '$phone_number')";
+
+$result = mysqli_query($conn, $sql);
+if (!$result) 
 {
-    $entered_email = $_POST["email"];
-    $entered_phonenum = $_POST["phonenum"];
-    $entered_password = $_POST["password"];
-
-    // Query the database for the entered username
-    $sql = "SELECT * FROM customers WHERE email = '$entered_email'";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) 
-    {
-        // User exists, now check the password
-        $row = $result->fetch_assoc();
-        $stored_password = $row["password"];
-
-        if ($entered_password == $stored_password) 
-        {
-            echo "Login successful!"; 
-            header("Location: 5_3_User_Account_Management.html");
-            exit();
-        } 
-        else 
-        {
-            header("Location: 5_2_Login.html");
-        }
-    } 
-    else 
-    {
-        echo "Email not found.";
-    }
+    echo "Something is wrong with ", $sql;
+} 
+else 
+{
+    echo "Insert successful";
+    header("Location: 5_3_User_Account_Management.html");
+    exit();
+}
+}
+else
+{
+    echo "Insert unsuccessful";
 }
 
-$conn->close();
+mysqli_close($conn);
 ?>
