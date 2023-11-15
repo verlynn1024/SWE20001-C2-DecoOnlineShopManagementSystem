@@ -64,6 +64,11 @@ document.addEventListener("DOMContentLoaded", function () {
   
 });
 
+function redirectToNewin(){
+    console.log("redirect to home page");
+    window.location.href = '8_1_Product___New_In.html';
+}
+
 
 function redirectToHome(){
     console.log("redirect to home page");
