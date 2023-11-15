@@ -1792,6 +1792,26 @@
 			<div id="Personal_Information">
 				<span>Personal Information</span>
 			</div>
+			<?php include '4_2_Checkout_Payment_Method.php'; ?>
+			<!-- <?php 
+                include '4_2_Checkout_Payment_Method.php';
+                $result = $conn->query("SELECT email, address, post_code, city FROM Payments");
+                if ($result->num_rows > 0) 
+				{
+				    // Output data of each row
+				    while ($row = $result->fetch_assoc()) 
+				    {
+				        echo "Email: " . $row["email"] . "<br>";
+				        echo "Address: " . $row["address"] . "<br>";
+				        echo "Postcode: " . $row["post_code"] . "<br>";
+				        echo "City: " . $row["city"] . "<br>";
+				    }
+				} 
+				else 
+				{
+				    echo "No results found";
+				}
+            ?> -->
 			<svg class="Rectangle_47_">
 				<rect id="Rectangle_47_" rx="0" ry="0" x="0" y="0" width="718" height="1">
 				</rect>
