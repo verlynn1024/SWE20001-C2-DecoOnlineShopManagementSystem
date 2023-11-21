@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>1.1.Home</title>
 <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="1_1.css"/>
+<script src="scripts/home1.js"></script>
 <script id="applicationScript" type="text/javascript" src="1_1.js"></script>
 </head>
 <body>
@@ -20,7 +21,7 @@
 			</path>
 		</svg>
 		<div style="position:absolute;width:149px;height:32px;left:59px;top:16px;overflow:visible;" data-type="Symbol" data-name="Logo-Text" id="Logo-Text" class="Logo_Text">
-			<div data-type="Text" data-name="LOZA" id="LOZA">
+			<div data-type="Text" data-name="LOZA" id="LOZA" onClick="redirectToHome()">
 				<span>DECO</span>
 			</div>
 			<div style="position:absolute;width:32px;height:32px;left:0px;top:0px;overflow:visible;" data-type="Symbol" data-name="Logo" id="Logo" class="Logo">
@@ -35,7 +36,7 @@
 			</div>
 		</div>
 		<div style="position:absolute;width:120px;height:24px;left:1227px;top:21px;overflow:visible;" data-type="Group" data-name="right icons" id="right_icons">
-			<div style="position:absolute;width:24px;height:24px;left:96px;top:0px;overflow:visible;" data-type="Symbol" data-name="Bag" id="Bag" class="Bag">
+			<div style="position:absolute;width:24px;height:24px;left:96px;top:0px;overflow:visible;" data-type="Symbol" data-name="Bag" id="Bag" class="Bag" onClick="redirectToBag()" >
 				<svg data-type="Rectangle" data-name="Container" class="Container_b">
 					<rect id="Container_b" rx="0" ry="0" x="0" y="0" width="24" height="24">
 					</rect>
@@ -45,7 +46,7 @@
 					</path>
 				</svg>
 			</div>
-			<div style="position:absolute;width:24px;height:24px;left:48px;top:0px;overflow:visible;" data-type="Symbol" data-name="Log-in" onclick="application.goToTargetView(event)" id="Log-in" class="Log_in">
+			<div style="position:absolute;width:24px;height:24px;left:48px;top:0px;overflow:visible;" data-type="Symbol" data-name="Log-in" onclick="redirectToLogin()" id="Log-in" class="Log_in">
 				<svg data-type="Rectangle" data-name="Conntainer" class="Conntainer">
 					<rect id="Conntainer" rx="0" ry="0" x="0" y="0" width="24" height="24">
 					</rect>
@@ -55,7 +56,7 @@
 					</path>
 				</svg>
 			</div>
-			<div style="position:absolute;width:24px;height:24px;left:0px;top:0px;overflow:visible;" data-type="Symbol" data-name="About us 122 – 1" id="About_us_122__1" class="About_us_122___1">
+			<div style="position:absolute;width:24px;height:24px;left:0px;top:0px;overflow:visible;" data-type="Symbol" data-name="About us 122 – 1" id="About_us_122__1" class="About_us_122___1" onClick="redirectToMeetUs()">
 				<svg data-type="Rectangle" data-name="Conntainer" class="Conntainer_b">
 					<rect id="Conntainer_b" rx="0" ry="0" x="0" y="0" width="24" height="24">
 					</rect>
@@ -66,7 +67,7 @@
 				</svg>
 			</div>
 		</div>
-		<div style="position:absolute;width:164px;height:52px;left:1063px;top:7px;overflow:visible;" data-type="Symbol" data-name="SearchButton" id="SearchButton" class="SearchButton">
+		<div style="position:absolute;width:164px;height:52px;left:1063px;top:7px;overflow:visible;" data-type="Symbol" data-name="SearchButton" id="SearchButton" class="SearchButton" onClick="reedirectToSearch()">
 			<div style="position:absolute;width:164px;height:52px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="Group 2215" id="Group_2215">
 				<svg data-type="Rectangle" data-name="Rectangle 1919" class="Rectangle_1919">
 					<rect id="Rectangle_1919" rx="26" ry="26" x="0" y="0" width="69" height="52">
@@ -97,7 +98,7 @@
 		<img style="position:absolute;width:824px;height:480px;left:424px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Container-image" id="Container-image" src="skins/Container-image.png" srcset="skins/Container-image.png 1x, Container-image@2x.png 2x">
 			
 		<div style="position:absolute;width:400px;height:228px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="home office" id="home_office_cj">
-			<div data-type="Text" data-name="Shop all" onclick="application.goToTargetView(event)" id="Shop_all">
+			<div data-type="Text" data-name="Shop all" onclick="redirectToHomeOffice()" id="Shop_all">
 				<span>Shop all</span>
 			</div>
 			<div data-type="Text" data-name="It might be work, but it doesn’t have to feel like it. All it takes is ergonomic yet comfortable and stylish home office furniture to keep things organised, and the right lighting for the job." id="It_might_be_work_but_it_doesnt">
@@ -160,7 +161,7 @@
 								<rect id="Container-icon_c" rx="0" ry="0" x="0" y="0" width="24" height="24">
 								</rect>
 							</svg>
-							<svg data-type="Path" data-name="Fav" class="Fav_c" viewBox="0 6.297 21 18">
+							<svg data-type="Path" data-name="Fav" class="Fav_c" viewBox="0 6.297 21 18" id="Fav_c">
 								<path id="Fav_c" d="M 14.82962512969971 6.296895980834961 C 12.66241550445557 6.296895980834961 11.29405117034912 7.331398487091064 10.50003719329834 8.266969680786133 C 9.705982208251953 7.331398487091064 8.337658882141113 6.296895980834961 6.169610500335693 6.296895980834961 C 2.479056119918823 6.296895980834961 -3.814697038251325e-06 9.649751663208008 -3.814697038251325e-06 12.78060722351074 C -3.814697038251325e-06 17.33942413330078 8.929231643676758 23.44832992553711 9.947105407714844 24.12957191467285 C 10.1136302947998 24.2405834197998 10.30721569061279 24.29689598083496 10.49999618530273 24.29689598083496 C 10.6935920715332 24.29689598083496 10.88635635375977 24.24138832092285 11.05288791656494 24.12957191467285 C 12.07090950012207 23.44820594787598 20.99999618530273 17.33922004699707 20.99999618530273 12.78060722351074 C 20.99999618530273 9.649751663208008 18.52009963989258 6.296895980834961 14.8295431137085 6.296895980834961 Z">
 								</path>
 							</svg>
@@ -186,7 +187,7 @@
 								<rect id="Container-icon_dg" rx="0" ry="0" x="0" y="0" width="24" height="24">
 								</rect>
 							</svg>
-							<svg data-type="Path" data-name="Fav" class="Fav_dh" viewBox="0 6.297 21 18">
+							<svg data-type="Path" data-name="Fav" class="Fav_dh" viewBox="0 6.297 21 18" id="Fav_dh">
 								<path id="Fav_dh" d="M 14.82962512969971 6.296895980834961 C 12.66241550445557 6.296895980834961 11.29405117034912 7.331398487091064 10.50003719329834 8.266969680786133 C 9.705982208251953 7.331398487091064 8.337658882141113 6.296895980834961 6.169610500335693 6.296895980834961 C 2.479056119918823 6.296895980834961 -3.814697038251325e-06 9.649751663208008 -3.814697038251325e-06 12.78060722351074 C -3.814697038251325e-06 17.33942413330078 8.929231643676758 23.44832992553711 9.947105407714844 24.12957191467285 C 10.1136302947998 24.2405834197998 10.30721569061279 24.29689598083496 10.49999618530273 24.29689598083496 C 10.6935920715332 24.29689598083496 10.88635635375977 24.24138832092285 11.05288791656494 24.12957191467285 C 12.07090950012207 23.44820594787598 20.99999618530273 17.33922004699707 20.99999618530273 12.78060722351074 C 20.99999618530273 9.649751663208008 18.52009963989258 6.296895980834961 14.8295431137085 6.296895980834961 Z">
 								</path>
 							</svg>
@@ -212,7 +213,7 @@
 								<rect id="Container-icon_dp" rx="0" ry="0" x="0" y="0" width="24" height="24">
 								</rect>
 							</svg>
-							<svg data-type="Path" data-name="Fav" class="Fav_dq" viewBox="0 6.297 21 18">
+							<svg data-type="Path" data-name="Fav" class="Fav_dq" viewBox="0 6.297 21 18" id="Fav_dq">
 								<path id="Fav_dq" d="M 14.82962512969971 6.296895980834961 C 12.66241550445557 6.296895980834961 11.29405117034912 7.331398487091064 10.50003719329834 8.266969680786133 C 9.705982208251953 7.331398487091064 8.337658882141113 6.296895980834961 6.169610500335693 6.296895980834961 C 2.479056119918823 6.296895980834961 -3.814697038251325e-06 9.649751663208008 -3.814697038251325e-06 12.78060722351074 C -3.814697038251325e-06 17.33942413330078 8.929231643676758 23.44832992553711 9.947105407714844 24.12957191467285 C 10.1136302947998 24.2405834197998 10.30721569061279 24.29689598083496 10.49999618530273 24.29689598083496 C 10.6935920715332 24.29689598083496 10.88635635375977 24.24138832092285 11.05288791656494 24.12957191467285 C 12.07090950012207 23.44820594787598 20.99999618530273 17.33922004699707 20.99999618530273 12.78060722351074 C 20.99999618530273 9.649751663208008 18.52009963989258 6.296895980834961 14.8295431137085 6.296895980834961 Z">
 								</path>
 							</svg>
@@ -238,7 +239,7 @@
 								<rect id="Container-icon_dy" rx="0" ry="0" x="0" y="0" width="24" height="24">
 								</rect>
 							</svg>
-							<svg data-type="Path" data-name="Fav" class="Fav_dz" viewBox="0 6.297 21 18">
+							<svg data-type="Path" data-name="Fav" class="Fav_dz" viewBox="0 6.297 21 18" id="Fav_dz">
 								<path id="Fav_dz" d="M 14.82962512969971 6.296895980834961 C 12.66241550445557 6.296895980834961 11.29405117034912 7.331398487091064 10.50003719329834 8.266969680786133 C 9.705982208251953 7.331398487091064 8.337658882141113 6.296895980834961 6.169610500335693 6.296895980834961 C 2.479056119918823 6.296895980834961 -3.814697038251325e-06 9.649751663208008 -3.814697038251325e-06 12.78060722351074 C -3.814697038251325e-06 17.33942413330078 8.929231643676758 23.44832992553711 9.947105407714844 24.12957191467285 C 10.1136302947998 24.2405834197998 10.30721569061279 24.29689598083496 10.49999618530273 24.29689598083496 C 10.6935920715332 24.29689598083496 10.88635635375977 24.24138832092285 11.05288791656494 24.12957191467285 C 12.07090950012207 23.44820594787598 20.99999618530273 17.33922004699707 20.99999618530273 12.78060722351074 C 20.99999618530273 9.649751663208008 18.52009963989258 6.296895980834961 14.8295431137085 6.296895980834961 Z">
 								</path>
 							</svg>
@@ -440,7 +441,7 @@ on sales! " id="n__great_furniture__on_sales_">
 			</rect>
 		</svg>
 		<div style="position:absolute;width:448px;height:62px;left:463px;top:14px;overflow:visible;" data-type="Group" data-name="category-list" id="category-list">
-			<div style="position:absolute;width:64px;height:60px;left:384px;top:1px;overflow:visible;" data-type="Symbol" data-name="Lighthing" onclick="application.goToTargetView(event)" id="Lighthing" class="Lighthing">
+			<div style="position:absolute;width:64px;height:60px;left:384px;top:1px;overflow:visible;" data-type="Symbol" data-name="Lighthing" onclick="redirectToLights()" id="Lighthing" class="Lighthing">
 				<div data-type="Text" data-name="Lighting" id="Lighting">
 					<span>Lighting</span>
 				</div>
@@ -455,14 +456,14 @@ on sales! " id="n__great_furniture__on_sales_">
 					</svg>
 				</div>
 			</div>
-			<div style="position:absolute;width:64px;height:62px;left:288px;top:0px;overflow:visible;" data-type="Symbol" data-name="Bed" onclick="application.goToTargetView(event)" id="Bed" class="Bed">
+			<div style="position:absolute;width:64px;height:62px;left:288px;top:0px;overflow:visible;" data-type="Symbol" data-name="Bed" onclick="redirectToBeds()" id="Bed" class="Bed">
 				<div data-type="Text" data-name="Beds" id="Beds">
 					<span>Beds</span>
 				</div>
 				<img style="position:absolute;width:49px;height:40px;left:8px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Rectangle 1923" id="Rectangle_1923" src="skins/Rectangle_1923.png" srcset="skins/Rectangle_1923.png 1x, Rectangle_1923@2x.png 2x">
 					
 			</div>
-			<div style="position:absolute;width:64px;height:60px;left:192px;top:1px;overflow:visible;" data-type="Symbol" data-name="Chair" onclick="application.goToTargetView(event)" id="Chair" class="Chair">
+			<div style="position:absolute;width:64px;height:60px;left:192px;top:1px;overflow:visible;" data-type="Symbol" data-name="Chair" onclick="redirectToChairs()" id="Chair" class="Chair">
 				<div data-type="Text" data-name="Chairs" id="Chairs">
 					<span>Chairs</span>
 				</div>
@@ -477,7 +478,7 @@ on sales! " id="n__great_furniture__on_sales_">
 					</svg>
 				</div>
 			</div>
-			<div style="position:absolute;width:64px;height:60px;left:96px;top:1px;overflow:visible;" data-type="Symbol" data-name="Sofa" onclick="application.goToTargetView(event)" id="Sofa" class="Sofa">
+			<div style="position:absolute;width:64px;height:60px;left:96px;top:1px;overflow:visible;" data-type="Symbol" data-name="Sofa" onclick="redirectToSofas()" id="Sofa" class="Sofa">
 				<div data-type="Text" data-name="Sofas" id="Sofas">
 					<span>Sofas</span>
 				</div>
@@ -537,7 +538,7 @@ on sales! " id="n__great_furniture__on_sales_">
 	</div>
 	<div style="position:absolute;width:1248px;height:480px;left:59px;top:1579px;overflow:visible;" data-type="Group" data-name="bedroom" id="bedroom">
 		<div style="position:absolute;width:400px;height:227px;left:848px;top:0px;overflow:visible;" data-type="Group" data-name="text" id="text">
-			<div data-type="Text" data-name="Shop all" onclick="application.goToTargetView(event)" id="Shop_all_gs">
+			<div data-type="Text" data-name="Shop all" onclick="redirectToBedroom()" id="Shop_all_gs">
 				<span>Shop all</span>
 			</div>
 			<div data-type="Text" data-name="Everything you need for a bedroom retreat. Clever storage keeps you clutter-free, while bedroom lighting and curated bedding sets 
@@ -562,21 +563,21 @@ the mood." id="Everything_you_need_for_a_bedr">
 		</svg>
 	</div>
 	<div style="position:absolute;width:1248px;height:444px;left:59px;top:2699px;overflow:visible;" data-type="Group" data-name="rooms" id="rooms">
-		<div style="position:absolute;width:400px;height:444px;left:848px;top:0px;overflow:visible;" data-type="Group" data-name="image and text" onclick="application.goToTargetView(event)" id="image_and_text">
+		<div style="position:absolute;width:400px;height:444px;left:848px;top:0px;overflow:visible;" data-type="Group" data-name="image and text" onclick="redirectToBathroom()" id="image_and_text">
 			<div data-type="Text" data-name="Bathroom" id="Bathroom">
 				<span>Bathroom</span>
 			</div>
 			<img style="position:absolute;width:400px;height:400px;left:0px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Container-image" id="Container-image_g" src="skins/Container-image_cj.png" srcset="skins/Container-image_cj.png 1x, Container-image_cj@2x.png 2x">
 				
 		</div>
-		<div style="position:absolute;width:400px;height:444px;left:424px;top:0px;overflow:visible;" data-type="Group" data-name="image and text" onclick="application.goToTargetView(event)" id="image_and_text_g">
+		<div style="position:absolute;width:400px;height:444px;left:424px;top:0px;overflow:visible;" data-type="Group" data-name="image and text" onclick="redirectToDiningRoom()" id="image_and_text_g">
 			<img style="position:absolute;width:400px;height:400px;left:0px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Container-image" id="Container-image_ha" src="skins/Container-image_cl.png" srcset="skins/Container-image_cl.png 1x, Container-image_cl@2x.png 2x">
 				
 			<div data-type="Text" data-name="Dining Room" id="Dining_Room">
 				<span>Dining Room</span>
 			</div>
 		</div>
-		<div style="position:absolute;width:400px;height:444px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="image and text" onclick="application.goToTargetView(event)" id="image_and_text_ha">
+		<div style="position:absolute;width:400px;height:444px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="image and text" onclick="redirectToLivingRoom()" id="image_and_text_ha">
 			<div data-type="Text" data-name="Living Room" id="Living_Room">
 				<span>Living Room</span>
 			</div>
@@ -596,6 +597,11 @@ the mood." id="Everything_you_need_for_a_bedr">
 				<ellipse id="Point" rx="8" ry="8" cx="8" cy="8">
 				</ellipse>
 			</svg>
+			<div class="ItemInfoContainer">
+				<h3>Betty</h3>
+				<h6>Table</h6>
+				<h2>USD 2,000</h2>
+			</div>
 		</div>
 		<div style="position:absolute;width:40px;height:40px;left:1151px;top:270px;overflow:visible;" data-type="Symbol" data-name="Hover-point" id="Hover-point_hg" class="Hover_point">
 			<svg data-type="Ellipse" data-name="Background" class="Background_hh">
@@ -606,6 +612,11 @@ the mood." id="Everything_you_need_for_a_bedr">
 				<ellipse id="Point_hi" rx="8" ry="8" cx="8" cy="8">
 				</ellipse>
 			</svg>
+			<div class="ItemInfoContainer">
+				<h3>Betty</h3>
+				<h6>Chair</h6>
+				<h2>USD 2,000</h2>
+			</div>
 		</div>
 		<div style="position:absolute;width:40px;height:40px;left:274px;top:294px;overflow:visible;" data-type="Symbol" data-name="Hover-point" id="Hover-point_hj" class="Hover_point">
 			<svg data-type="Ellipse" data-name="Background" class="Background_hk">
@@ -616,6 +627,11 @@ the mood." id="Everything_you_need_for_a_bedr">
 				<ellipse id="Point_hl" rx="8" ry="8" cx="8" cy="8">
 				</ellipse>
 			</svg>
+			<div class="ItemInfoContainer">
+				<h3>Betty</h3>
+				<h6>Sofa</h6>
+				<h2>USD 2,000</h2>
+			</div>
 		</div>
 	</div>
 </div>
