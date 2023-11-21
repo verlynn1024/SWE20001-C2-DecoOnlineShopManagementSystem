@@ -43,5 +43,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function goToBagDetails() {
     // Redirect to the bag details page
-    window.location.href = "3_3_Bag_detail.html";
+    window.location.href = "3_3_Bag_detail_.html";
   }
