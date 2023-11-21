@@ -202,6 +202,7 @@
 	left: 2px;
 	top: 0px;
 	transform: matrix(1,0,0,1,0,0);
+	cursor: pointer;
 }
 #Log-in {
 	position: absolute;
@@ -268,6 +269,7 @@
 	left: 0px;
 	top: 0px;
 	transform: matrix(1,0,0,1,0,0);
+	cursor: pointer;
 }
 #SearchButton {
 	position: absolute;
@@ -348,6 +350,7 @@
 	left: 2px;
 	top: 2px;
 	transform: matrix(1,0,0,1,0,0);
+	cursor: pointer;
 }
 #Group_2239 {
 	position: absolute;
@@ -803,6 +806,7 @@
 	left: 1.5px;
 	top: 3.057px;
 	transform: matrix(1,0,0,1,0,0);
+	cursor: pointer;
 }
 #Product-list_di {
 	position: absolute;
@@ -3079,6 +3083,7 @@
 	stroke-linecap: butt;
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
+	cursor: pointer;
 }
 .Fav_ix {
 	overflow: visible;
@@ -3088,4 +3093,59 @@
 	left: 1.5px;
 	top: 3.057px;
 	transform: matrix(1,0,0,1,0,0);
+	cursor: pointer;
 }
+#Fav_c,#Fav_dz, #Fav_dq, #Fav_dh {
+  		cursor: pointer;
+	}
+
+	/* change the fill color of the heart icon to pink */
+	#Fav_c.clicked path, 
+	#Fav_dz.clicked path,
+	#Fav_dq.clicked path,
+	#Fav_dh.clicked path
+	{
+	  fill: red;
+	}
+
+	.Hover_point {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		overflow: visible;
+		cursor: pointer;
+	}
+
+	.ItemInfoContainer {
+		display: none;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		background-color: #fff;
+		padding: 30px;
+		border: 1px solid #ddd;
+	}
+
+	.Hover_point:hover .ItemInfoContainer {
+		display: block;
+	}
+
+	h3 {
+		margin: 0;
+		color: #333;
+		font-size: 16px; /* Set the font size to your desired value */
+	}
+
+	.ItemInfoContainer h6 {
+		margin: 0;
+		color: #333;
+		font-size: 16px; /* Set the font size to your desired value */
+		font-weight: normal; /* Set font-weight to normal (not bold) */
+	}
+
+	.ItemInfoContainer h2 {
+		margin: 0;
+		color: #333;
+		font-size: 16px; /* Set the font size to your desired value */
+		white-space: nowrap; /* Prevent the text from wrapping */
+	}
