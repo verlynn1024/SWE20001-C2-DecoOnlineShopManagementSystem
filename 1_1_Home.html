@@ -6,7 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>1.1.Home</title>
 <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="1_1.css"/>
-<script src="scripts/home1.js"></script>
 <script id="applicationScript" type="text/javascript" src="1_1.js"></script>
 </head>
 <body>
@@ -21,7 +20,7 @@
 			</path>
 		</svg>
 		<div style="position:absolute;width:149px;height:32px;left:59px;top:16px;overflow:visible;" data-type="Symbol" data-name="Logo-Text" id="Logo-Text" class="Logo_Text">
-			<div data-type="Text" data-name="LOZA" id="LOZA" onClick="redirectToHome()">
+			<div data-type="Text" data-name="LOZA" id="LOZA">
 				<span>DECO</span>
 			</div>
 			<div style="position:absolute;width:32px;height:32px;left:0px;top:0px;overflow:visible;" data-type="Symbol" data-name="Logo" id="Logo" class="Logo">
@@ -36,7 +35,7 @@
 			</div>
 		</div>
 		<div style="position:absolute;width:120px;height:24px;left:1227px;top:21px;overflow:visible;" data-type="Group" data-name="right icons" id="right_icons">
-			<div style="position:absolute;width:24px;height:24px;left:96px;top:0px;overflow:visible;" data-type="Symbol" data-name="Bag" id="Bag" class="Bag" onClick="redirectToBag()" >
+			<div style="position:absolute;width:24px;height:24px;left:96px;top:0px;overflow:visible;" data-type="Symbol" data-name="Bag" id="Bag" class="Bag">
 				<svg data-type="Rectangle" data-name="Container" class="Container_b">
 					<rect id="Container_b" rx="0" ry="0" x="0" y="0" width="24" height="24">
 					</rect>
@@ -46,7 +45,7 @@
 					</path>
 				</svg>
 			</div>
-			<div style="position:absolute;width:24px;height:24px;left:48px;top:0px;overflow:visible;" data-type="Symbol" data-name="Log-in" onclick="redirectToLogin()" id="Log-in" class="Log_in">
+			<div style="position:absolute;width:24px;height:24px;left:48px;top:0px;overflow:visible;" data-type="Symbol" data-name="Log-in" onclick="application.goToTargetView(event)" id="Log-in" class="Log_in">
 				<svg data-type="Rectangle" data-name="Conntainer" class="Conntainer">
 					<rect id="Conntainer" rx="0" ry="0" x="0" y="0" width="24" height="24">
 					</rect>
@@ -56,7 +55,7 @@
 					</path>
 				</svg>
 			</div>
-			<div style="position:absolute;width:24px;height:24px;left:0px;top:0px;overflow:visible;" data-type="Symbol" data-name="About us 122 – 1" id="About_us_122__1" class="About_us_122___1" onClick="redirectToMeetUs()">
+			<div style="position:absolute;width:24px;height:24px;left:0px;top:0px;overflow:visible;" data-type="Symbol" data-name="About us 122 – 1" id="About_us_122__1" class="About_us_122___1">
 				<svg data-type="Rectangle" data-name="Conntainer" class="Conntainer_b">
 					<rect id="Conntainer_b" rx="0" ry="0" x="0" y="0" width="24" height="24">
 					</rect>
@@ -67,7 +66,7 @@
 				</svg>
 			</div>
 		</div>
-		<div style="position:absolute;width:164px;height:52px;left:1063px;top:7px;overflow:visible;" data-type="Symbol" data-name="SearchButton" id="SearchButton" class="SearchButton" onClick="reedirectToSearch()">
+		<div style="position:absolute;width:164px;height:52px;left:1063px;top:7px;overflow:visible;" data-type="Symbol" data-name="SearchButton" id="SearchButton" class="SearchButton">
 			<div style="position:absolute;width:164px;height:52px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="Group 2215" id="Group_2215">
 				<svg data-type="Rectangle" data-name="Rectangle 1919" class="Rectangle_1919">
 					<rect id="Rectangle_1919" rx="26" ry="26" x="0" y="0" width="69" height="52">
@@ -95,10 +94,10 @@
 		</div>
 	</div>
 	<div style="position:absolute;width:1248px;height:480px;left:59px;top:1019px;overflow:visible;" data-type="Group" data-name="home office" id="home_office">
-		<img style="position:absolute;width:824px;height:480px;left:424px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Container-image" id="Container-image" src="skins/Container-image.png" srcset="skins/Container-image.png 1x, Container-image@2x.png 2x">
+		<img style="position:absolute;width:824px;height:480px;left:424px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Container-image" id="Container-image" src="skins/Container-image.png" srcset="skins/RoomFur_1.png 1x, Container-image@2x.png 2x">
 			
 		<div style="position:absolute;width:400px;height:228px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="home office" id="home_office_cj">
-			<div data-type="Text" data-name="Shop all" onclick="redirectToHomeOffice()" id="Shop_all">
+			<div data-type="Text" data-name="Shop all" onclick="application.goToTargetView(event)" id="Shop_all">
 				<span>Shop all</span>
 			</div>
 			<div data-type="Text" data-name="It might be work, but it doesn’t have to feel like it. All it takes is ergonomic yet comfortable and stylish home office furniture to keep things organised, and the right lighting for the job." id="It_might_be_work_but_it_doesnt">
@@ -147,21 +146,21 @@
 						<span>USD 2,000</span>
 					</div>
 					<div data-type="Text" data-name="Betty" id="Betty_c">
-						<span>Chairo</span>
+						<span>Betty</span>
 					</div>
 					<div style="position:absolute;width:294px;height:294px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="Product Image" id="Product_Image_c">
 						<svg data-type="Rectangle" data-name="Container" class="Container_c">
 							<rect id="Container_c" rx="0" ry="0" x="0" y="0" width="294" height="294">
 							</rect>
 						</svg>
-						<img style="position:absolute;width:240px;height:240px;left:27px;top:27px;overflow:visible;" data-type="Rectangle" data-name="Image-Product" id="Image-Product_c" src="skins/Image-Product_bka.png" srcset="skins/Image-Product_bka.png 1x, Image-Product_bka@2x.png 2x">
+						<img style="position:absolute;width:240px;height:240px;left:27px;top:27px;overflow:visible;" data-type="Rectangle" data-name="Image-Product" id="Image-Product_c" src="skins/Image-Product_c.png" srcset="skins/BlueChair_1.png 1x, Image-Product_c@2x.png 2x">
 							
 						<div style="position:absolute;width:24px;height:24px;left:256px;top:14px;overflow:visible;" data-type="Symbol" data-name="icon-fav" id="icon-fav_c" class="icon_fav">
 							<svg data-type="Rectangle" data-name="Container-icon" class="Container-icon_c">
 								<rect id="Container-icon_c" rx="0" ry="0" x="0" y="0" width="24" height="24">
 								</rect>
 							</svg>
-							<svg data-type="Path" data-name="Fav" class="Fav_c" viewBox="0 6.297 21 18" id="Fav_c">
+							<svg data-type="Path" data-name="Fav" class="Fav_c" viewBox="0 6.297 21 18">
 								<path id="Fav_c" d="M 14.82962512969971 6.296895980834961 C 12.66241550445557 6.296895980834961 11.29405117034912 7.331398487091064 10.50003719329834 8.266969680786133 C 9.705982208251953 7.331398487091064 8.337658882141113 6.296895980834961 6.169610500335693 6.296895980834961 C 2.479056119918823 6.296895980834961 -3.814697038251325e-06 9.649751663208008 -3.814697038251325e-06 12.78060722351074 C -3.814697038251325e-06 17.33942413330078 8.929231643676758 23.44832992553711 9.947105407714844 24.12957191467285 C 10.1136302947998 24.2405834197998 10.30721569061279 24.29689598083496 10.49999618530273 24.29689598083496 C 10.6935920715332 24.29689598083496 10.88635635375977 24.24138832092285 11.05288791656494 24.12957191467285 C 12.07090950012207 23.44820594787598 20.99999618530273 17.33922004699707 20.99999618530273 12.78060722351074 C 20.99999618530273 9.649751663208008 18.52009963989258 6.296895980834961 14.8295431137085 6.296895980834961 Z">
 								</path>
 							</svg>
@@ -173,21 +172,21 @@
 						<span>USD 2,000</span>
 					</div>
 					<div data-type="Text" data-name="Betty" id="Betty_db">
-						<span>Paula</span>
+						<span>Betty</span>
 					</div>
 					<div style="position:absolute;width:294px;height:294px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="Product Image" id="Product_Image_dc">
 						<svg data-type="Rectangle" data-name="Container" class="Container_dd">
 							<rect id="Container_dd" rx="0" ry="0" x="0" y="0" width="294" height="294">
 							</rect>
 						</svg>
-						<img style="position:absolute;width:240px;height:240px;left:27px;top:27px;overflow:visible;" data-type="Rectangle" data-name="Image-Product" id="Image-Product_de" src="skins/Image-Product_bki.png" srcset="skins/Image-Product_bki.png 1x, Image-Product_bki@2x.png 2x">
+						<img style="position:absolute;width:240px;height:240px;left:27px;top:27px;overflow:visible;" data-type="Rectangle" data-name="Image-Product" id="Image-Product_de" src="skins/Image-Product_de.png" srcset="skins/BrownChair_1.png 1x, Image-Product_de@2x.png 2x">
 							
 						<div style="position:absolute;width:24px;height:24px;left:256px;top:14px;overflow:visible;" data-type="Symbol" data-name="icon-fav" id="icon-fav_df" class="icon_fav">
 							<svg data-type="Rectangle" data-name="Container-icon" class="Container-icon_dg">
 								<rect id="Container-icon_dg" rx="0" ry="0" x="0" y="0" width="24" height="24">
 								</rect>
 							</svg>
-							<svg data-type="Path" data-name="Fav" class="Fav_dh" viewBox="0 6.297 21 18" id="Fav_dh">
+							<svg data-type="Path" data-name="Fav" class="Fav_dh" viewBox="0 6.297 21 18">
 								<path id="Fav_dh" d="M 14.82962512969971 6.296895980834961 C 12.66241550445557 6.296895980834961 11.29405117034912 7.331398487091064 10.50003719329834 8.266969680786133 C 9.705982208251953 7.331398487091064 8.337658882141113 6.296895980834961 6.169610500335693 6.296895980834961 C 2.479056119918823 6.296895980834961 -3.814697038251325e-06 9.649751663208008 -3.814697038251325e-06 12.78060722351074 C -3.814697038251325e-06 17.33942413330078 8.929231643676758 23.44832992553711 9.947105407714844 24.12957191467285 C 10.1136302947998 24.2405834197998 10.30721569061279 24.29689598083496 10.49999618530273 24.29689598083496 C 10.6935920715332 24.29689598083496 10.88635635375977 24.24138832092285 11.05288791656494 24.12957191467285 C 12.07090950012207 23.44820594787598 20.99999618530273 17.33922004699707 20.99999618530273 12.78060722351074 C 20.99999618530273 9.649751663208008 18.52009963989258 6.296895980834961 14.8295431137085 6.296895980834961 Z">
 								</path>
 							</svg>
@@ -199,21 +198,21 @@
 						<span>USD 2,000</span>
 					</div>
 					<div data-type="Text" data-name="Betty" id="Betty_dk">
-						<span>Kate</span>
+						<span>Betty</span>
 					</div>
 					<div style="position:absolute;width:294px;height:294px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="Product Image" id="Product_Image_dl">
 						<svg data-type="Rectangle" data-name="Container" class="Container_dm">
 							<rect id="Container_dm" rx="0" ry="0" x="0" y="0" width="294" height="294">
 							</rect>
 						</svg>
-						<img style="position:absolute;width:240px;height:240px;left:27px;top:27px;overflow:visible;" data-type="Rectangle" data-name="Image-Product" id="Image-Product_dn" src="skins/Image-Product_bkr.png" srcset="skins/Image-Product_bkr.png 1x, Image-Product_bkr@2x.png 2x">
+						<img style="position:absolute;width:240px;height:240px;left:27px;top:27px;overflow:visible;" data-type="Rectangle" data-name="Image-Product" id="Image-Product_dn" src="skins/Image-Product_dn.png" srcset="skins/GreyChair_1.png 1x, Image-Product_dn@2x.png 2x">
 							
 						<div style="position:absolute;width:24px;height:24px;left:256px;top:14px;overflow:visible;" data-type="Symbol" data-name="icon-fav" id="icon-fav_do" class="icon_fav">
 							<svg data-type="Rectangle" data-name="Container-icon" class="Container-icon_dp">
 								<rect id="Container-icon_dp" rx="0" ry="0" x="0" y="0" width="24" height="24">
 								</rect>
 							</svg>
-							<svg data-type="Path" data-name="Fav" class="Fav_dq" viewBox="0 6.297 21 18" id="Fav_dq">
+							<svg data-type="Path" data-name="Fav" class="Fav_dq" viewBox="0 6.297 21 18">
 								<path id="Fav_dq" d="M 14.82962512969971 6.296895980834961 C 12.66241550445557 6.296895980834961 11.29405117034912 7.331398487091064 10.50003719329834 8.266969680786133 C 9.705982208251953 7.331398487091064 8.337658882141113 6.296895980834961 6.169610500335693 6.296895980834961 C 2.479056119918823 6.296895980834961 -3.814697038251325e-06 9.649751663208008 -3.814697038251325e-06 12.78060722351074 C -3.814697038251325e-06 17.33942413330078 8.929231643676758 23.44832992553711 9.947105407714844 24.12957191467285 C 10.1136302947998 24.2405834197998 10.30721569061279 24.29689598083496 10.49999618530273 24.29689598083496 C 10.6935920715332 24.29689598083496 10.88635635375977 24.24138832092285 11.05288791656494 24.12957191467285 C 12.07090950012207 23.44820594787598 20.99999618530273 17.33922004699707 20.99999618530273 12.78060722351074 C 20.99999618530273 9.649751663208008 18.52009963989258 6.296895980834961 14.8295431137085 6.296895980834961 Z">
 								</path>
 							</svg>
@@ -232,14 +231,14 @@
 							<rect id="Container_dv" rx="0" ry="0" x="0" y="0" width="294" height="294">
 							</rect>
 						</svg>
-						<img style="position:absolute;width:240px;height:240px;left:27px;top:27px;overflow:visible;" data-type="Rectangle" data-name="Image-Product" id="Image-Product_dw" src="skins/Image-Product_dw.png" srcset="skins/Image-Product_dw.png 1x, Image-Product_dw@2x.png 2x">
+						<img style="position:absolute;width:240px;height:240px;left:27px;top:27px;overflow:visible;" data-type="Rectangle" data-name="Image-Product" id="Image-Product_dw" src="skins/Image-Product_dw.png" srcset="skins/BlackChair_1.png 1x, Image-Product_dw@2x.png 2x">
 							
 						<div style="position:absolute;width:24px;height:24px;left:256px;top:14px;overflow:visible;" data-type="Symbol" data-name="icon-fav" id="icon-fav_dx" class="icon_fav">
 							<svg data-type="Rectangle" data-name="Container-icon" class="Container-icon_dy">
 								<rect id="Container-icon_dy" rx="0" ry="0" x="0" y="0" width="24" height="24">
 								</rect>
 							</svg>
-							<svg data-type="Path" data-name="Fav" class="Fav_dz" viewBox="0 6.297 21 18" id="Fav_dz">
+							<svg data-type="Path" data-name="Fav" class="Fav_dz" viewBox="0 6.297 21 18">
 								<path id="Fav_dz" d="M 14.82962512969971 6.296895980834961 C 12.66241550445557 6.296895980834961 11.29405117034912 7.331398487091064 10.50003719329834 8.266969680786133 C 9.705982208251953 7.331398487091064 8.337658882141113 6.296895980834961 6.169610500335693 6.296895980834961 C 2.479056119918823 6.296895980834961 -3.814697038251325e-06 9.649751663208008 -3.814697038251325e-06 12.78060722351074 C -3.814697038251325e-06 17.33942413330078 8.929231643676758 23.44832992553711 9.947105407714844 24.12957191467285 C 10.1136302947998 24.2405834197998 10.30721569061279 24.29689598083496 10.49999618530273 24.29689598083496 C 10.6935920715332 24.29689598083496 10.88635635375977 24.24138832092285 11.05288791656494 24.12957191467285 C 12.07090950012207 23.44820594787598 20.99999618530273 17.33922004699707 20.99999618530273 12.78060722351074 C 20.99999618530273 9.649751663208008 18.52009963989258 6.296895980834961 14.8295431137085 6.296895980834961 Z">
 								</path>
 							</svg>
@@ -391,7 +390,7 @@
 				<rect id="Container_fd" rx="0" ry="0" x="0" y="0" width="400" height="240">
 				</rect>
 			</svg>
-			<img style="position:absolute;width:212px;height:240px;left:188px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Image-Product" id="Image-Product_fe" src="skins/Image-Product_i.png" srcset="skins/Image-Product_i.png 1x, Image-Product_fe@2x.png 2x">
+			<img style="position:absolute;width:212px;height:240px;left:188px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Image-Product" id="Image-Product_fe" src="skins/Image-Product_fe.png" srcset="skins/WhiteChair_1.png 1x, Image-Product_fe@2x.png 2x">
 				
 			<div style="position:absolute;width:160px;height:120px;left:24px;top:40px;overflow:visible;" data-type="Group" data-name="Promotion-text" id="Promotion-text">
 				<div data-type="Text" data-name="$100" id="n_00">
@@ -423,7 +422,7 @@ on sales! " id="n__great_furniture__on_sales_">
 				<rect id="Container_fo" rx="0" ry="0" x="0" y="0" width="400" height="240">
 				</rect>
 			</svg>
-			<img style="position:absolute;width:212px;height:240px;left:188px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Image-Product" id="Image-Product_fp" src="skins/Image-Product_jb.png" srcset="skins/Image-Product_jb.png 1x, Image-Product_jb@2x.png 2x">
+			<img style="position:absolute;width:212px;height:240px;left:188px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Image-Product" id="Image-Product_fp" src="skins/Image-Product_fp.png" srcset="skins/BlueChair_1.png 1x, Image-Product_fp@2x.png 2x">
 				
 			<div style="position:absolute;width:160px;height:92px;left:24px;top:40px;overflow:visible;" data-type="Group" data-name="Promotion-text" id="Promotion-text_fq">
 				<div data-type="Text" data-name="$50" id="n_0">
@@ -441,7 +440,7 @@ on sales! " id="n__great_furniture__on_sales_">
 			</rect>
 		</svg>
 		<div style="position:absolute;width:448px;height:62px;left:463px;top:14px;overflow:visible;" data-type="Group" data-name="category-list" id="category-list">
-			<div style="position:absolute;width:64px;height:60px;left:384px;top:1px;overflow:visible;" data-type="Symbol" data-name="Lighthing" onclick="redirectToLights()" id="Lighthing" class="Lighthing">
+			<div style="position:absolute;width:64px;height:60px;left:384px;top:1px;overflow:visible;" data-type="Symbol" data-name="Lighthing" onclick="application.goToTargetView(event)" id="Lighthing" class="Lighthing">
 				<div data-type="Text" data-name="Lighting" id="Lighting">
 					<span>Lighting</span>
 				</div>
@@ -456,14 +455,14 @@ on sales! " id="n__great_furniture__on_sales_">
 					</svg>
 				</div>
 			</div>
-			<div style="position:absolute;width:64px;height:62px;left:288px;top:0px;overflow:visible;" data-type="Symbol" data-name="Bed" onclick="redirectToBeds()" id="Bed" class="Bed">
+			<div style="position:absolute;width:64px;height:62px;left:288px;top:0px;overflow:visible;" data-type="Symbol" data-name="Bed" onclick="application.goToTargetView(event)" id="Bed" class="Bed">
 				<div data-type="Text" data-name="Beds" id="Beds">
 					<span>Beds</span>
 				</div>
-				<img style="position:absolute;width:49px;height:40px;left:8px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Rectangle 1923" id="Rectangle_1923" src="skins/Rectangle_1923.png" srcset="skins/Rectangle_1923.png 1x, Rectangle_1923@2x.png 2x">
+				<img style="position:absolute;width:49px;height:40px;left:8px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Rectangle 1923" id="Rectangle_1923" src="skins/Rectangle_1923.png" srcset="skins/Rectangle_1.png 1x, Rectangle_1923@2x.png 2x">
 					
 			</div>
-			<div style="position:absolute;width:64px;height:60px;left:192px;top:1px;overflow:visible;" data-type="Symbol" data-name="Chair" onclick="redirectToChairs()" id="Chair" class="Chair">
+			<div style="position:absolute;width:64px;height:60px;left:192px;top:1px;overflow:visible;" data-type="Symbol" data-name="Chair" onclick="application.goToTargetView(event)" id="Chair" class="Chair">
 				<div data-type="Text" data-name="Chairs" id="Chairs">
 					<span>Chairs</span>
 				</div>
@@ -478,7 +477,7 @@ on sales! " id="n__great_furniture__on_sales_">
 					</svg>
 				</div>
 			</div>
-			<div style="position:absolute;width:64px;height:60px;left:96px;top:1px;overflow:visible;" data-type="Symbol" data-name="Sofa" onclick="redirectToSofas()" id="Sofa" class="Sofa">
+			<div style="position:absolute;width:64px;height:60px;left:96px;top:1px;overflow:visible;" data-type="Symbol" data-name="Sofa" onclick="application.goToTargetView(event)" id="Sofa" class="Sofa">
 				<div data-type="Text" data-name="Sofas" id="Sofas">
 					<span>Sofas</span>
 				</div>
@@ -538,7 +537,7 @@ on sales! " id="n__great_furniture__on_sales_">
 	</div>
 	<div style="position:absolute;width:1248px;height:480px;left:59px;top:1579px;overflow:visible;" data-type="Group" data-name="bedroom" id="bedroom">
 		<div style="position:absolute;width:400px;height:227px;left:848px;top:0px;overflow:visible;" data-type="Group" data-name="text" id="text">
-			<div data-type="Text" data-name="Shop all" onclick="redirectToBedroom()" id="Shop_all_gs">
+			<div data-type="Text" data-name="Shop all" onclick="application.goToTargetView(event)" id="Shop_all_gs">
 				<span>Shop all</span>
 			</div>
 			<div data-type="Text" data-name="Everything you need for a bedroom retreat. Clever storage keeps you clutter-free, while bedroom lighting and curated bedding sets 
@@ -553,35 +552,40 @@ the mood." id="Everything_you_need_for_a_bedr">
 				</rect>
 			</svg>
 		</div>
-		<img style="position:absolute;width:824px;height:480px;left:0px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Container-image" id="Container-image_gw" src="skins/Container-image_cf.png" srcset="skins/Container-image_cf.png 1x, Container-image_cf@2x.png 2x">
+		<img style="position:absolute;width:824px;height:480px;left:0px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Container-image" id="Container-image_gw" src="skins/Container-image_gw.png" srcset="skins/Bedroom_1.png 1x, Container-image_gw@2x.png 2x">
 			
 	</div>
 	<div style="position:absolute;width:1248px;height:69px;left:59px;top:3281px;overflow:visible;" data-type="Group" data-name="Group 2238" id="Group_2238">
+		<div style="position:absolute;width:174px;height:28px;left:0px;top:41px;overflow:visible;" data-type="Group" data-name="arrows" id="arrows">
+			<div data-type="Text" data-name="Recently Viewed" id="Recently_Viewed">
+				<span>Recently Viewed</span>
+			</div>
+		</div>
 		<svg data-type="Rectangle" data-name="Line-Break" class="Line-Break">
 			<rect id="Line-Break" rx="0" ry="0" x="0" y="0" width="1248" height="1">
 			</rect>
 		</svg>
 	</div>
 	<div style="position:absolute;width:1248px;height:444px;left:59px;top:2699px;overflow:visible;" data-type="Group" data-name="rooms" id="rooms">
-		<div style="position:absolute;width:400px;height:444px;left:848px;top:0px;overflow:visible;" data-type="Group" data-name="image and text" onclick="redirectToBathroom()" id="image_and_text">
+		<div style="position:absolute;width:400px;height:444px;left:848px;top:0px;overflow:visible;" data-type="Group" data-name="image and text" onclick="application.goToTargetView(event)" id="image_and_text">
 			<div data-type="Text" data-name="Bathroom" id="Bathroom">
 				<span>Bathroom</span>
 			</div>
-			<img style="position:absolute;width:400px;height:400px;left:0px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Container-image" id="Container-image_g" src="skins/Container-image_cj.png" srcset="skins/Container-image_cj.png 1x, Container-image_cj@2x.png 2x">
+			<img style="position:absolute;width:400px;height:400px;left:0px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Container-image" id="Container-image_g" src="skins/Container-image_g.png" srcset="skins/Bathroom.png 1x, Container-image_g@2x.png 2x">
 				
 		</div>
-		<div style="position:absolute;width:400px;height:444px;left:424px;top:0px;overflow:visible;" data-type="Group" data-name="image and text" onclick="redirectToDiningRoom()" id="image_and_text_g">
-			<img style="position:absolute;width:400px;height:400px;left:0px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Container-image" id="Container-image_ha" src="skins/Container-image_cl.png" srcset="skins/Container-image_cl.png 1x, Container-image_cl@2x.png 2x">
+		<div style="position:absolute;width:400px;height:444px;left:424px;top:0px;overflow:visible;" data-type="Group" data-name="image and text" onclick="application.goToTargetView(event)" id="image_and_text_g">
+			<img style="position:absolute;width:400px;height:400px;left:0px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Container-image" id="Container-image_ha" src="skins/Container-image_ha.png" srcset="skins/DiningRoom.png 1x, Container-image_ha@2x.png 2x">
 				
 			<div data-type="Text" data-name="Dining Room" id="Dining_Room">
 				<span>Dining Room</span>
 			</div>
 		</div>
-		<div style="position:absolute;width:400px;height:444px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="image and text" onclick="redirectToLivingRoom()" id="image_and_text_ha">
+		<div style="position:absolute;width:400px;height:444px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="image and text" onclick="application.goToTargetView(event)" id="image_and_text_ha">
 			<div data-type="Text" data-name="Living Room" id="Living_Room">
 				<span>Living Room</span>
 			</div>
-			<img style="position:absolute;width:400px;height:400px;left:0px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Container-image" id="Container-image_hb" src="skins/Container-image_cp.png" srcset="skins/Container-image_cp.png 1x, Container-image_cp@2x.png 2x">
+			<img style="position:absolute;width:400px;height:400px;left:0px;top:0px;overflow:visible;" data-type="Rectangle" data-name="Container-image" id="Container-image_hb" src="skins/Container-image_hb.png" srcset="skins/LivingRoom.png 1x, Container-image_hb@2x.png 2x">
 				
 		</div>
 	</div>
@@ -597,11 +601,6 @@ the mood." id="Everything_you_need_for_a_bedr">
 				<ellipse id="Point" rx="8" ry="8" cx="8" cy="8">
 				</ellipse>
 			</svg>
-			<div class="ItemInfoContainer">
-				<h3>Betty</h3>
-				<h6>Table</h6>
-				<h2>USD 2,000</h2>
-			</div>
 		</div>
 		<div style="position:absolute;width:40px;height:40px;left:1151px;top:270px;overflow:visible;" data-type="Symbol" data-name="Hover-point" id="Hover-point_hg" class="Hover_point">
 			<svg data-type="Ellipse" data-name="Background" class="Background_hh">
@@ -612,11 +611,6 @@ the mood." id="Everything_you_need_for_a_bedr">
 				<ellipse id="Point_hi" rx="8" ry="8" cx="8" cy="8">
 				</ellipse>
 			</svg>
-			<div class="ItemInfoContainer">
-				<h3>Betty</h3>
-				<h6>Chair</h6>
-				<h2>USD 2,000</h2>
-			</div>
 		</div>
 		<div style="position:absolute;width:40px;height:40px;left:274px;top:294px;overflow:visible;" data-type="Symbol" data-name="Hover-point" id="Hover-point_hj" class="Hover_point">
 			<svg data-type="Ellipse" data-name="Background" class="Background_hk">
@@ -627,10 +621,141 @@ the mood." id="Everything_you_need_for_a_bedr">
 				<ellipse id="Point_hl" rx="8" ry="8" cx="8" cy="8">
 				</ellipse>
 			</svg>
-			<div class="ItemInfoContainer">
-				<h3>Betty</h3>
-				<h6>Sofa</h6>
-				<h2>USD 2,000</h2>
+		</div>
+	</div>
+	<div style="mix-blend-mode:normal;position:absolute;width:1307px;height:356px;left:0px;top:3390px;overflow:hidden;" data-type="ScrollableGroup" data-name="Scroll Group 7" id="Scroll_Group_7">
+		<div style="position:absolute;width:1566px;height:356px;left:59px;top:0px;overflow:hidden;" data-type="Repeat Grid" data-name="Repeat Grid" id="Repeat_Grid_hn">
+			<div style="position:absolute;width:1566px;height:356px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="Repeat Grid" id="Repeat_Grid_ho" class="Repeat_Grid">
+				<div style="position:absolute;width:294px;height:356px;left:1272px;top:0px;overflow:visible;" data-type="Group" data-name="Product-list" id="Product-list_hp">
+					<div data-type="Text" data-name="USD 2,000" id="USD_2000_hq">
+						<span>USD 2,000</span>
+					</div>
+					<div data-type="Text" data-name="Betty" id="Betty_hr">
+						<span>Betty</span>
+					</div>
+					<div style="position:absolute;width:294px;height:294px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="Product Image" id="Product_Image_hs">
+						<svg data-type="Rectangle" data-name="Container" class="Container_ht">
+							<rect id="Container_ht" rx="0" ry="0" x="0" y="0" width="294" height="294">
+							</rect>
+						</svg>
+						<img style="position:absolute;width:240px;height:240px;left:27px;top:27px;overflow:visible;" data-type="Rectangle" data-name="Image-Product" id="Image-Product_hu" src="skins/Image-Product_hu.png" srcset="skins/Image-Product_hu.png 1x, Image-Product_hu@2x.png 2x">
+							
+						<div style="position:absolute;width:24px;height:24px;left:256px;top:14px;overflow:visible;" data-type="Symbol" data-name="icon-fav" id="icon-fav_hv" class="icon_fav">
+							<svg data-type="Rectangle" data-name="Container-icon" class="Container-icon_hw">
+								<rect id="Container-icon_hw" rx="0" ry="0" x="0" y="0" width="24" height="24">
+								</rect>
+							</svg>
+							<svg data-type="Path" data-name="Fav" class="Fav_hx" viewBox="0 6.297 21 18">
+								<path id="Fav_hx" d="M 14.82962512969971 6.296895980834961 C 12.66241550445557 6.296895980834961 11.29405117034912 7.331398487091064 10.50003719329834 8.266969680786133 C 9.705982208251953 7.331398487091064 8.337658882141113 6.296895980834961 6.169610500335693 6.296895980834961 C 2.479056119918823 6.296895980834961 -3.814697038251325e-06 9.649751663208008 -3.814697038251325e-06 12.78060722351074 C -3.814697038251325e-06 17.33942413330078 8.929231643676758 23.44832992553711 9.947105407714844 24.12957191467285 C 10.1136302947998 24.2405834197998 10.30721569061279 24.29689598083496 10.49999618530273 24.29689598083496 C 10.6935920715332 24.29689598083496 10.88635635375977 24.24138832092285 11.05288791656494 24.12957191467285 C 12.07090950012207 23.44820594787598 20.99999618530273 17.33922004699707 20.99999618530273 12.78060722351074 C 20.99999618530273 9.649751663208008 18.52009963989258 6.296895980834961 14.8295431137085 6.296895980834961 Z">
+								</path>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div style="position:absolute;width:294px;height:356px;left:954px;top:0px;overflow:visible;" data-type="Group" data-name="Product-list" id="Product-list_hy">
+					<div data-type="Text" data-name="USD 2,000" id="USD_2000_hz">
+						<span>USD 2,000</span>
+					</div>
+					<div data-type="Text" data-name="Betty" id="Betty_h">
+						<span>Betty</span>
+					</div>
+					<div style="position:absolute;width:294px;height:294px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="Product Image" id="Product_Image_h">
+						<svg data-type="Rectangle" data-name="Container" class="Container_h">
+							<rect id="Container_h" rx="0" ry="0" x="0" y="0" width="294" height="294">
+							</rect>
+						</svg>
+						<img style="position:absolute;width:240px;height:240px;left:27px;top:27px;overflow:visible;" data-type="Rectangle" data-name="Image-Product" id="Image-Product_h" src="skins/Image-Product_h.png" srcset="skins/BlueChair_1.png 1x, Image-Product_h@2x.png 2x">
+							
+						<div style="position:absolute;width:24px;height:24px;left:256px;top:14px;overflow:visible;" data-type="Symbol" data-name="icon-fav" id="icon-fav_h" class="icon_fav">
+							<svg data-type="Rectangle" data-name="Container-icon" class="Container-icon_h">
+								<rect id="Container-icon_h" rx="0" ry="0" x="0" y="0" width="24" height="24">
+								</rect>
+							</svg>
+							<svg data-type="Path" data-name="Fav" class="Fav_h" viewBox="0 6.297 21 18">
+								<path id="Fav_h" d="M 14.82962512969971 6.296895980834961 C 12.66241550445557 6.296895980834961 11.29405117034912 7.331398487091064 10.50003719329834 8.266969680786133 C 9.705982208251953 7.331398487091064 8.337658882141113 6.296895980834961 6.169610500335693 6.296895980834961 C 2.479056119918823 6.296895980834961 -3.814697038251325e-06 9.649751663208008 -3.814697038251325e-06 12.78060722351074 C -3.814697038251325e-06 17.33942413330078 8.929231643676758 23.44832992553711 9.947105407714844 24.12957191467285 C 10.1136302947998 24.2405834197998 10.30721569061279 24.29689598083496 10.49999618530273 24.29689598083496 C 10.6935920715332 24.29689598083496 10.88635635375977 24.24138832092285 11.05288791656494 24.12957191467285 C 12.07090950012207 23.44820594787598 20.99999618530273 17.33922004699707 20.99999618530273 12.78060722351074 C 20.99999618530273 9.649751663208008 18.52009963989258 6.296895980834961 14.8295431137085 6.296895980834961 Z">
+								</path>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div style="position:absolute;width:294px;height:356px;left:636px;top:0px;overflow:visible;" data-type="Group" data-name="Product-list" id="Product-list_h">
+					<div data-type="Text" data-name="USD 2,000" id="USD_2000_h">
+						<span>USD 2,000</span>
+					</div>
+					<div data-type="Text" data-name="Betty" id="Betty_ia">
+						<span>Betty</span>
+					</div>
+					<div style="position:absolute;width:294px;height:294px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="Product Image" id="Product_Image_ia">
+						<svg data-type="Rectangle" data-name="Container" class="Container_ib">
+							<rect id="Container_ib" rx="0" ry="0" x="0" y="0" width="294" height="294">
+							</rect>
+						</svg>
+						<img style="position:absolute;width:240px;height:240px;left:27px;top:27px;overflow:visible;" data-type="Rectangle" data-name="Image-Product" id="Image-Product_ic" src="skins/Image-Product_ic.png" srcset="skins/BrownChair_1.png 1x, Image-Product_ic@2x.png 2x">
+							
+						<div style="position:absolute;width:24px;height:24px;left:256px;top:14px;overflow:visible;" data-type="Symbol" data-name="icon-fav" id="icon-fav_id" class="icon_fav">
+							<svg data-type="Rectangle" data-name="Container-icon" class="Container-icon_ie">
+								<rect id="Container-icon_ie" rx="0" ry="0" x="0" y="0" width="24" height="24">
+								</rect>
+							</svg>
+							<svg data-type="Path" data-name="Fav" class="Fav_if" viewBox="0 6.297 21 18">
+								<path id="Fav_if" d="M 14.82962512969971 6.296895980834961 C 12.66241550445557 6.296895980834961 11.29405117034912 7.331398487091064 10.50003719329834 8.266969680786133 C 9.705982208251953 7.331398487091064 8.337658882141113 6.296895980834961 6.169610500335693 6.296895980834961 C 2.479056119918823 6.296895980834961 -3.814697038251325e-06 9.649751663208008 -3.814697038251325e-06 12.78060722351074 C -3.814697038251325e-06 17.33942413330078 8.929231643676758 23.44832992553711 9.947105407714844 24.12957191467285 C 10.1136302947998 24.2405834197998 10.30721569061279 24.29689598083496 10.49999618530273 24.29689598083496 C 10.6935920715332 24.29689598083496 10.88635635375977 24.24138832092285 11.05288791656494 24.12957191467285 C 12.07090950012207 23.44820594787598 20.99999618530273 17.33922004699707 20.99999618530273 12.78060722351074 C 20.99999618530273 9.649751663208008 18.52009963989258 6.296895980834961 14.8295431137085 6.296895980834961 Z">
+								</path>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div style="position:absolute;width:294px;height:356px;left:318px;top:0px;overflow:visible;" data-type="Group" data-name="Product-list" id="Product-list_ig">
+					<div data-type="Text" data-name="USD 2,000" id="USD_2000_ih">
+						<span>USD 2,000</span>
+					</div>
+					<div data-type="Text" data-name="Betty" id="Betty_ii">
+						<span>Betty</span>
+					</div>
+					<div style="position:absolute;width:294px;height:294px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="Product Image" id="Product_Image_ij">
+						<svg data-type="Rectangle" data-name="Container" class="Container_ik">
+							<rect id="Container_ik" rx="0" ry="0" x="0" y="0" width="294" height="294">
+							</rect>
+						</svg>
+						<img style="position:absolute;width:240px;height:240px;left:27px;top:27px;overflow:visible;" data-type="Rectangle" data-name="Image-Product" id="Image-Product_il" src="skins/Image-Product_il.png" srcset="skins/GreyChair_1.png 1x, Image-Product_il@2x.png 2x">
+							
+						<div style="position:absolute;width:24px;height:24px;left:256px;top:14px;overflow:visible;" data-type="Symbol" data-name="icon-fav" id="icon-fav_im" class="icon_fav">
+							<svg data-type="Rectangle" data-name="Container-icon" class="Container-icon_in">
+								<rect id="Container-icon_in" rx="0" ry="0" x="0" y="0" width="24" height="24">
+								</rect>
+							</svg>
+							<svg data-type="Path" data-name="Fav" class="Fav_io" viewBox="0 6.297 21 18">
+								<path id="Fav_io" d="M 14.82962512969971 6.296895980834961 C 12.66241550445557 6.296895980834961 11.29405117034912 7.331398487091064 10.50003719329834 8.266969680786133 C 9.705982208251953 7.331398487091064 8.337658882141113 6.296895980834961 6.169610500335693 6.296895980834961 C 2.479056119918823 6.296895980834961 -3.814697038251325e-06 9.649751663208008 -3.814697038251325e-06 12.78060722351074 C -3.814697038251325e-06 17.33942413330078 8.929231643676758 23.44832992553711 9.947105407714844 24.12957191467285 C 10.1136302947998 24.2405834197998 10.30721569061279 24.29689598083496 10.49999618530273 24.29689598083496 C 10.6935920715332 24.29689598083496 10.88635635375977 24.24138832092285 11.05288791656494 24.12957191467285 C 12.07090950012207 23.44820594787598 20.99999618530273 17.33922004699707 20.99999618530273 12.78060722351074 C 20.99999618530273 9.649751663208008 18.52009963989258 6.296895980834961 14.8295431137085 6.296895980834961 Z">
+								</path>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div style="position:absolute;width:294px;height:356px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="Product-list" id="Product-list_ip">
+					<div data-type="Text" data-name="USD 2,000" id="USD_2000_iq">
+						<span>USD 2,000</span>
+					</div>
+					<div data-type="Text" data-name="Betty" id="Betty_ir">
+						<span>Betty</span>
+					</div>
+					<div style="position:absolute;width:294px;height:294px;left:0px;top:0px;overflow:visible;" data-type="Group" data-name="Product Image" id="Product_Image_is">
+						<svg data-type="Rectangle" data-name="Container" class="Container_it">
+							<rect id="Container_it" rx="0" ry="0" x="0" y="0" width="294" height="294">
+							</rect>
+						</svg>
+						<img style="position:absolute;width:240px;height:240px;left:27px;top:27px;overflow:visible;" data-type="Rectangle" data-name="Image-Product" id="Image-Product_iu" src="skins/Image-Product_iu.png" srcset="skins/BlackChair_1.png 1x, Image-Product_iu@2x.png 2x">
+							
+						<div style="position:absolute;width:24px;height:24px;left:256px;top:14px;overflow:visible;" data-type="Symbol" data-name="icon-fav" id="icon-fav_iv" class="icon_fav">
+							<svg data-type="Rectangle" data-name="Container-icon" class="Container-icon_iw">
+								<rect id="Container-icon_iw" rx="0" ry="0" x="0" y="0" width="24" height="24">
+								</rect>
+							</svg>
+							<svg data-type="Path" data-name="Fav" class="Fav_ix" viewBox="0 6.297 21 18">
+								<path id="Fav_ix" d="M 14.82962512969971 6.296895980834961 C 12.66241550445557 6.296895980834961 11.29405117034912 7.331398487091064 10.50003719329834 8.266969680786133 C 9.705982208251953 7.331398487091064 8.337658882141113 6.296895980834961 6.169610500335693 6.296895980834961 C 2.479056119918823 6.296895980834961 -3.814697038251325e-06 9.649751663208008 -3.814697038251325e-06 12.78060722351074 C -3.814697038251325e-06 17.33942413330078 8.929231643676758 23.44832992553711 9.947105407714844 24.12957191467285 C 10.1136302947998 24.2405834197998 10.30721569061279 24.29689598083496 10.49999618530273 24.29689598083496 C 10.6935920715332 24.29689598083496 10.88635635375977 24.24138832092285 11.05288791656494 24.12957191467285 C 12.07090950012207 23.44820594787598 20.99999618530273 17.33922004699707 20.99999618530273 12.78060722351074 C 20.99999618530273 9.649751663208008 18.52009963989258 6.296895980834961 14.8295431137085 6.296895980834961 Z">
+								</path>
+							</svg>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
