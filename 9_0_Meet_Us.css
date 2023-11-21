@@ -2,7 +2,7 @@
 	--web-view-name: 9.0 Meet us page;
 	--web-view-id: n_0_Meet_us_page;
 	--web-scale-to-fit: true;
-	--web-scale-to-fit-type: fit;
+	--web-scale-to-fit-type: width;
 	--web-scale-on-resize: true;
 	--web-enable-deep-linking: true;
 }
@@ -18,13 +18,13 @@
 .n_0_Meet_us_page_Class {
 	position: absolute;
 	width: 1920px;
-	height: 1080px;
+	height: 5164px;
 	background-color: rgba(255,255,255,1);
 	overflow: hidden;
 	--web-view-name: 9.0 Meet us page;
 	--web-view-id: n_0_Meet_us_page;
 	--web-scale-to-fit: true;
-	--web-scale-to-fit-type: fit;
+	--web-scale-to-fit-type: width;
 	--web-scale-on-resize: true;
 	--web-enable-deep-linking: true;
 }
@@ -730,7 +730,7 @@
 	mix-blend-mode: normal;
 	position: absolute;
 	width: 1366px;
-	height: 868px;
+	height: 4952px;
 	left: 277px;
 	top: 156px;
 	overflow: hidden;
